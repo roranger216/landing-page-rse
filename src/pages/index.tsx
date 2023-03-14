@@ -1,9 +1,15 @@
 import React from "react";
 
+import Head from './components/header';
+import Content from './components/hero'
+import About from './components/about'
+
 const index = () => {
   return (
-    <div className="text-center m-8 text-2xl font-bold">
-      <div>Hello Team RSE</div>
+    <div className="container mx-auto">
+      <Head />
+      <Content />
+      <About />
     </div>
   );
 };
