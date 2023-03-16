@@ -6,7 +6,7 @@ import About from './components/about'
 
 const index = () => {
   return (
-    <div className="container mx-auto">
+    <div className="">
       <Head />
       <Content />
       <About />
