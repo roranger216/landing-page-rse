@@ -14,10 +14,10 @@ const Header = () => {
             </div>
             <div>
                 <ul className="hidden md:flex gap-12 cursor-pointer">
-                    <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md">Home</li>
-                    <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md">About</li>
-                    <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md">Services</li>
-                    <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md">Contact</li>
+                    <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md ease-in duration-300">Home</li>
+                    <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md ease-in duration-300">About</li>
+                    <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md ease-in duration-300">Services</li>
+                    <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md ease-in duration-300">Contact</li>
                 </ul>
                 <div onClick={handleNav} className="block md:hidden">
                     {!nav ? <img src="https://cdn-icons-png.flaticon.com/128/7710/7710488.png" className="" width={24}></img> : <img src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" className="" width={24}></img>}

@@ -7,7 +7,7 @@ import Footer from './components/footer'
 
 const index = () => {
   return (
-    <div className="w-100">
+    <div className="container mx-auto">
       <Header />
       <Content />
       <About />
