@@ -1,9 +1,11 @@
 import React from "react";
 
+import Header from './components/header'
+
 const index = () => {
   return (
-    <div className="text-center m-8 text-2xl font-bold">
-      <div>Hello Team RSE</div>
+    <div className="w-full">
+      <Header />
     </div>
   );
 };
