@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div className="flex flex-col md:flex-row pt-10 pb-10">
+        <div id="about" className="flex flex-col md:flex-row pt-10 pb-10">
             <div className="w-full md:w-1/2 p-10">
                 <div className="w-full">
                     <img className="pb-0 cursor-pointer" src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="programmer working on programming website" />
