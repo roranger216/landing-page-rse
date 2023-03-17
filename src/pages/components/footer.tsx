@@ -1,25 +1,90 @@
-import React from 'react';
+import React from "react";
 
-const Footer = () => {
-    return (
-        <div className="w-screen absolute left-0 h-auto bg-slate-200 p-4 md:p-8">
-            <div className="container bg-sky-200">
-                <div className="text-center mb-2">
-                    <div className="font-bold">This is footer</div>
-                </div>
-                <div className="flex flex-col lg:flex-row">
-                    <div className="flex md:flex-row">
-                        <div className="text-justify p-2 md:p-4 text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolore porro alias consequuntur dolorem amet ad voluptatibus dicta, quo illo molestiae cum est neque totam autem aliquid, animi vitae eveniet?</div>
-                        <div className="text-justify p-2 md:p-4 text-sm md:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quia doloremque odio accusamus tempora, eligendi harum earum, quo commodi porro aut facere quasi illo quod sapiente ex sed repellat eaque.</div>
-                    </div>
-                    <div className="flex md:flex-row">
-                        <div className="text-justify p-2 md:p-4 text-sm md:text-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius voluptatibus eos repudiandae magni corporis quia id reprehenderit enim natus obcaecati rerum eaque a placeat temporibus, consequatur, suscipit recusandae, architecto quos!</div>
-                        <div className="text-justify p-2 md:p-4 text-sm md:text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam ipsum fugit veritatis itaque quaerat nesciunt fuga eveniet asperiores modi, deleniti perspiciatis eaque fugiat eos. Pariatur asperiores dicta reprehenderit facilis.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
+function Footer() {
+	return (
+		<div className="w-full absolute left-0">
+			<div className="bg-gray-200 h-1/2 flex md:flex-row flex-col justify-around items-start p-20">
+				<div className="p-5 ">
+					<ul>
+						<p className="text-gray-800 font-bold text-3xl pb-6">
+							THIS<span className="text-blue-600">Logo</span>
+						</p>
+						<div className="flex gap-6 pb-5">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3955/3955024.png" width={28}></img>
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width={28}></img>
+                            <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" width={28}></img>
+                            <img src="https://cdn-icons-png.flaticon.com/512/3670/3670147.png" width={28}></img>
+						</div>
+					</ul>
+				</div>
+				<div className="p-5">
+					<ul>
+						<p className="text-gray-800 font-bold text-2xl pb-4">Product</p>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Stocks
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Futures & Options
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Mutual Funds
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Fixed deposits
+						</li>
+					</ul>
+				</div>
+				<div className="p-5">
+					<ul>
+						<p className="text-gray-800 font-bold text-2xl pb-4">Company</p>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							About
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Products
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Pricing
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Careers
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Press & Media
+						</li>
+					</ul>
+				</div>
+				<div className="p-5">
+					<ul>
+						<p className="text-gray-800 font-bold text-2xl pb-4">Support</p>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Contact
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Support Portals
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							List Of Charges
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Downloads & Resources
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+							Videos
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-200">
+				<h1 className=" text-gray-800 font-semibold">
+					© 2022-2023 All rights reserved | Build with ❤ by{" "}
+					<span className="hover:text-blue-600 font-semibold cursor-pointer">
+						Team RSE INTERNS{" "}
+					</span>
+				</h1>
+			</div>
+		</div>
+	);
 }
 
 export default Footer;

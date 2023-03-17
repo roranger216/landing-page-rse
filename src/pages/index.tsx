@@ -10,7 +10,7 @@ import Contact from './components/contact'
 const index = () => {
   return (
     // <div className="container mx-auto"></div>
-    <div className="container mx-auto justify-center">
+    <div className="container mx-auto">
       <Header />
       <Content />
       <About />
