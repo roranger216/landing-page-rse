@@ -36,18 +36,18 @@ const Header = () => {
                 <div onClick={handleNav} className="block md:hidden">
                     {!nav ? <img src="https://cdn-icons-png.flaticon.com/128/7710/7710488.png" className="" width={24}></img> : <img src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" className="" width={24}></img>}
                 </div>
-                <div className={!nav ? 'opacity-0' : 'fixed transition-opacity ease-in-out duration-300'}>
-                    <ul className="flex flex-col gap-4 fixed left-0 top-16 uppercase p-6 text-center bg-white w-full shadow-2xl opacity-100">
-                        <li className="text-md font-medium p-2 rounded-md hover:bg-sky-200">
+                <div className={!nav ? 'hidden' : 'fixed transition-transform ease-in-out duration-300'}>
+                    <ul className="flex flex-col gap-4 fixed left-0 top-16 uppercase p-6 text-center bg-white w-full shadow-2xl">
+                        <li className="text-md font-medium p-2 rounded-md">
                             <Link to="home" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
                         </li>
-                        <li className="text-md font-medium p-2 rounded-md hover:bg-sky-200">
+                        <li className="text-md font-medium p-2 rounded-md">
                             <Link to="about" spy={true} smooth={true} offset={-40} duration={500} onClick={closeMenu}>About</Link>
                         </li>
-                        <li className="text-md font-medium p-2 rounded-md hover:bg-sky-200">
+                        <li className="text-md font-medium p-2 rounded-md">
                             <Link to="services" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Services</Link>
                         </li>
-                        <li className="text-md font-medium p-2 rounded-md hover:bg-sky-200">
+                        <li className="text-md font-medium p-2 rounded-md">
                             <Link to="contact" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Contact</Link>
                         </li>
                     </ul>
