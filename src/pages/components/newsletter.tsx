@@ -12,7 +12,7 @@ const Newsletter = () => {
           <p>Sign up to our newsletter and stay up to date.</p>
           <Typed
             className='md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2'
-            strings={['TEAM', 'RAPID', 'SIGNAL']}
+            strings={['RAPID', 'SIGNAL', 'ELECTRONICS']}
             typeSpeed={120}
             backSpeed={140}
             loop
@@ -30,8 +30,8 @@ const Newsletter = () => {
             </button>
           </div>
           <p>
-            We care bout the protection of your data. Read our{' '}
-            <span className='text-[#ffffff]'>Privacy Policy.</span>
+            We care about the protection of your data. Read our{' '}
+            <span className='text-[#e44040]'>Privacy Policy.</span>
           </p>
         </div>
       </div>
