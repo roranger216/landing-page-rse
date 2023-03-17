@@ -42,9 +42,9 @@ const Head = () => {
 
   return (
 
-    <div>
-    <div className="flex flex-row justify-between w-full shadow-lg fixed bg-slate-50">
-      <div className="text-center lg:flex-col lg:flex flex justify-between w-full">
+    <div className=''>
+    <div className="flex flex-row w-3/4 justify-between shadow-lg fixed bg-slate-50">
+      <div className="text-center w-full lg:flex-col lg:flex flex justify-between">
         <div ref={btnMenu} className="items-center justify-between rounded-md p-2 hover:bg-sky-200 ease-in duration-300 min-[900px]:hidden lg:m-6 lg:flex-row m-5">
           <button id="menu-btn" className='text-2xl' onClick={showMenu}>
             <FontAwesomeIcon icon={faBars}/>
