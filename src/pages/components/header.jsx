@@ -13,10 +13,12 @@ const Header = () => {
     const handleClick = () => setClick(!click)
     const closeMenu = () => setClick
 
+
+
     return (
-        <div className="fixed w-full top-0 left-0 bg-white shadow-md flex justify-between p-4 pl-16 pr-16 items-center">
+        <div className="fixed w-full top-0 left-0 bg-white flex justify-between p-4 pl-16 pr-16 items-center">
             <div className="cursor-pointer pl-0 md:pl-20">
-                <div className="flex font-bold text-2xl">THIS<div className="text-sky-600">Logo</div></div>
+                <div className="flex font-bold text-3xl">THIS<div className="text-sky-600">Logo</div></div>
             </div>
             <div className="pr-0 md:pr-20">
                 <ul className="hidden md:flex gap-12 cursor-pointer">

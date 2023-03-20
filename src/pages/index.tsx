@@ -13,10 +13,10 @@ const index = () => {
     <div className="container mx-auto">
       <Header />
       <Content />
-      <About />
+      <About/>
       <Services />
       <Contact />
-      <Footer />
+      <Footer/>
     </div>
   );
 };
