@@ -12,7 +12,7 @@ const Head = () => {
     if (sidemenuRef.current && btnMenu.current) {
       const sidebarDisplay = sidemenuRef.current.style.display;
       sidemenuRef.current.style.display = sidebarDisplay === 'flex' ? 'none' : 'flex';
-        sidemenuRef.current.style.position = 'absolute';
+        sidemenuRef.current.style.position = 'fixed';
         sidemenuRef.current.style.marginTop = '80px';
         sidemenuRef.current.style.backgroundColor = 'rgb(248 250 252)';
         sidemenuRef.current.style.paddingBottom = '25px';
@@ -42,14 +42,14 @@ const Head = () => {
   return (
 
     <div className=''>
-    <div className="flex flex-row w-3/4 justify-between shadow-lg fixed bg-slate-50">
+    <div className="container fixed flex flex-row w-full justify-between shadow-lg bg-slate-50">
       <div className="text-center w-full lg:flex-col lg:flex flex justify-between">
         <div ref={btnMenu} className="items-center justify-between rounded-md p-2 hover:bg-sky-200 ease-in duration-300 min-[900px]:hidden lg:m-6 lg:flex-row m-5">
           <button id="menu-btn" className='text-2xl' onClick={showMenu}>
             <FontAwesomeIcon icon={faBars}/>
           </button>
         </div>
-        <div className="flex lg:m-6 m-6 font-bold text-xl p-2">THISLogo</div>
+        <div className="flex lg:m-6 m-6 font-bold text-xl p-2 font-courier font-['Open_Sans'] bg-gradient-to-r bg-clip-text text-transparent from-blue-500 to-pink-500">RASINIX</div>
       </div>
       <div className="flex flex-col md:flex-row items-center justify-between lg:gap-20 lg:m-6 font-medium text-lg cursor-pointer" ref={sidemenuRef}>
         <div id="sidebar" className="hide flex-row flex items-center justify-between gap-20 font-medium text-lg cursor-pointer max-[900px]:hidden">
