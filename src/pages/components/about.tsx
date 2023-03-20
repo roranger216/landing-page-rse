@@ -2,63 +2,37 @@ import React from 'react'
 
 const About = () => {
     return (
-        
-    <div className="flex flex-col lg:flex-row pt-10 pb-10" id='about'>
-    <div className="flex flex-col">
-      <div className="">
-        <img
-          className="p-6 pb-0 max-w-full h-auto md:max-w-4xl rounded-lg"
-          src="https://thumbs.dreamstime.com/b/professional-development-programmer-working-programming-website-software-coding-technology-writing-codes-data-code-132331729.jpg"
-          alt="programmer working on programming website"
-        />
-      </div>
-      <div className="flex flex-wrap p-6 gap-6 md:gap-16">
-        <img
-          className="object-cover w-full md:w-1/2 lg:w-1/3 h-64 max-w-xl"
-          src="https://cdn.ucberkeleybootcamp.com/wp-content/uploads/sites/106/2020/12/tes_gen_blog_code6-800x412.jpg"
-          alt="programming code"
-        />
-        <img
-          className="object-cover w-full md:w-1/2 lg:w-1/3 h-64 max-w-2xl"
-          src="https://6448316.fs1.hubspotusercontent-na1.net/hubfs/6448316/what-computer-programming-jobs-offer-remote-work-jpg.jpeg"
-          alt="remote programming jobs"
-        />
-      </div>
-    </div>
-    <div className="md:w-1/2 p-6">
-      <div className="">
-        <h1 className="text-sky-500 text-4xl mb-10 font-bold">About Us</h1>
-        <p
-          className="text-justify text-xl mb-10 first-letter:text-4xl first-letter:font-bold first-letter:text-black
-first-letter:mr-3 first-letter:float-left"
-        >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          quia praesentium ipsum porro ut enim aspernatur nemo? Architecto,
-          harum modi natus maxime dolorum eligendi quibusdam commodi unde
-          odio, ad neque? Lorem, ipsum dolor sit amet consectetur adipisicing
-          elit. Vitae quia, sint ab possimus enim rerum commodi sequi ad
-          beatae inventore minima quaerat laudantium maiores doloremque itaque
-          porro nisi recusandae at?
-        </p>
-        <p className="text-justify text-xl mb-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          quia praesentium ipsum porro ut enim aspernatur nemo? Architecto,
-          harum modi natus maxime dolorum eligendi quibusdam commodi unde
-          odio, ad neque? Lorem, ipsum dolor sit amet consectetur adipisicing
-          elit. Vitae quia, sint ab possimus enim rerum commodi sequi ad
-          beatae inventore minima quaerat laudantium maiores doloremque itaque
-          porro nisi recusandae at?
-        </p>
-        <p className="text-justify text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          quia praesentium ipsum porro ut enim aspernatur nemo? Architecto,
-          harum modi natus maxime dolorum eligendi quibusdam commodi unde
-          odio, ad neque? Lorem, ipsum dolor sit amet consectetur adipisicing
-          elit
-        </p>
-      </div>
-    </div>
-  </div>
+        <div id="about" className="flex flex-col pt-20 pb-10">
+            <div className="p-4">
+                <div className="">
+                    <h1 className="text-sky-500 text-4xl mb-10 font-bold text-center">About Us</h1>
+
+                    <p className="text-justify text-xs lg:text-lg mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quia praesentium ipsum porro ut enim aspernatur nemo? Architecto, harum modi natus maxime dolorum eligendi quibusdam commodi unde odio, ad neque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae quia, sint ab possimus enim rerum commodi sequi ad beatae inventore minima quaerat laudantium maiores doloremque itaque porro nisi recusandae at?</p>
+                    <p className="text-justify text-xs lg:text-lg mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quia praesentium ipsum porro ut enim aspernatur nemo? Architecto, harum modi natus maxime dolorum eligendi quibusdam commodi unde odio, ad neque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae quia, sint ab possimus enim rerum commodi sequi ad beatae inventore minima quaerat laudantium maiores doloremque itaque porro nisi recusandae at?</p>
+                    <p className="text-justify text-xs lg:text-lg mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quia praesentium ipsum porro ut enim aspernatur nemo? Architecto, harum modi natus maxime dolorum eligendi quibusdam commodi unde odio, ad neque.</p>
+                </div>
+            </div>
+            <div className="flex flex-col md:flex-row p-4">
+                    <img className="object-cover w-full md:w-1/3 rounded mt-4 md:mt-0 md:pr-4" src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="programmer working on programming website" />
+
+                    <img className="object-cover w-full md:w-1/3 rounded mt-4 md:mt-0" src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="programming code" />
+
+                    <img className="object-cover w-full md:w-1/3 rounded mt-4 md:mt-0 md:pl-4" src="https://images.unsplash.com/photo-1503945438517-f65904a52ce6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="remote programming jobs" />
+            </div>
+
+
+            {/* <div className="w-full flex md:w-1/2 p-6 md:pt-28">
+                <div className="w-full">
+                    <img className="pb-0 cursor-pointer rounded-lg" src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="programmer working on programming website" />
+                </div>
+                <div className="w-full md:flex md:w-1/2 mt-6">
+                    <img className="object-cover w-full cursor-pointer md:rounded-l-lg" src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="programming code" />
+                </div>
+                <div className="w-full md:flex md:w-1/2 mt-6">
+                    <img className="object-cover w-full mt-6 md:mt-0 cursor-pointer md:rounded-r-lg" src="https://images.unsplash.com/photo-1503945438517-f65904a52ce6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="remote programming jobs" />
+                </div>
+            </div> */}
+        </div>
     )
 }
 
