@@ -19,7 +19,7 @@ function Footer() {
 				</div>
 				<div className="p-5">
 					<ul>
-						<p className="text-gray-800 font-bold text-2xl pb-4">Product</p>
+						<p className="text-gray-800 font-bold text-2xl pb-4">Services</p>
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
 							Stocks
 						</li>

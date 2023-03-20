@@ -14,7 +14,7 @@ const Header = () => {
     const closeMenu = () => setClick
 
     return (
-        <div className="fixed w-full top-0 left-0 bg-white shadow-lg flex justify-between p-4 pl-16 pr-16 items-center">
+        <div className="fixed w-full top-0 left-0 bg-white shadow-md flex justify-between p-4 pl-16 pr-16 items-center">
             <div className="cursor-pointer pl-0 md:pl-20">
                 <div className="flex font-bold text-2xl">THIS<div className="text-sky-600">Logo</div></div>
             </div>
@@ -24,7 +24,7 @@ const Header = () => {
                         <Link to="home" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
                     </li>
                     <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md ease-in duration-300">
-                        <Link to="about" spy={true} smooth={true} offset={-40} duration={500} onClick={closeMenu}>About</Link>
+                        <Link to="about" spy={true} smooth={true} offset={0} duration={500} onClick={closeMenu}>About</Link>
                     </li>
                     <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md ease-in duration-300">
                         <Link to="services" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Services</Link>
@@ -42,7 +42,7 @@ const Header = () => {
                             <Link to="home" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
                         </li>
                         <li className="text-md font-medium p-2 rounded-md">
-                            <Link to="about" spy={true} smooth={true} offset={-40} duration={500} onClick={closeMenu}>About</Link>
+                            <Link to="about" spy={true} smooth={true} offset={20} duration={500} onClick={closeMenu}>About</Link>
                         </li>
                         <li className="text-md font-medium p-2 rounded-md">
                             <Link to="services" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Services</Link>
