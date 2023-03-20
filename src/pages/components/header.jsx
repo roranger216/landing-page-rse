@@ -16,7 +16,7 @@ const Header = () => {
 
 
     return (
-        <div className="fixed w-full top-0 left-0 bg-white flex justify-between p-4 pl-16 pr-16 items-center">
+        <div className="fixed w-full top-0 left-0 bg-white flex justify-between p-4 pl-16 pr-16 items-center shadow">
             <div className="cursor-pointer pl-0 md:pl-20">
                 <div className="flex font-bold text-3xl">THIS<div className="text-sky-600">Logo</div></div>
             </div>
