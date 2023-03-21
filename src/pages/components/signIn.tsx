@@ -1,8 +1,67 @@
-import React, { useState } from 'react'
+import React, { useState,ChangeEvent,useEffect } from 'react'
+
+
+
 
 
 const SignIn = () => {
 
+    const [accountArray, setAccountArray] = useState([
+        {id:1, email:'jayson@gmail.com', password:'123456'},
+        {id:2, email:'dsteph@gmail.com',password:'hey'}
+    ]);
+
+
+    const [emailValue, setEmail] = useState(""); // for email 
+ 
+    const [passwordValue, setPasswordValue] =useState("")
+
+    const [showAlert, setShowAlert] = useState(false); //alert
+    useEffect(() => {
+      // Show the div after 1 second
+      setTimeout(() => {
+        setShowAlert(true);
+      }, 1000);
+
+      // Hide the div after 3 seconds
+      setTimeout(() => {
+        setShowAlert(true);
+      }, 3000);
+    }, []);
+
+    const handleEmail =(event: ChangeEvent<HTMLInputElement> ) =>{
+        setEmail( event.target.value);
+    }
+
+    const handlePassword =(event: ChangeEvent<HTMLInputElement>)=>{
+        setPasswordValue(event.target.value)
+    }
+     const handleButtonClick = () => {
+       // Perform action when button is clicked
+         if (emailValue.trim() == ''){
+           
+            setShowAlert(true)
+         }
+         else if ( emailValue.includes('@') && emailValue.includes('.')){  
+                if(accountArray.find(obj =>obj.email == emailValue)){
+                    if(accountArray.find(obj =>obj.password == passwordValue)){
+                        alert('Hooray')
+                    }
+                    else{
+                        setShowAlert(true)
+                    }
+                }
+                else{
+                    setShowAlert(true)
+                }
+           
+         }
+         else{
+            
+            setShowAlert(true)
+         }
+       
+        }
     return (
         <div className="grid mt-20 mb-10">
             <div className="flex justify-center mb-10">
