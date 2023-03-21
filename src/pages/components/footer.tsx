@@ -1,29 +1,25 @@
 import React from "react";
-import { FaInstagram } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
 
-function Footer() {
+const Footer = () => {
 	return (
-		<>
-			<div className="bg-gray-50 h-1/2 w-full flex md:flex-row flex-col justify-around items-start p-20">
+		<div className="w-full absolute left-0">
+			<div className="bg-gray-200 h-1/2 flex md:flex-row flex-col justify-around items-start p-20">
 				<div className="p-5 ">
 					<ul>
 						<p className="text-gray-800 font-bold text-3xl pb-6">
-							TEAM<span className="text-blue-600">RSE</span>
+							THIS<span className="text-blue-600">Logo</span>
 						</p>
 						<div className="flex gap-6 pb-5">
-							<FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" />
-							<FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
-							<FaLinkedin className="text-2xl cursor-pointer hover:text-blue-600" />
-							<FaYoutube className="text-2xl cursor-pointer hover:text-red-600" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/3955/3955024.png" width={28}></img>
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width={28}></img>
+                            <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" width={28}></img>
+                            <img src="https://cdn-icons-png.flaticon.com/512/3670/3670147.png" width={28}></img>
 						</div>
 					</ul>
 				</div>
 				<div className="p-5">
 					<ul>
-						<p className="text-gray-800 font-bold text-2xl pb-4">Product</p>
+						<p className="text-gray-800 font-bold text-2xl pb-4">Services</p>
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
 							Stocks
 						</li>
@@ -79,15 +75,15 @@ function Footer() {
 					</ul>
 				</div>
 			</div>
-			<div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-50">
+			<div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-200">
 				<h1 className=" text-gray-800 font-semibold">
 					© 2022-2023 All rights reserved | Build with ❤ by{" "}
 					<span className="hover:text-blue-600 font-semibold cursor-pointer">
-						Team RSE{" "}
+						Team RSE INTERNS{" "}
 					</span>
 				</h1>
 			</div>
-		</>
+		</div>
 	);
 }
 
