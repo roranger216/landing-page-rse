@@ -10,9 +10,9 @@ import {
   FaGithub,
 } from "react-icons/fa";
 
-function Contactus() {
+function Contactpage() {
   return (
-    <div className="bg-[#04163f] w-screen md:h-screen h-auto">
+    <div className="bg-[#02050c] w-full h-auto">
       <div className="flex justify-around items-center mx-20 md:flex-row flex-col">
         {/* textual content */}
         <div className="md:w-1/2 w-full md:p-10 my-10 md:my-0  flex-col">
@@ -108,4 +108,4 @@ function Contactus() {
   );
 }
 
-export default Contactus;
+export default Contactpage;
