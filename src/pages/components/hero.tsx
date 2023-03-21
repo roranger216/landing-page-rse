@@ -16,7 +16,7 @@ const Content = () => {
             <div>
                 {showModal && (
                     <div className="modal w-full h-full top-0 left-0 fixed flex content-center justify-center items-center bg-black/75 z-20">
-                        <div className="w-2/5 h-auto bg-slate-100 rounded-md p-5">
+                        <div className=" w-5/6 lg:w-2/5 h-auto bg-slate-100 rounded-md p-5">
 
                             <div className="float-right">
                                 <button className="text-slate-500 px-2 rounded-md font-bold text-4xl hover:text-red-600" onClick={closeSignInModal}>&times;</button>
