@@ -5,16 +5,23 @@ import pic3 from "../../assets/img/consultation.jpg";
 import pic4 from "../../assets/img/documentation.jpg";
 import pic5 from "../../assets/img/design.jpg";
 import pic6 from "../../assets/img/outsource.jpg";
+import React, { useEffect } from "react";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { duration } from '@material-ui/core'
 
-import React from "react";
 const Service = () => {
+  useEffect(() => {
+      AOS.init({duration: 1000})
+  }, [])
   return (
     <div id="services" className="w-full h-auto sm:mx-0 mb-40">
       <div
         id="header"
         className=" mx-4 w-auto h-28 flex items-center sm:justify-center"
       >
-        <h1 className="font-bold text-4xl text-sky-600 sm:text-center">
+        <h1
+          data-aos="fade-up" className="font-bold text-4xl text-sky-600 sm:text-center">
           Our Services
         </h1>
       </div>
@@ -36,8 +43,9 @@ const Service = () => {
                                             md:justify-center items-center"
           >
             <div
+              data-aos="fade-right"
               id="image-container"
-              className="bg-blue-300 max-[480px]:w-52 h-full
+              className="animation bg-blue-300 max-[480px]:w-52 h-full
                                        sm:
                                        md: w-64"
             >
@@ -54,7 +62,8 @@ const Service = () => {
             className=" max-[480px]:w-full h-10 items-center mt-2 lg:mt-3 mb-4"
           >
             <h1
-              className=" text-black w-auto max-[480px]:mx-4 text-sm font-bold 
+              data-aos="fade-up"
+              className=" animation text-black w-auto max-[480px]:mx-4 text-sm font-bold 
                                                     sm:text-base
                                                     md:text-xl
                                                     lg:text-2xl "
@@ -62,7 +71,8 @@ const Service = () => {
               Development
             </h1>
           </div>
-          <div className="w-full h-auto overflow-auto max-[480px]:h-48">
+          <div className="animation w-full h-auto overflow-auto max-[480px]:h-48"
+          data-aos="fade-up">
             <p
               className="text-justify text-ellipsis max-[480px]:h-full text-xs
                                                      sm:text-sm
@@ -97,8 +107,9 @@ const Service = () => {
                                             md:justify-center items-center"
           >
             <div
+              data-aos="fade-right"
               id="image-container"
-              className="bg-blue-300 max-[480px]:w-52 h-full
+              className="animation bg-blue-300 max-[480px]:w-52 h-full
                                        sm:
                                        md: w-64"
             >
@@ -115,7 +126,8 @@ const Service = () => {
             className=" max-[480px]:w-full h-10 items-center mt-2 lg:mt-3 mb-4"
           >
             <h1
-              className=" text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 
+              data-aos="fade-up"
+              className=" animation text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 
                                                     sm:text-base
                                                     md:text-xl
                                                     lg:text-2xl "
@@ -123,7 +135,8 @@ const Service = () => {
               Customization
             </h1>
           </div>
-          <div className="w-full h-auto overflow-auto max-[480px]:h-48">
+          <div className="animation w-full h-auto overflow-auto max-[480px]:h-48"
+          data-aos="fade-up">
             <p
               className="text-justify text-ellipsis max-[480px]:h-full text-xs
                                                      sm:text-sm
@@ -157,8 +170,9 @@ const Service = () => {
                                             md:justify-center items-center"
           >
             <div
+              data-aos="fade-right"
               id="image-container"
-              className="bg-blue-300 max-[480px]:w-52 h-full
+              className="animation bg-blue-300 max-[480px]:w-52 h-full
                                        sm:
                                        md: w-64"
             >
@@ -176,7 +190,8 @@ const Service = () => {
             lg:mt-3 lg:mb-4"
           >
             <h1
-              className=" text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 
+              data-aos="fade-up"
+              className=" animation text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 
                                                     sm:text-base
                                                     md:text-xl
                                                     lg:text-2xl "
@@ -184,7 +199,8 @@ const Service = () => {
               Consultation
             </h1>
           </div>
-          <div className="w-full h-auto overflow-auto max-[480px]:h-48">
+          <div className="animation w-full h-auto overflow-auto max-[480px]:h-48"
+          data-aos="fade-up">
             <p
               className="text-justify text-ellipsis max-[480px]:h-full text-xs
                                                      sm:text-sm
@@ -219,8 +235,9 @@ const Service = () => {
                                             md:justify-center items-center"
           >
             <div
+              data-aos="fade-right"
               id="image-container"
-              className="bg-blue-300 max-[480px]:w-52 h-full
+              className="animation bg-blue-300 max-[480px]:w-52 h-full
                                        sm:
                                        md: w-64"
             >
@@ -238,7 +255,8 @@ const Service = () => {
             lg:mt-3 lg:mb-4"
           >
             <h1
-              className=" text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 
+              data-aos="fade-up"
+              className=" animation text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 
                                                     sm:text-base
                                                     md:text-xl
                                                     lg:text-2xl "
@@ -246,7 +264,8 @@ const Service = () => {
               Documentation
             </h1>
           </div>
-          <div className="w-full h-auto overflow-auto max-[480px]:h-48">
+          <div className="animation w-full h-auto overflow-auto max-[480px]:h-48"
+          data-aos="fade-up">
             <p
               className="text-justify text-ellipsis max-[480px]:h-full text-xs
                                                      sm:text-sm
@@ -281,8 +300,9 @@ const Service = () => {
                                             md:justify-center items-center"
           >
             <div
+              data-aos="fade-right"
               id="image-container"
-              className="bg-blue-300 max-[480px]:w-52 h-full
+              className="animation bg-blue-300 max-[480px]:w-52 h-full
                                        sm:
                                        md: w-64"
             >
@@ -300,7 +320,8 @@ const Service = () => {
             lg:mt-3 lg:mb-4"
           >
             <h1
-              className=" text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 
+              data-aos="fade-up"
+              className=" animation text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 
                                                     sm:text-base
                                                     md:text-xl
                                                     lg:text-2xl "
@@ -308,7 +329,8 @@ const Service = () => {
               Design
             </h1>
           </div>
-          <div className="w-full h-auto overflow-auto max-[480px]:h-48">
+          <div className="animation w-full h-auto overflow-auto max-[480px]:h-48"
+          data-aos="fade-up">
             <p
               className="text-justify text-ellipsis max-[480px]:h-full text-xs
                                                      sm:text-sm
@@ -343,8 +365,9 @@ const Service = () => {
                                             md:justify-center items-center"
           >
             <div
+              data-aos="fade-right"
               id="image-container"
-              className="bg-blue-300 max-[480px]:w-52 h-full
+              className="animation bg-blue-300 max-[480px]:w-52 h-full
                                        sm:
                                        md: w-64"
             >
@@ -362,7 +385,8 @@ const Service = () => {
             lg:mt-3 lg:mb-4"
           >
             <h1
-              className=" text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 
+              data-aos="fade-up"
+              className=" animation text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 
                                                     sm:text-base
                                                     md:text-xl
                                                     lg:text-2xl "
@@ -370,7 +394,8 @@ const Service = () => {
               Outsource IT Works
             </h1>
           </div>
-          <div className="w-full h-auto overflow-auto max-[480px]:h-48">
+          <div className="animation w-full h-auto overflow-auto max-[480px]:h-48"
+          data-aos="fade-up">
             <p
               className="text-justify text-ellipsis max-[480px]:h-full text-xs
                                                      sm:text-sm

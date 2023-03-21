@@ -7,7 +7,7 @@ const SignIn = () => {
         <div className="grid mt-20 mb-10">
             <div className="flex justify-center mb-10">
                 <div className="Logo">
-                    <h1 className="font-bold text-3xl">RASI<span className="text-sky-600">NIX</span></h1>
+                    <h1 className="font-bold text-3xl">THIS<span className="text-sky-600">Logo</span></h1>
                 </div>
             </div>
             <div className="inputs flex justify-center">
