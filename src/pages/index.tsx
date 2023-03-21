@@ -3,7 +3,7 @@ import Head from './components/header';
 import Content from './components/hero'
 import About from './components/about'
 import Team from './components/team'
-import Contactus from './components/contactus'
+import Contactpage from './components/contactpage'
 import Newsletter from './components/newsletter'
 import Footer from './components/footer'
 import Service from "./components/service";
@@ -17,7 +17,7 @@ const Index: React.FC = () => {
       <About />
       <Service/>
       <Team />
-      <Contactus />
+      <Contactpage />
       <Newsletter />
       <Footer />
       <Service />
