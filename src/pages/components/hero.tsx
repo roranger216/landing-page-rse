@@ -17,10 +17,10 @@ import SignIn from './signIn'
         
 
     return (
-        <div className="content transition ease-in duration-500">
+        <div id="home" className="content flex flex-col lg:flex-row justify-between items-center pt-32 md:pt-10 lg:pt-40 xl:pt-0 pb-20 px-4 lg:px-0 m-4 md:m-20">
             {show && (
-            <div className="modal transition ease-in duration-500">
-                {show && ( 
+            <div className="modal">
+                {show && (
                     <div>
                         <div className="close h-3 fixed z-30">
                             <button className="float-right text-red-500 px-2 rounded-md font-bold text-5xl hover:text-red-200"

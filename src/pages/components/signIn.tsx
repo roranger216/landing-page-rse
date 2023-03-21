@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 function SignIn() {
 
   return (
-        <div className="Sign-in w-full h-full fixed flex content-center justify-center items-center bg-black/75 z-20 ease-in duration-500">
+        <div className="Sign-in w-full h-full left-0 top-0 fixed flex content-center justify-center items-center bg-black/75 z-20 ease-in duration-500">
             <div className="grid p-5 w-2/5 h-4/6 absolute bg-slate-100 rounded-md ease-in duration-500">
                 <div className="logo flex justify-center">
                     <div className="Logo flex flex-col justify-center items-center">
