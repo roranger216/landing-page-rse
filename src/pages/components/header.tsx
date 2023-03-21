@@ -29,7 +29,7 @@ const Header = () => {
                         <Link to="about" spy={true} smooth={true} offset={0} duration={500} onClick={closeMenu}>About</Link>
                     </li>
                     <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md ease-in duration-300">
-                        <Link to="services" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Services</Link>
+                        <Link to="services" spy={true} smooth={true} offset={-60} duration={500} onClick={closeMenu}>Services</Link>
                     </li>
                     <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md ease-in duration-300">
                         <Link to="contact" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Contact</Link>

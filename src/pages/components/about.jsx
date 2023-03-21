@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div id="about" className="flex flex-col pt-20 pb-10">
+        <div id="about" className="flex flex-col pt-20 pb-40">
             <div className="p-4">
                 <div className="">
                     <h1 className="text-sky-500 text-4xl mb-10 font-bold text-center">About Us</h1>
@@ -19,19 +19,6 @@ const About = () => {
 
                     <img className="object-cover w-full md:w-1/3 rounded mt-4 md:mt-0 md:pl-4" src="https://images.unsplash.com/photo-1503945438517-f65904a52ce6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="remote programming jobs" />
             </div>
-
-
-            {/* <div className="w-full flex md:w-1/2 p-6 md:pt-28">
-                <div className="w-full">
-                    <img className="pb-0 cursor-pointer rounded-lg" src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="programmer working on programming website" />
-                </div>
-                <div className="w-full md:flex md:w-1/2 mt-6">
-                    <img className="object-cover w-full cursor-pointer md:rounded-l-lg" src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="programming code" />
-                </div>
-                <div className="w-full md:flex md:w-1/2 mt-6">
-                    <img className="object-cover w-full mt-6 md:mt-0 cursor-pointer md:rounded-r-lg" src="https://images.unsplash.com/photo-1503945438517-f65904a52ce6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="remote programming jobs" />
-                </div>
-            </div> */}
         </div>
     )
 }

@@ -40,7 +40,7 @@ import SignIn from './signIn'
                 </button>
             </div>
             <div className="lg:w-1/2">
-                <img className="w-full rounded-lg" src="https://cdn.dribbble.com/users/508588/screenshots/11263629/thg_m78_02_4x.jpg" />
+                <img className="w-full" src="https://amincodes.com/html/one-pages/flex-it/assets/images/hero/illustration-1.png" />
             </div>
         </div>
         </div>
