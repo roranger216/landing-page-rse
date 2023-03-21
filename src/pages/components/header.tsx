@@ -26,14 +26,15 @@ const Header = () => {
                         <Link to="home" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
                     </li>
                     <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md ease-in duration-300">
-                        <Link to="about" spy={true} smooth={true} offset={0} duration={500} onClick={closeMenu}>About</Link>
+                        <Link to="about" spy={true} smooth={true} offset={-20} duration={500} onClick={closeMenu}>About</Link>
                     </li>
                     <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md ease-in duration-300">
                         <Link to="services" spy={true} smooth={true} offset={-60} duration={500} onClick={closeMenu}>Services</Link>
                     </li>
                     <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md ease-in duration-300">
-                        <Link to="contact" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Contact</Link>
+                        <Link to="contact" spy={true} smooth={true} offset={-160} duration={500} onClick={closeMenu}>Contact</Link>
                     </li>
+                    {/* <li className="text-lg p-2 pl-4 pr-4 font-medium bg-sky-500 text-white rounded-md ease-in duration-300">Sign In</li> */}
                 </ul>
                 <div onClick={handleNav} className="block md:hidden">
                     {!nav ? <img src="https://cdn-icons-png.flaticon.com/128/7710/7710488.png" className="" width={24}></img> : <img src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" className="" width={24}></img>}

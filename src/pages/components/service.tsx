@@ -9,7 +9,7 @@ import pic6 from "../../assets/img/outsource.jpg";
 import React from "react";
 const Service = () => {
   return (
-    <div id="services" className="w-full h-auto sm:mx-0 ">
+    <div id="services" className="w-full h-auto sm:mx-0 mb-40">
       <div
         id="header"
         className=" mx-4 w-auto h-28 flex items-center sm:justify-center"
@@ -21,7 +21,7 @@ const Service = () => {
       <div
         id="Content holder"
         className=" mx-4 w-auto h-auto grid xl:grid-cols-3 gap-36
-                                            lg:grid-cols-2 gap-12
+                                            lg:grid-cols-2
                                             max-[480px]:gap-2 grid-cols-1 "
       >
         <div
@@ -51,7 +51,7 @@ const Service = () => {
           </div>
           <div
             id="service-offered"
-            className=" max-[480px]:w-full h-10 items-center mt-2 mb-1 lg:mt-3 mb-4"
+            className=" max-[480px]:w-full h-10 items-center mt-2 lg:mt-3 mb-4"
           >
             <h1
               className=" text-black w-auto max-[480px]:mx-4 text-sm font-bold 
@@ -112,7 +112,7 @@ const Service = () => {
           </div>
           <div
             id="service-offered"
-            className=" max-[480px]:w-full h-10 items-center mt-2 mb-1 lg:mt-3 mb-4"
+            className=" max-[480px]:w-full h-10 items-center mt-2 lg:mt-3 mb-4"
           >
             <h1
               className=" text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 

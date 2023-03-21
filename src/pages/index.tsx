@@ -2,9 +2,11 @@ import React from "react";
 import Head from './components/header';
 import Content from './components/hero'
 import About from './components/about'
-import Team from './components/team'
-import Footer from './components/footer'
 import Service from "./components/service";
+import Team from './components/team'
+import Contactpage from './components/contactpage'
+import Footer from './components/footer'
+
 
 
 const Index: React.FC = () => {
@@ -14,6 +16,7 @@ const Index: React.FC = () => {
       <Content />
       <About />
       <Service/>
+      <Contactpage />
       <Team />
       <Footer />
       
