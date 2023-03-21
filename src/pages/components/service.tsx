@@ -14,7 +14,7 @@ const Service = () => {
         id="header"
         className=" mx-4 w-auto h-28 flex items-center sm:justify-center"
       >
-        <h1 className="font-bold text-4xl text-sky-400 sm:text-center">
+        <h1 className="font-bold text-4xl text-sky-600 sm:text-center">
           Our Services
         </h1>
       </div>
