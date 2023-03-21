@@ -10,10 +10,10 @@ const Footer = () => {
 							THIS<span className="text-sky-600">Logo</span>
 						</p>
 						<div className="flex gap-6 pb-5">
-                            <img src="https://cdn-icons-png.flaticon.com/512/3955/3955024.png" width={28}></img>
-                            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width={28}></img>
-                            <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" width={28}></img>
-                            <img src="https://cdn-icons-png.flaticon.com/512/3670/3670147.png" width={28}></img>
+                            <img src="https://cdn-icons-png.flaticon.com/512/3955/3955024.png" width={28} className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."></img>
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width={28} className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."></img>
+                            <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" width={28} className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."></img>
+                            <img src="https://cdn-icons-png.flaticon.com/512/3670/3670147.png" width={28} className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."></img>
 						</div>
 					</ul>
 				</div>
