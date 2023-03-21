@@ -1,78 +1,62 @@
-import React, { useRef,useEffect, CSSProperties } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-import Link from 'next/link'
+import React, { useState } from 'react'
 
-const Head = () => {
+import { Link } from 'react-scroll'
 
-  
-  const sidemenuRef = useRef<HTMLDivElement>(null);
-  const btnMenu = useRef<HTMLDivElement>(null);
-  function showMenu() {
-    if (sidemenuRef.current && btnMenu.current) {
-      const sidebarDisplay = sidemenuRef.current.style.display;
-      sidemenuRef.current.style.display = sidebarDisplay === 'flex' ? 'none' : 'flex';
-        sidemenuRef.current.style.position = 'absolute';
-        sidemenuRef.current.style.marginTop = '80px';
-        sidemenuRef.current.style.backgroundColor = 'rgb(248 250 252)';
-        sidemenuRef.current.style.paddingBottom = '25px';
-    }  
-  }
+const Header = () => {
 
-  useEffect(() => {
-    const handleResize = () => {
-      if(sidemenuRef.current){
-        if (window.innerWidth >= 800) {
-          sidemenuRef.current.style.display = 'none';
-        }
-      }
-    };
-  
-    handleResize();
-  
-    window.addEventListener('resize', handleResize);
-  
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-  
-  
+    const [nav, setNav] = useState(false)
+    const handleNav = () => {
+        setNav(!nav)
+    }
 
-  return (
+    const [click, setClick] = useState(false)
+    const handleClick = () => setClick(!click)
+    const closeMenu = () => setClick
 
-    <div>
-    <div className="flex flex-row justify-between w-full shadow-lg fixed bg-slate-50">
-      <div className="text-center lg:flex-col lg:flex flex justify-between w-full">
-        <div ref={btnMenu} className="items-center justify-between rounded-md p-2 hover:bg-sky-200 ease-in duration-300 min-[900px]:hidden lg:m-6 lg:flex-row m-5">
-          <button id="menu-btn" className='text-2xl' onClick={showMenu}>
-            <FontAwesomeIcon icon={faBars}/>
-          </button>
+
+
+    return (
+        <div className="fixed w-full top-0 left-0 bg-white flex justify-between p-4 pl-16 pr-16 items-center shadow">
+            <div className="cursor-pointer pl-0 md:pl-20">
+                <div className="flex font-bold text-3xl">THIS<div className="text-sky-600">Logo</div></div>
+            </div>
+            <div className="pr-0 md:pr-20">
+                <ul className="hidden md:flex gap-12 cursor-pointer">
+                    <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md ease-in duration-300">
+                        <Link to="home" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
+                    </li>
+                    <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md ease-in duration-300">
+                        <Link to="about" spy={true} smooth={true} offset={0} duration={500} onClick={closeMenu}>About</Link>
+                    </li>
+                    <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md ease-in duration-300">
+                        <Link to="services" spy={true} smooth={true} offset={-60} duration={500} onClick={closeMenu}>Services</Link>
+                    </li>
+                    <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md ease-in duration-300">
+                        <Link to="contact" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Contact</Link>
+                    </li>
+                </ul>
+                <div onClick={handleNav} className="block md:hidden">
+                    {!nav ? <img src="https://cdn-icons-png.flaticon.com/128/7710/7710488.png" className="" width={24}></img> : <img src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" className="" width={24}></img>}
+                </div>
+                <div className={!nav ? 'hidden' : 'fixed transition-transform ease-in-out duration-300 md:hidden'}>
+                    <ul className="flex flex-col gap-4 fixed left-0 top-16 uppercase p-6 text-center bg-white w-full shadow-2xl">
+                        <li className="text-md font-medium p-2 rounded-md">
+                            <Link to="home" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
+                        </li>
+                        <li className="text-md font-medium p-2 rounded-md">
+                            <Link to="about" spy={true} smooth={true} offset={20} duration={500} onClick={closeMenu}>About</Link>
+                        </li>
+                        <li className="text-md font-medium p-2 rounded-md">
+                            <Link to="services" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Services</Link>
+                        </li>
+                        <li className="text-md font-medium p-2 rounded-md">
+                            <Link to="contact" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Contact</Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div className="flex lg:m-6 m-6 font-bold text-xl p-2">THISLogo</div>
-      </div>
-      <div className="flex flex-col md:flex-row items-center justify-between lg:gap-20 lg:m-6 font-medium text-lg cursor-pointer" ref={sidemenuRef}>
-        <div id="sidebar" className="hide flex-row flex items-center justify-between gap-20 font-medium text-lg cursor-pointer max-[900px]:hidden">
-          <div className="rounded-md p-2 hover:bg-sky-200 ease-in duration-300"><a href="">Home</a></div>
-          <div className="rounded-md p-2 hover:bg-sky-200 ease-in duration-300"><a href="">About</a></div>
-          <div className="rounded-md p-2 hover:bg-sky-200 ease-in duration-300"><a href="">Services</a></div>
-          <div className="rounded-md p-2 hover:bg-sky-200 ease-in duration-300"><a href="">Contact</a></div>
-          </div>
-      </div>
-    </div>
-      <div className="hidden w-1/3 pt-px justify-center items-center shadow-lg " ref={sidemenuRef}>
-        <div className="lg:flex lg:flex-col w-1/2 justify-center items-center font-medium text-lg cursor-pointer ">
-          <div className="rounded-md p-2 hover:bg-sky-200 ease-in duration-300">
-            <Link legacyBehavior href='#about'>
-              <a href="">Home</a>
-            </Link></div> 
-          <div className="rounded-md p-2 hover:bg-sky-200 ease-in duration-300"><a href="#about">About</a></div>
-          <div className="rounded-md p-2 hover:bg-sky-200 ease-in duration-300"><a href="">Services</a></div>
-          <div className="rounded-md p-2 hover:bg-sky-200 ease-in duration-300"><a href="">Contact</a></div>
-        </div>
-      </div>
-      </div>
-  )
+    )
 }
 
-export default Head
+export default Header;
