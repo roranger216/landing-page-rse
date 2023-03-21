@@ -367,7 +367,7 @@ const Service = () => {
                                                     md:text-xl
                                                     lg:text-2xl "
             >
-              Design
+              Outsource IT Works
             </h1>
           </div>
           <div className="w-full h-auto overflow-auto max-[480px]:h-48">
