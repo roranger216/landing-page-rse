@@ -7,7 +7,7 @@ import { FaInstagram, FaTwitter, FaYoutube, FaPinterest, FaGithub, } from "react
 const Contactpage = () => {
   return (
     <div id="contact" className="bg-white w-full h-auto mb-40">
-      <div className="flex justify-around items-center mx-20 md:flex-row flex-col">
+      <div className="flex justify-around items-center mx-10 md:flex-row flex-col">
         {/* textual content */}
         <div className="md:w-1/2 w-full md:p-10 my-10 md:my-0  flex-col">
           <h1 className="text-4xl font-bold text-sky-600 ">CONTACT US</h1>
@@ -45,7 +45,7 @@ const Contactpage = () => {
           </div>
         </div>
         {/* Contact form */}
-        <div className="bg-slate-200 p-12 rounded-lg shadow-lg">
+        <div className="bg-slate-200 p-12 rounded-lg shadow-lg w-full md:w-auto">
           <form>
             <div className="grid xl:grid-cols-2 xl:gap-10">
               <input
