@@ -14,6 +14,7 @@ const Footer = () => {
                             <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="twitter" width={28} className="cursor-pointer transform transition-shadow duration-500 hover:scale-125"></img>
                             <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn" width={28} className="cursor-pointer transform transition-shadow duration-500 hover:scale-125"></img>
                             <img src="https://cdn-icons-png.flaticon.com/512/3670/3670147.png" alt="Facebook" width={28} className="cursor-pointer transform transition-shadow duration-500 hover:scale-125"></img>
+
 						</div>
 					</ul>
 				</div>
