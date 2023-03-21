@@ -9,7 +9,7 @@ import pic6 from "../../assets/img/outsource.jpg";
 import React from "react";
 const Service = () => {
   return (
-    <div id="services" className="w-full h-auto sm:mx-0 ">
+    <div id="services" className="w-full h-auto sm:mx-0 mb-40">
       <div
         id="header"
         className=" mx-4 w-auto h-28 flex items-center sm:justify-center"

@@ -16,8 +16,8 @@ const Index: React.FC = () => {
       <Content />
       <About />
       <Service/>
-      <Team />
       <Contactpage />
+      <Team />
       <Footer />
       
     </div>
