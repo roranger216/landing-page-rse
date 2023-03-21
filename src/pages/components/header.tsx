@@ -14,13 +14,8 @@ const Header = () => {
     const closeMenu = () => setClick
 
 
-
     return (
-<<<<<<< HEAD
-        <div className="fixed w-full top-0 left-0 bg-white flex justify-between p-4 px-8 md:px-16 items-center shadow">
-=======
         <div className="fixed w-full top-0 left-0 bg-white flex justify-between p-4 px-8 md:px-16 items-center shadow z-49" data-aos="bg">
->>>>>>> origin
             <div className="cursor-pointer pl-0 md:pl-20">
                 <div className="flex font-bold text-3xl">THIS<div className="text-sky-600">Logo</div></div>
             </div>
