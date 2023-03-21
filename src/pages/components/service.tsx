@@ -15,7 +15,7 @@ const Service = () => {
       AOS.init({duration: 1000})
   }, [])
   return (
-    <div id="services" className="w-full h-auto sm:mx-0 mb-40">
+    <div id="services" className="w-full h-auto sm:mx-0 mb-40mb-40">
       <div
         id="header"
         className=" mx-4 w-auto h-28 flex items-center sm:justify-center"
@@ -28,6 +28,7 @@ const Service = () => {
       <div
         id="Content holder"
         className=" mx-4 w-auto h-auto grid xl:grid-cols-3 gap-36
+                                            lg:grid-cols-2
                                             lg:grid-cols-2
                                             max-[480px]:gap-2 grid-cols-1 "
       >
