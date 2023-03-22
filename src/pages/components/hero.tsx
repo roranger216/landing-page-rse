@@ -22,7 +22,7 @@ const Content = () => {
 
             <div>
                 {showModal && (
-                    <div className="animation modal w-full h-full top-0 left-0 fixed flex content-center justify-center items-center bg-black/75 z-20">
+                    <div className="animation modal w-full h-full top-0 left-0 fixed flex content-center justify-center items-center bg-black/75 z-50">
                         <div className=" w-5/6 lg:w-2/5 h-auto bg-slate-100 rounded-md p-5"  data-aos="fade-up">
 
                             <div className="float-right">

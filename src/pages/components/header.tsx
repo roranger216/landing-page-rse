@@ -16,7 +16,7 @@ const Header = () => {
 
 
     return (
-        <div className="fixed w-full top-0 left-0 bg-white flex justify-between p-4 px-8 md:px-16 items-center shadow z-49" data-aos="bg">
+        <div className="fixed w-full top-0 left-0 bg-white flex justify-between p-4 px-8 md:px-16 items-center shadow z-50" data-aos="bg">
             <div className="cursor-pointer pl-0 md:pl-20">
                 <div className="flex font-bold text-3xl">THIS<div className="text-sky-600">Logo</div></div>
             </div>
@@ -53,7 +53,7 @@ const Header = () => {
                         <li className="text-md font-medium p-2 rounded-md">
                             <Link to="contact" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Contact</Link>
                         </li>
-                        <Linked href="#" className="text-lg px-0 py-2 rounded font-medium border-2 bg-sky-600 text-white">Sign In</Linked>
+                        <Linked href="/components/auth/signin" className="text-lg px-0 py-2 rounded-md font-medium border-2 bg-sky-600 text-white">Sign In</Linked>
                     </ul>
                 </div>
             </div>
