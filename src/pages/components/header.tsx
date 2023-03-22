@@ -15,6 +15,7 @@ const Header = () => {
     const handleClick = () => setClick(!click)
     const closeMenu = () => setClick
 
+    
     const classNames = (...classes : any) => {
         return classes.filter(Boolean).join(' ');
     }
@@ -25,12 +26,12 @@ const Header = () => {
 
     return (
         // <div className="fixed w-full top-0 left-0 bg-white flex justify-between p-4 px-8 md:px-16 items-center shadow z-50" data-aos="bg">
-        <div className={classNames(scrollPosition > 0 ? 'bg-sky-500 shadow' : 'bg-white', 'fixed w-full top-0 left-0 flex justify-between p-4 px-8 md:px-16 items-center z-50 transition-all duration-300')}>
+        <div className={classNames(scrollPosition > 0 ? 'shadow-md' : 'shadow-none', 'fixed w-full top-0 left-0 flex justify-between bg-white p-4 px-8 md:px-16 items-center z-50 transition duration-500')}>
 
             <div className="cursor-pointer pl-0 md:pl-20">
-                <div className="flex font-bold text-3xl">THIS<div className={classNames(scrollPosition > 0 ? 'text-white' : 'text-sky-600', 'transition-all duration-200')}>Logo</div></div>
+                <div className="flex font-bold text-3xl">THIS<span className="text-sky-600">Logo</span></div>
             </div>
-            <div className={classNames(scrollPosition > 0 ? 'text-white' : 'text-black', 'transition-all duration-200 pr-0 md:pr-20')}>
+            <div className="pr-0 md:pr-20">
                 <ul className="hidden md:flex gap-12 cursor-pointer">
                     <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md ease-in duration-300">
                         <Link to="home" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
