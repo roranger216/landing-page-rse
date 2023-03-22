@@ -22,6 +22,7 @@ const Header = () => {
 
     const scrollPosition = useScrollPosition ()
     console.log(scrollPosition);
+    // Function for scrolling effect Navbar
 
 
     return (
