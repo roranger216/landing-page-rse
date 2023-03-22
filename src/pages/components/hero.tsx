@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import SignIn from './signIn'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { duration } from '@material-ui/core'
+import Register from './register'
 
 const Content = () => {
 
@@ -29,7 +29,7 @@ const Content = () => {
                                 <button className="text-slate-500 px-2 rounded-md font-bold text-4xl hover:text-red-600" onClick={closeSignInModal}>&times;</button>
                             </div>
 
-                            <SignIn />
+                            <Register />
                         </div>
                     </div>
                 )}
