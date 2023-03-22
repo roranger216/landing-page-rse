@@ -23,7 +23,7 @@ const Content = () => {
             <div>
                 {showModal && (
                     <div className="animation modal w-full h-full top-0 left-0 fixed flex content-center justify-center items-center bg-black/75 z-50">
-                        <div className=" w-5/6 lg:w-2/5 h-auto bg-slate-100 rounded-md p-5"  data-aos="fade-up">
+                        <div className="w-5/6 lg:w-2/5 h-5/6 bg-slate-100 rounded-md p-5 max-sm:h-4/5 overflow-y-scroll scroll-px-0 scroll-m-0 scroll-smooth"  data-aos="fade-up">
 
                             <div className="float-right">
                                 <button className="text-slate-500 px-2 rounded-md font-bold text-4xl hover:text-red-600" onClick={closeSignInModal}>&times;</button>
