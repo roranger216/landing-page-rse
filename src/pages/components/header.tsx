@@ -33,7 +33,7 @@ const Header = () => {
                     <li className="text-lg p-2 font-medium hover:bg-sky-200 rounded-md ease-in duration-300">
                         <Link to="contact" spy={true} smooth={true} offset={-160} duration={500} onClick={closeMenu}>Contact</Link>
                     </li>
-                    {/* <li className="text-lg p-2 pl-4 pr-4 font-medium bg-sky-500 text-white rounded-md ease-in duration-300">Sign In</li> */}
+                    <a href="#" className="text-lg px-4 py-1 font-medium border-2 border-sky-500 bg-white text-black hover:bg-sky-500 hover:text-white rounded-md ease-in duration-200">Sign In</a>
                 </ul>
                 <div onClick={handleNav} className="block md:hidden">
                     {!nav ? <img src="https://cdn-icons-png.flaticon.com/128/7710/7710488.png" className="" width={24}></img> : <img src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" className="" width={24}></img>}
