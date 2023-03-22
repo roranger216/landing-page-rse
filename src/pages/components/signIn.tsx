@@ -1,8 +1,6 @@
 import React, { useState,ChangeEvent,useEffect } from 'react'
-
-
-
-
+import bg from '../../assets/img/f-bg.jpg';
+import Image from 'next/image';
 
 const SignIn = () => {
 
@@ -17,17 +15,6 @@ const SignIn = () => {
     const [passwordValue, setPasswordValue] =useState("")
 
     const [showAlert, setShowAlert] = useState(false); //alert
-    useEffect(() => {
-      // Show the div after 1 second
-      setTimeout(() => {
-        setShowAlert(true);
-      }, 1000);
-
-      // Hide the div after 3 seconds
-      setTimeout(() => {
-        setShowAlert(true);
-      }, 3000);
-    }, []);
 
     const handleEmail =(event: ChangeEvent<HTMLInputElement> ) =>{
         setEmail( event.target.value);
@@ -36,11 +23,17 @@ const SignIn = () => {
     const handlePassword =(event: ChangeEvent<HTMLInputElement>)=>{
         setPasswordValue(event.target.value)
     }
+    const triggerAlert =()=>{
+        setShowAlert(true);
+        setTimeout(() => {
+          setShowAlert(false);
+        }, 3000);
+    }
      const handleButtonClick = () => {
        // Perform action when button is clicked
          if (emailValue.trim() == ''){
            
-            setShowAlert(true)
+           triggerAlert()
          }
          else if ( emailValue.includes('@') && emailValue.includes('.')){  
                 if(accountArray.find(obj =>obj.email == emailValue)){
@@ -48,46 +41,109 @@ const SignIn = () => {
                         alert('Hooray')
                     }
                     else{
-                        setShowAlert(true)
+                      triggerAlert()
                     }
                 }
                 else{
                     setShowAlert(true)
+                    setTimeout(() => {
+                      setShowAlert(false);
+                    }, 3000);
                 }
            
          }
          else{
             
-            setShowAlert(true)
+          triggerAlert()
          }
        
         }
     return (
-        <div className="grid mt-20 mb-10">
-            <div className="flex justify-center mb-10">
-                <div className="Logo">
-                    <h1 className="font-bold text-3xl">THIS<span className="text-sky-600">Logo</span></h1>
-                </div>
+      <div className=" w-screen h-screen flex justify-center items-center ">
+        <Image 
+        alt='bg'
+        src={bg} className="w-screen h-screen -z-10"
+        />
+        <div
+          className="grid absolute bg-white rounded-2xl shadow-2xl shadow-black/40
+                        max-[480px]:w-full h-5/6
+                        sm:w-3/4 sm:h-5/6 sm:border-0
+                        md:w-1/2 md:h-3/4  
+                        xl:w-1/3 p"
+        >
+          <div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl">
+                THIS<span className="text-sky-600">Logo</span>
+              </h1>
             </div>
-            <div className="inputs flex justify-center">
-                <div className="flex w-full flex-col justify-center items-center gap-6">
-                    <input value={emailValue} onChange={handleEmail}type="email" name="username" placeholder="Email" className="w-3/4 h-1/3 text-justify px-2 rounded-md border-2 border-blue-300 p-5" />
-                    <input value={passwordValue} onChange={handlePassword} type="password" name="password" placeholder="Password" className="w-3/4 h-1/3 text-justify px-2 rounded-md border-2 border-blue-300 p-5" />
-                </div>
+          </div>
+
+          <div className="inputs flex flex-col justify-center">
+            {showAlert && (
+              <div className=" w-full">
+                <h1
+                  className="text-red-500 max-[480px]:text-lg text-center  
+                                          sm:text-xl
+                                           md:text-xl 
+                                           lg:text-2xl"
+                >
+                  Incorrect Email or Password!
+                </h1>
+              </div>
+            )}
+
+            <div className="flex w-full flex-col justify-center items-center gap-6 max-[480px]:gap-4">
+              <input
+                value={emailValue}
+                onChange={handleEmail}
+                type="email"
+                name="username"
+                placeholder="Email"
+                className="w-3/4 h-1/3 text-justify pl-8 px-2 rounded-full border-2 border-blue-300 p-5"
+              />
+              <input
+                value={passwordValue}
+                onChange={handlePassword}
+                type="password"
+                name="password"
+                placeholder="Password"
+                className="w-3/4 h-1/3 text-justify pl-8 px-2 rounded-full border-2 border-blue-300 p-5"
+              />
             </div>
-            <div className="buttons w-full">
-                <div className="flex flex-col items-center justify-between mb-20">
-                    <button onClick= {handleButtonClick} type="submit" className=" w-2/5 bg-blue-600 hover:bg-blue-400 p-1 rounded-md font-bold text-lg text-white hover:text-gray-200">
-                        Sign Up
-                    </button>
-                    <div className="flex flex-col items-center">
-                        <p className="flex flex-row max-[900px]:flex-col justify-center items-center">Don&apos;t have an account? <a href="" className='text-blue-600'>create account</a></p>
-                        <a href="" className='text-blue-600'>forgot password?</a>
-                    </div>
+          </div>
+          <div className="buttons w-full">
+            <div className="flex flex-col items-center justify-between mb-20">
+              <button
+                onClick={handleButtonClick}
+                type="submit"
+                className=" w-2/5 bg-blue-600 hover:bg-blue-400 p-1 rounded-md font-bold text-lg text-white hover:text-gray-200 mb-5"
+              >
+                Sign In
+              </button>
+              <div
+                className="lg:flex flex-col justify-center items-center max-[480px]:pt-8 w-4/5 
+                             sm:w-4/5     md:w-9/12"
+              >
+                <div className="w-full  ">
+                  <h2 className="w-auto float-left ">
+                    Don&apos;t have an account?
+                  </h2>
+                  <a href="" className="text-blue-600 pl-2 w-auto ">
+                    create account
+                  </a>
                 </div>
+                <div className="w-full mt-2">
+                  <a href="" className="text-blue-600">
+                    Forgot password?
+                  </a>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    )
+      </div>
+    );
 }
 
 export default SignIn;

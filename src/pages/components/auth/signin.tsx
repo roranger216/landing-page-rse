@@ -1,8 +1,10 @@
 import React from 'react';
+import SignIn from '../signIn';
 
 const Signin = () => {
   return (
-    <h1 className="text-center font-bold text-4xl p-10">Sign In Here</h1>
+    
+    <SignIn/>
   )
 }
 
