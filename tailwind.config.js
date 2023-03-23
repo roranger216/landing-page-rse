@@ -27,8 +27,11 @@ module.exports = {
           900: "#6d3808",
         },
       },
+      dropShadow: {
+        w2xl: "0 5px 10px rgba(255, 255, 255, 0.2)",
+      },
     },
   },
-  variants:{},
+  variants: {},
   plugins: [],
 };

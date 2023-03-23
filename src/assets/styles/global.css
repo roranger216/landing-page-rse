@@ -8,7 +8,7 @@
       
     }
     #nav-holder{
-      @apply bg-white dark:bg-gray-700
+      @apply bg-white dark:bg-gradient-to-t from-purple-900 to-fuchsia-500
     }
     #nav-element{
       @apply text-black dark:text-white
@@ -22,7 +22,22 @@
     #image-container{
       @apply border-2 border-gray-400 dark:border-white
     }
+    #contact{
+      @apply bg-slate-300 border-black border-solid dark:bg-white
+    }
+    #profile-holder{
+      @apply bg-white dark:bg-gray-700 drop-shadow-w2xl
+    }
     selection {
     @apply text-white bg-blue-600;
     }
+    #footer {
+      @apply bg-neutral-800 dark:bg-gray-800
+    }
+    #mobile-nav-drop {
+      @apply dark:bg-gray-800
+    }
+    /* #nav-btn {
+      @apply dark:contrast-0
+    } */
 }
