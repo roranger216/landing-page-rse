@@ -62,8 +62,9 @@ const SignIn = () => {
       <div className=" w-screen h-screen flex justify-center items-center ">
         <Image 
         alt='bg'
-        src={bg} className="w-screen h-screen -z-10"
+        src={bg} className="w-screen h-screen -z-10 brightness-50"
         />
+
         <div
           className="grid absolute bg-white rounded-2xl shadow-2xl shadow-black/40
                         max-[480px]:w-full h-5/6
@@ -73,10 +74,11 @@ const SignIn = () => {
                         lg:w-2/4
                         xl:w-1/3 p"
         >
+
           <div className="flex justify-center">
             <div className="Logo flex justify-center items-center">
-              <h1 className="font-bold text-3xl">
-                THIS<span className="text-sky-600">Logo</span>
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
               </h1>
             </div>
           </div>
@@ -85,10 +87,7 @@ const SignIn = () => {
             {showAlert && (
               <div className=" w-full">
                 <h1
-                  className="text-red-500 max-[480px]:text-lg text-center  
-                                          sm:text-xl
-                                           md:text-xl 
-                                           lg:text-2xl"
+                  className="text-red-600 text-center font-semibold text-base md:text-lg"
                 >
                   Incorrect Email or Password!
                 </h1>
@@ -102,8 +101,10 @@ const SignIn = () => {
                 type="email"
                 name="username"
                 placeholder="Email"
+
                 required
                 className="w-3/4 h-1/3 text-justify pl-8 px-2 rounded-full border-2 border-blue-300 p-5"
+
               />
               <input
                 value={passwordValue}
@@ -111,37 +112,26 @@ const SignIn = () => {
                 type="password"
                 name="password"
                 placeholder="Password"
+
                 required
                 className="w-3/4 h-1/3 text-justify pl-8 px-2 rounded-full border-2 border-blue-300 p-5"
+
               />
             </div>
           </div>
           <div className="buttons w-full">
-            <div className="flex flex-col items-center justify-between mb-20">
+            <div className="flex flex-col items-center justify-between">
               <button
                 onClick={handleButtonClick}
                 type="submit"
-                className=" w-2/5 bg-blue-600 hover:bg-blue-400 p-1 rounded-md font-bold text-lg text-white hover:text-gray-200 mb-5"
-              >
+                className=" w-2/5 bg-blue-600 hover:bg-blue-400 p-1 rounded-md font-bold text-lg text-white hover:text-gray-200 my-6">
                 Sign In
               </button>
-              <div
-                className="lg:flex flex-col justify-center items-center max-[480px]:pt-8 w-4/5 
-                             sm:w-4/5     md:w-9/12"
-              >
-                <div className="w-full  ">
-                  <h2 className="w-auto float-left ">
-                    Don&apos;t have an account?
-                  </h2>
-                  <a href="" className="text-blue-600 pl-2 w-auto ">
-                    create account
-                  </a>
-                </div>
-                <div className="w-full mt-2">
-                  <a href="" className="text-blue-600">
-                    Forgot password?
-                  </a>
-                </div>
+              <div>
+                <span>Don&apos;t have an account? </span><a href="#" className="text-blue-600 cursor-pointer">create account</a>
+              </div>
+              <div>
+                <a href="#" className="text-blue-600 cursor-pointer">Forgot password?</a>
               </div>
             </div>
           </div>
