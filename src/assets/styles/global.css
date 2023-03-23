@@ -40,6 +40,12 @@
     #contact-card {
       @apply dark:bg-gray-800
     }
+    #modal-bg{
+      @apply dark:bg-gray-800
+    }
+    #signin-card{
+      @apply bg-white dark:bg-gray-800
+    }
     /* #nav-btn {
       @apply dark:contrast-0
     } */
