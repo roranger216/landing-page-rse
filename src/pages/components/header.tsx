@@ -101,6 +101,9 @@ const Header = () => {
                 Contact
               </Link>
             </li>
+            <li className="-mx-8 mb-2">
+              <Darkmode />
+            </li>
             <li className="mt-2">
               <Linked
                 id="signin"
@@ -109,9 +112,6 @@ const Header = () => {
               >
                 Sign In
               </Linked>
-            </li>
-            <li>
-              <Darkmode />
             </li>
           </ul>
 
