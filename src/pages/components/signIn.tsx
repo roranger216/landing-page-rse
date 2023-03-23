@@ -64,7 +64,17 @@ const SignIn = () => {
         alt='bg'
         src={bg} className="w-screen h-screen -z-10 brightness-50"
         />
-        <div className="grid absolute bg-white rounded-2xl shadow-2xl shadow-black/40 sm:w-3/5 md:w-1/2 lg:w-1/3 px-8 xl:px-20 py-20">
+
+        <div
+          className="grid absolute bg-white rounded-2xl shadow-2xl shadow-black/40
+                        max-[480px]:w-full h-5/6
+                        max-sm:w-3/4 sm:h-5/6 sm:border-0
+                        sm:w-3/4
+                        md:w-1/2 md:h-3/4  
+                        lg:w-2/4
+                        xl:w-1/3 p"
+        >
+
           <div className="flex justify-center">
             <div className="Logo flex justify-center items-center">
               <h1 className="font-bold text-3xl mb-8">
@@ -91,7 +101,10 @@ const SignIn = () => {
                 type="email"
                 name="username"
                 placeholder="Email"
-                className="w-full h-1/3 text-justify pl-8 px-2 rounded-full border-2 border-blue-300 p-5"
+
+                required
+                className="w-3/4 h-1/3 text-justify pl-8 px-2 rounded-full border-2 border-blue-300 p-5"
+
               />
               <input
                 value={passwordValue}
@@ -99,7 +112,10 @@ const SignIn = () => {
                 type="password"
                 name="password"
                 placeholder="Password"
-                className="w-full h-1/3 text-justify pl-8 px-2 rounded-full border-2 border-blue-300 p-5"
+
+                required
+                className="w-3/4 h-1/3 text-justify pl-8 px-2 rounded-full border-2 border-blue-300 p-5"
+
               />
             </div>
           </div>
