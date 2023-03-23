@@ -19,19 +19,29 @@ const Darkmode = () => {
 
     if (currentTheme === 'dark') {
       return (
-        <BsSun
-          className="w-5 h-5"
+        <div 
+          className="darkmode flex flex-row items-center gap-4"
           role="button"
           onClick={() => setTheme('light')}
-        />
+        >
+          <BsSun
+            className="w-5 h-5"
+          />
+          <span>Dark Mode</span>
+        </div>
       );
     } else {
       return (
-        <FaMoon
-          className="w-5 h-5"
+        <div className="darkmode flex flex-row items-center gap-4"
           role="button"
           onClick={() => setTheme('dark')}
-        />
+        >
+          <FaMoon
+            className="w-5 h-5"
+          />
+          <span>Light Mode</span>
+        </div>
+        
       );
     }
   };
