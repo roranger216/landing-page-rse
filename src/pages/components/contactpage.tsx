@@ -11,7 +11,7 @@ const Contactpage = () => {
         {/* textual content */}
         <div className="md:w-1/2 w-full md:p-10 my-10 md:my-0  flex-col">
           <h1 className="text-4xl font-bold text-sky-600 ">CONTACT US</h1>
-          <p className="text-black font-semibold text-sm my-5">
+          <p className="font-semibold text-sm my-5">
             {" "}
             Greetings of Peace! Fill out the form and our team will get back to you. Thank you!
           </p>
@@ -45,14 +45,14 @@ const Contactpage = () => {
           </div>
         </div>
         {/* Contact form */}
-        <div className="bg-slate-200 p-12 rounded-lg shadow-lg w-full md:w-auto">
+        <div id="contact-card" className="bg-slate-200 p-12 rounded-lg shadow-lg w-full md:w-auto">
           <form>
             <div className="grid xl:grid-cols-2 xl:gap-10">
               <input
                 type="text"
                 name="first_name"
                 id="first_name"
-                className="form-control block w-full px-3 py-2 mb-5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-md transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-sky-600 focus:outline-none"
+                className="form-control block w-full px-3 py-2 mb-5 text-base font-normal text-gray-700 bg-clip-padding border border-solid border-gray-300 rounded-md transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-sky-600 focus:outline-none"
                 placeholder="First Name "
                 required={true}
               />
@@ -60,7 +60,7 @@ const Contactpage = () => {
                 type="text"
                 name="last_name"
                 id="last_name"
-                className="form-control block w-full px-3 py-2 mb-5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-md transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-sky-600 focus:outline-none"
+                className="form-control block w-full px-3 py-2 mb-5 text-base font-normal text-gray-700 bg-clip-padding border border-solid border-gray-300 rounded-md transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-sky-600 focus:outline-none"
                 placeholder="Last Name "
                 required= {true}
               />
@@ -68,14 +68,14 @@ const Contactpage = () => {
             <input
               type="email"
               name="email"
-              className="form-control block w-full px-3 py-2 mb-5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-md transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-sky-600 focus:outline-none"
+              className="form-control block w-full px-3 py-2 mb-5 text-base font-normal text-gray-700 bg-clip-padding border border-solid border-gray-300 rounded-md transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-sky-600 focus:outline-none"
               placeholder="Email "
               required={true}
             />
             <input
               type="text"
               name="subject"
-              className="form-control block w-full px-3 py-2 mb-5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-md transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-sky-600 focus:outline-none"
+              className="form-control block w-full px-3 py-2 mb-5 text-base font-normal text-gray-700 bg-clip-padding border border-solid border-gray-300 rounded-md transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-sky-600 focus:outline-none"
               placeholder="Subject "
               required={true}
             />
@@ -83,7 +83,7 @@ const Contactpage = () => {
             <div className="flex justify-center">
               <textarea
                 id="exampleFormControlTextarea1"
-                className="form-control block w-full px-3 py-2 mb-5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-md transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-sky-600 focus:outline-none"
+                className="form-control block w-full px-3 py-2 mb-5 text-base font-normal text-gray-700bg-clip-padding border border-solid border-gray-300 rounded-md transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-sky-600 focus:outline-none"
                 placeholder="Your message"
                 required={true}
                 ></textarea>
