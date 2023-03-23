@@ -50,8 +50,8 @@ const Header = () => {
                     <li className="mt-2">
                     <Linked href="/components/auth/signin" className="text-lg px-4 py-1 font-medium border-2 border-sky-500 bg-white text-black hover:bg-sky-500 hover:text-white rounded-md ease-in duration-200">Sign In</Linked>
                     </li>
+                    <ul><Darkmode></Darkmode></ul>
                 </ul>
-                <li><Darkmode></Darkmode></li>
                 <div onClick={handleNav} className="block md:hidden">
                     {!nav ? <img src="https://cdn-icons-png.flaticon.com/128/7710/7710488.png" className="" width={24}></img> : <img src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" className="" width={24}></img>}
                 </div>
