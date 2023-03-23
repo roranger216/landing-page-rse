@@ -67,8 +67,10 @@ const SignIn = () => {
         <div
           className="grid absolute bg-white rounded-2xl shadow-2xl shadow-black/40
                         max-[480px]:w-full h-5/6
-                        sm:w-3/4 sm:h-5/6 sm:border-0
+                        max-sm:w-3/4 sm:h-5/6 sm:border-0
+                        sm:w-3/4
                         md:w-1/2 md:h-3/4  
+                        lg:w-2/4
                         xl:w-1/3 p"
         >
           <div className="flex justify-center">
@@ -100,6 +102,7 @@ const SignIn = () => {
                 type="email"
                 name="username"
                 placeholder="Email"
+                required
                 className="w-3/4 h-1/3 text-justify pl-8 px-2 rounded-full border-2 border-blue-300 p-5"
               />
               <input
@@ -108,6 +111,7 @@ const SignIn = () => {
                 type="password"
                 name="password"
                 placeholder="Password"
+                required
                 className="w-3/4 h-1/3 text-justify pl-8 px-2 rounded-full border-2 border-blue-300 p-5"
               />
             </div>
