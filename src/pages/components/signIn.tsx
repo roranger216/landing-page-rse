@@ -65,8 +65,8 @@ const SignIn = () => {
         src={bg} className="w-screen h-screen -z-10 brightness-50"
         />
 
-        <div
-          className="grid absolute bg-white rounded-2xl shadow-2xl shadow-black/40
+        <div id="signin-card"
+          className="grid absolute rounded-2xl shadow-2xl shadow-black/40
                         max-[480px]:w-full h-5/6
                         max-sm:w-3/4 sm:h-5/6 sm:border-0
                         sm:w-3/4
