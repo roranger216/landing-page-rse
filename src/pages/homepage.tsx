@@ -5,15 +5,282 @@ import Footer from './components/footer'
 const Homepage = () => {
   return (
     <div className="HomePage">
-        <Header />
-        <div className="containter ml-52 h-96">
-          <div className="section1 flex bg-red-600"></div>
-          <div className="section2 flex bg-red-600"></div>
-          <div className="section3 flex bg-red-600"></div>
-          <div className="section4 flex bg-red-600"></div>
-          <div className="section5 flex bg-red-600"></div>
-        </div>
-        <Footer/>
+      <nav><Header /></nav>
+      <div className="mt-16">
+        <div className="row "><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div><div className="flex justify-center">
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+          </div></div>
+      </div>
+      <div className="absolute md:w-4/5 -z-10 md:ml-60"><Footer /></div>
+      
     </div>
   )
 }
