@@ -1,4 +1,5 @@
 import React from "react";
+import Darkmode from './components/darkmode'
 import Head from './components/header';
 import Content from './components/hero'
 import About from './components/about'
@@ -12,6 +13,7 @@ import Footer from './components/footer'
 const Index: React.FC = () => {
   return (
     <div className="container mx-auto">
+      <Darkmode />
       <Head />
       <Content />
       <About />
