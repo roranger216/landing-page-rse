@@ -8,6 +8,7 @@ import Image from 'next/image';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '400px',
+    
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -32,18 +33,18 @@ function ProfilePage2() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-    <Avatar className={classes.avatar}>
-      <Image  
-      alt="Profile Picture"
-      src={sengoku}
-      className={classes.avatar}/>
-    </Avatar>
+    <div id="profile-holder" className={classes.root}>
+      <Avatar className={classes.avatar}>
+        <Image alt="Profile Picture" src={sengoku} className={classes.avatar} />
+      </Avatar>
       <Typography variant="h4" component="h1" gutterBottom>
         Masakata Sengoku
       </Typography>
       <Typography variant="body1" className={classes.bio}>
-      Masakata Sengoku is a successful entrepreneur and co-founder of a rapidly growing tech company. With a passion for innovation and a strong business acumen, Sengoku has been instrumental in building his company from the ground up, turning it into a major player in the tech industry.
+        Masakata Sengoku is a successful entrepreneur and co-founder of a
+        rapidly growing tech company. With a passion for innovation and a strong
+        business acumen, Sengoku has been instrumental in building his company
+        from the ground up, turning it into a major player in the tech industry.
       </Typography>
     </div>
   );

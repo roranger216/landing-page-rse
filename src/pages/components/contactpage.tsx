@@ -6,7 +6,7 @@ import { FaInstagram, FaTwitter, FaYoutube, FaPinterest, FaGithub, } from "react
 
 const Contactpage = () => {
   return (
-    <div id="contact" className="bg-white w-full h-auto mb-40">
+    <div id="contact" className=" w-full h-auto mb-52">
       <div className="flex justify-around items-center mx-10 md:flex-row flex-col">
         {/* textual content */}
         <div className="md:w-1/2 w-full md:p-10 my-10 md:my-0  flex-col">
