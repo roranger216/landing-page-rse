@@ -10,6 +10,8 @@ import { BiHomeAlt2 } from 'react-icons/bi';
 import { MdLogout, MdOutlineInfo } from 'react-icons/md';
 import { RiServiceLine } from 'react-icons/ri'
 
+import Darkmode from './darkmode'
+
 const Header = () => {
 
     useEffect(() => {
@@ -80,7 +82,7 @@ const Header = () => {
                 <hr />
                     <li className="text-lg p-2 pb-0 font-medium border-b-2 border-transparent  ease-in-out duration-500">
                         <Link to="home" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu} className=" flex flex-row items-center gap-4"><BsMoon /><span className="w w-28">Dark Mode</span> </Link>
-                        <Link to="home" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu} className="hidden flex-row items-center gap-4"><BsSun /><span className="w w-28">Light Mode</span> </Link>
+                        <Link to="home" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu} className=" flex-row items-center gap-4"><BsSun /><span className="w w-28">Light Mode</span> </Link>
                     </li>
                     <li className="text-lg p-2 pb-0 font-medium border-b-2 border-transparent  ease-in-out duration-500">
                         <Link to="about" spy={true} smooth={true} offset={-20} duration={500} onClick={closeMenu} className=" flex flex-row items-center gap-4"><FaQuestionCircle /> <span className="w w-28">FAQs</span></Link>

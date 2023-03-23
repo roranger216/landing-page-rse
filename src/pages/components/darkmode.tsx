@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import { FaMoon } from 'react-icons/fa';
-import { FaSun} from 'react-icons/fa'
+import { BsSun } from 'react-icons/bs';
 
 
 const Darkmode = () => {
@@ -19,7 +19,7 @@ const Darkmode = () => {
 
     if (currentTheme === 'dark') {
       return (
-        <FaSun
+        <BsSun
           className="w-5 h-5"
           role="button"
           onClick={() => setTheme('light')}
@@ -37,11 +37,11 @@ const Darkmode = () => {
   };
 
   return (
-  
+    <footer className="border-b border-gray-100 dark:border-gray-700">
       <div className="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
         {renderThemeChanger()}
       </div>
-
+    </footer>
   );
 };
 
