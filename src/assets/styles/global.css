@@ -10,6 +10,12 @@
     #nav-holder{
       @apply bg-white dark:bg-gradient-to-t from-purple-900 to-fuchsia-500
     }
+    #nav-holder2{
+      @apply bg-white dark:bg-gray-900
+    }
+    #nav-holder2{
+      @apply bg-white dark:bg-gray-900
+    }
     #nav-element{
       @apply text-black dark:text-white
     }
