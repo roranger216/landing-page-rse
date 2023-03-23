@@ -21,7 +21,9 @@ const Service = () => {
         className=" mx-4 w-auto h-28 flex items-center sm:justify-center"
       >
         <h1
-          data-aos="fade-up" className="font-bold text-4xl text-sky-600 sm:text-center">
+          data-aos="fade-up"
+          className="font-bold text-4xl text-sky-600 sm:text-center"
+        >
           Our Services
         </h1>
       </div>
@@ -33,7 +35,7 @@ const Service = () => {
       >
         <div
           id="content"
-          className=" h-auto max-[480px]:h-96
+          className="h-auto max-[480px]:h-96
                                                      sm: h-1/2s"
         >
           <div
@@ -62,6 +64,8 @@ const Service = () => {
             className=" max-[480px]:w-full h-10 items-center mt-2 lg:mt-3 mb-4"
           >
             <h1
+              id="service-title"
+              
               data-aos="fade-up"
               className=" animation text-black w-auto max-[480px]:mx-4 text-sm font-bold 
                                                     sm:text-base
@@ -71,8 +75,10 @@ const Service = () => {
               Development
             </h1>
           </div>
-          <div className="animation w-full h-auto overflow-auto max-[480px]:h-48"
-          data-aos="fade-up">
+          <div
+            className="animation w-full h-auto overflow-auto max-[480px]:h-48"
+            data-aos="fade-up"
+          >
             <p
               className="text-justify text-ellipsis max-[480px]:h-full text-xs
                                                      sm:text-sm
@@ -126,6 +132,7 @@ const Service = () => {
             className=" max-[480px]:w-full h-10 items-center mt-2 lg:mt-3 mb-4"
           >
             <h1
+              id="service-title"
               data-aos="fade-up"
               className=" animation text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 
                                                     sm:text-base
@@ -135,8 +142,10 @@ const Service = () => {
               Customization
             </h1>
           </div>
-          <div className="animation w-full h-auto overflow-auto max-[480px]:h-48"
-          data-aos="fade-up">
+          <div
+            className="animation w-full h-auto overflow-auto max-[480px]:h-48"
+            data-aos="fade-up"
+          >
             <p
               className="text-justify text-ellipsis max-[480px]:h-full text-xs
                                                      sm:text-sm
@@ -190,6 +199,7 @@ const Service = () => {
             lg:mt-3 lg:mb-4"
           >
             <h1
+              id="service-title"
               data-aos="fade-up"
               className=" animation text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 
                                                     sm:text-base
@@ -199,8 +209,10 @@ const Service = () => {
               Consultation
             </h1>
           </div>
-          <div className="animation w-full h-auto overflow-auto max-[480px]:h-48"
-          data-aos="fade-up">
+          <div
+            className="animation w-full h-auto overflow-auto max-[480px]:h-48"
+            data-aos="fade-up"
+          >
             <p
               className="text-justify text-ellipsis max-[480px]:h-full text-xs
                                                      sm:text-sm
@@ -255,6 +267,7 @@ const Service = () => {
             lg:mt-3 lg:mb-4"
           >
             <h1
+              id="service-title"
               data-aos="fade-up"
               className=" animation text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 
                                                     sm:text-base
@@ -264,8 +277,10 @@ const Service = () => {
               Documentation
             </h1>
           </div>
-          <div className="animation w-full h-auto overflow-auto max-[480px]:h-48"
-          data-aos="fade-up">
+          <div
+            className="animation w-full h-auto overflow-auto max-[480px]:h-48"
+            data-aos="fade-up"
+          >
             <p
               className="text-justify text-ellipsis max-[480px]:h-full text-xs
                                                      sm:text-sm
@@ -320,6 +335,7 @@ const Service = () => {
             lg:mt-3 lg:mb-4"
           >
             <h1
+              id="service-title"
               data-aos="fade-up"
               className=" animation text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 
                                                     sm:text-base
@@ -329,8 +345,10 @@ const Service = () => {
               Design
             </h1>
           </div>
-          <div className="animation w-full h-auto overflow-auto max-[480px]:h-48"
-          data-aos="fade-up">
+          <div
+            className="animation w-full h-auto overflow-auto max-[480px]:h-48"
+            data-aos="fade-up"
+          >
             <p
               className="text-justify text-ellipsis max-[480px]:h-full text-xs
                                                      sm:text-sm
@@ -385,6 +403,7 @@ const Service = () => {
             lg:mt-3 lg:mb-4"
           >
             <h1
+              id="service-title"
               data-aos="fade-up"
               className=" animation text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 
                                                     sm:text-base
@@ -394,8 +413,10 @@ const Service = () => {
               Outsource IT Works
             </h1>
           </div>
-          <div className="animation w-full h-auto overflow-auto max-[480px]:h-48"
-          data-aos="fade-up">
+          <div
+            className="animation w-full h-auto overflow-auto max-[480px]:h-48"
+            data-aos="fade-up"
+          >
             <p
               className="text-justify text-ellipsis max-[480px]:h-full text-xs
                                                      sm:text-sm
