@@ -28,4 +28,10 @@
     #footer {
       @apply bg-neutral-800 dark:bg-gray-800
     }
+    #mobile-nav-drop {
+      @apply dark:bg-gray-800
+    }
+    #nav-btn {
+      @apply dark:contrast-0
+    }
 }
