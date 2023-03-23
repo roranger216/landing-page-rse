@@ -4,17 +4,20 @@ import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 import rengoku from '../../../assets/img/31f399f8b385b923ad1db24f01dc4b7b58d18d62.jpg'
 import Image from 'next/image';
+import Darkmode from '../darkmode';
 
-const useStyles = makeStyles((theme) => ({
+
+const ProfileLayout = makeStyles((theme) => ({
   root: {
-    width: '400px',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
+    width: "400px",
+
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
     padding: theme.spacing(2),
-    background: 'white',
-    boxShadow: '0px 6px 14px 0px rgb(0 0 0 / .1)'
+    background: "white",
+    boxShadow: "0px 6px 14px 0px rgb(0 0 0 / .1)",
   },
   avatar: {
     width: theme.spacing(10),
@@ -22,17 +25,16 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1),
   },
   bio: {
-    textAlign: 'center',
-    maxWidth: '400px',
+    textAlign: "center",
+    maxWidth: "400px",
     margin: theme.spacing(2),
   },
 }));
-
 function ProfilePage() {
-  const classes = useStyles();
-
+    const classes = ProfileLayout();
   return (
-    <div className={classes.root}>
+    
+    <div id='profile-holder' className={classes.root}>
     <Avatar className={classes.avatar}>
       <Image  
       alt="Profile Picture"
