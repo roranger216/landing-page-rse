@@ -2,14 +2,14 @@ import React from "react";
 
 const Footer = () => {
 	return (
-		<div className="w-full absolute left-0">
-			<div className="bg-neutral-800 flex md:flex-row flex-col justify-around items-start p-20">
-				<div className="p-5 ">
+		<div className="left-0">
+			<div className="bg-neutral-800 flex max-sm:flex-wrap max-sm:p-3 md:flex-row md:justify-around justify-start items-start p-10 md:p-20">
+				<div className="p-5 max-sm:w-40 md:w-56 ">
 					<ul>
 						<p className="text-white font-bold text-3xl pb-6">
 							THIS<span className="text-sky-600">Logo</span>
 						</p>
-						<div className="flex gap-6 pb-5">
+						<div className="flex flex-row flex-wrap gap-2 pb-5">
                             <img src="https://cdn-icons-png.flaticon.com/512/3955/3955024.png" width={28} className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."></img>
                             <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width={28} className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."></img>
                             <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" width={28} className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."></img>
@@ -17,7 +17,7 @@ const Footer = () => {
 						</div>
 					</ul>
 				</div>
-				<div className="p-5">
+				<div className="p-5 max-sm:w-40 md:w-56">
 					<ul>
 						<p className="text-gray-100 font-bold text-2xl pb-4">Services</p>
 						<li className="text-gray-400 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
@@ -34,7 +34,7 @@ const Footer = () => {
 						</li>
 					</ul>
 				</div>
-				<div className="p-5">
+				<div className="p-5 max-sm:w-40 md:w-56">
 					<ul>
 						<p className="text-gray-100 font-bold text-2xl pb-4">Company</p>
 						<li className="text-gray-400 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
@@ -54,7 +54,7 @@ const Footer = () => {
 						</li>
 					</ul>
 				</div>
-				<div className="p-5">
+				<div className="p-5 max-sm:w-40 md:w-56">
 					<ul>
 						<p className="text-gray-100 font-bold text-2xl pb-4">Support</p>
 						<li className="text-gray-400 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
