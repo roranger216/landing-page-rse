@@ -32,14 +32,12 @@ const Header = () => {
 
 
     return (
-      // <div className="fixed w-full top-0 left-0 bg-white flex justify-between p-4 px-8 md:px-16 items-center shadow z-50" data-aos="bg">
       <div
         id="nav-holder"
         className={classNames(
           scrollPosition > 0 ? "shadow-md" : "shadow-none py-6",
           "fixed w-full top-0 left-0 flex justify-between bg-white p-4 px-8 md:px-6 lg:px-16 items-center z-50"
         )}
-        data-aos="bg"
       >
         <div className="cursor-pointer pl-0 xl:pl-16">
           <div className="flex font-bold text-3xl">
@@ -100,6 +98,9 @@ const Header = () => {
                 Contact
               </Link>
             </li>
+            <li className="pt-2">
+              <Darkmode />
+            </li>
             <li className="mt-2">
               <Linked
                 id="signin"
@@ -109,13 +110,10 @@ const Header = () => {
                 Sign In
               </Linked>
             </li>
-            <li>
-              <Darkmode />
-            </li>
           </ul>
 
         <div className="flex items-center md:hidden">
-          <div className="mr-4"><Darkmode /></div>
+          <div className="mr-8"><Darkmode /></div>
           <div onClick={handleNav} className="block md:hidden">
             {!nav ? (<img id="nav-btn" src="https://cdn-icons-png.flaticon.com/128/7710/7710488.png" className="" width={24} ></img>) : (<img id="nav-btn" src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" className="" width={24} ></img>)}
           </div>
