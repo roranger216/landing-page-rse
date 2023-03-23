@@ -20,7 +20,7 @@ const Darkmode = () => {
     if (currentTheme === 'dark') {
       return (
         <FaSun
-          className="w-7 h-7"
+          className="w-5 h-5"
           role="button"
           onClick={() => setTheme('light')}
         />
@@ -28,7 +28,7 @@ const Darkmode = () => {
     } else {
       return (
         <FaMoon
-          className="w-7 h-7"
+          className="w-5 h-5"
           role="button"
           onClick={() => setTheme('dark')}
         />
@@ -37,11 +37,11 @@ const Darkmode = () => {
   };
 
   return (
-    <footer className="border-b border-gray-100 dark:border-gray-700">
+  
       <div className="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
         {renderThemeChanger()}
       </div>
-    </footer>
+
   );
 };
 
