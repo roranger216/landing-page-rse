@@ -31,7 +31,7 @@ function Register() {
             <input
               type="firstname"
               id="firstname"
-              className="w-full h-1/5 text-justify px-2 py-3  rounded-md border-2 border-blue-300 capitalize"
+              className="w-full h-1/5 text-justify px-2 py-3  rounded-md border-2 border-blue-300 capitalize bg-white"
               placeholder="Firstname"
               required
             />
@@ -40,7 +40,7 @@ function Register() {
             <input
               type="middlename"
               id="middlename"
-              className="w-full h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300 capitalize"
+              className="w-full h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300 capitalize bg-white"
               placeholder="Middle Name"
             />
           </div>
@@ -48,7 +48,7 @@ function Register() {
             <input
               type="lastname"
               id="lastname"
-              className="w-full h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300 capitalize"
+              className="w-full h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300 capitalize bg-white"
               placeholder="Lastname"
               required
             />
@@ -57,7 +57,7 @@ function Register() {
             <input
               type="email"
               id="email"
-              className="w-full h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300"
+              className="w-full h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300 bg-white"
               placeholder="Email"
               required
             />
@@ -66,13 +66,13 @@ function Register() {
             <input
               type="password"
               id="password"
-              className="w-full h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300"
+              className="w-full h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300 bg-white"
               placeholder="Password"
               required
             />
           </div>
           <div className=" w-3/4 ">
-            <h2 className="pb-3 w-auto">Gender:</h2>
+            <h2 className="pb-3 w-auto text-black">Gender:</h2>
 
             <div className=" w-full flex flex-col gap-1">
               {/*  */}
@@ -80,7 +80,7 @@ function Register() {
                 <div className=" float-left mx-2 ">
                   <label
                     htmlFor="male"
-                    className="w-auto max-sm:px-4 sm:px-5 lg:px-6"
+                    className="w-auto text-black max-sm:px-4 sm:px-5 lg:px-6"
                   >
                     Male
                   </label>
@@ -89,12 +89,13 @@ function Register() {
                     checked={gender === "Male"}
                     value="Male"
                     onClick={() => setGender("Male")}
+                    className="bg-white dark:bg-white"
                   />
                 </div>
-                <div className="float-left max-sm:">
+                <div className="float-left mx-2 max-sm:">
                   <label
                     htmlFor="female"
-                    className="w-auto max-sm:px-4 sm:px-5 lg:px-6"
+                    className="w-auto text-black max-sm:px-4 sm:px-5 lg:px-6"
                   >
                     Female
                   </label>
@@ -106,10 +107,10 @@ function Register() {
                   />
                 </div>
 
-                <div className="float-left max-sm:">
+                <div className="float-left mx-2 max-sm:">
                   <label
                     htmlFor="others"
-                    className="w-auto max-sm:px-4 sm:px-5 lg:px-6"
+                    className="w-auto text-black max-sm:px-4 sm:px-5 lg:px-6"
                   >
                     Other
                   </label>
@@ -119,6 +120,7 @@ function Register() {
                     checked={gender === "Other"}
                     value="Other"
                     onClick={() => setGender("Other")}
+                    
                   />
                 </div>
               </div>
@@ -132,9 +134,9 @@ function Register() {
             >
               Register
             </button>
-            <p>
+            <p className='underline text-black'>
               or
-              <hr className=" border-gray-400 w-full" />
+             
             </p>
             <button
               type="submit"
