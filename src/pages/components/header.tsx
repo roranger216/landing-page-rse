@@ -1,11 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { Link } from 'react-scroll'
 import Linked from 'next/link'
 import Darkmode from './darkmode'
 import useScrollPosition from './hooks/scroll'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Header = () => {
+
+    useEffect(() => {
+        AOS.init({duration: 3000})
+    }, [])
 
     const [nav, setNav] = useState(false)
     const handleNav = () => {

@@ -12,17 +12,20 @@ import Footer from './components/footer'
 
 const Index: React.FC = () => {
   return (
-    <div className="container mx-auto">
+    <div className="index">
+    <Head />
+      <div className="container mx-auto">
       <Darkmode />
-      <Head />
       <Content />
       <About />
       <Service/>
       <Contactpage />
       <Team />
-      <Footer />
       
+      </div>
+      <Footer />
     </div>
+    
   );
 };
 
