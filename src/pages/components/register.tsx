@@ -80,7 +80,7 @@ function Register() {
                 <div className=" float-left mx-2 ">
                   <label
                     htmlFor="male"
-                    className="w-auto  max-[480px]:px-4 max-sm:px-4 md:px-5 lg:px-6"
+                    className="w-auto max-sm:px-4 sm:px-5 lg:px-6"
                   >
                     Male
                   </label>
@@ -94,7 +94,7 @@ function Register() {
                 <div className="float-left max-sm:">
                   <label
                     htmlFor="female"
-                    className="w-auto max-[480px]:px-4 max-sm:px-4 md:px-5 lg:px-6"
+                    className="w-auto max-sm:px-4 sm:px-5 lg:px-6"
                   >
                     Female
                   </label>
@@ -109,7 +109,7 @@ function Register() {
                 <div className="float-left max-sm:">
                   <label
                     htmlFor="others"
-                    className="w-auto max-[480px]:px-4 md:px-5 lg:px-6"
+                    className="w-auto max-sm:px-4 sm:px-5 lg:px-6"
                   >
                     Other
                   </label>
