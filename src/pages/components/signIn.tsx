@@ -6,12 +6,12 @@ import Router from 'next/router'
 
 const SignIn = () => {
 
-    const [accountArray, setAccountArray] = useState([
-      {id:1, email:'jayson@gmail.com', password:'123456'},
-      {id:2, email:'dsteph@gmail.com',password:'hey'},
+    const accountArray =[
+      {id:1, email:'jayson@gmail.com',password:'123456'},
+      {id:2, email:'dsteph@gmail.com',password:'heys'},
       {id:3, email:'roger@gmail.com', password:'sarge'},
-      {id:4, email:'grytz@gmail.com', password:'chang'}
-    ]);
+      {id:4, email:'grytz@gmail.com', password:'chang'},
+    ];
 
 
     const [emailValue, setEmail] = useState(""); // for email 
@@ -41,19 +41,18 @@ const SignIn = () => {
          }
          else if ( emailValue.includes('@') && emailValue.includes('.')){  
                 if(accountArray.find(obj =>obj.email == emailValue)){
+                  console.log(passwordValue);
                     if(accountArray.find(obj =>obj.password == passwordValue)){
                         // alert('Hooray')
-                        Router.push('/homepage')
+                        console.log(passwordValue)
+                        //Router.push('/homepage')
                     }
                     else{
                       triggerAlert()
                     }
                 }
                 else{
-                    setShowAlert(true)
-                    setTimeout(() => {
-                      setShowAlert(false);
-                    }, 3000);
+                   triggerAlert()
                 }
            
          }
