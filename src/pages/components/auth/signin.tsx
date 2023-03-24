@@ -83,7 +83,7 @@ const SignIn = () => {
         alt='bg'
         src={bg} className="w-screen h-screen -z-10 brightness-50"
       />
-      <div className=" grid absolute bg-white rounded-2xl shadow-2xl shadow-black/40 sm:w-3/5 md:w-1/2 lg:w-1/3 px-8 xl:px-20 py-20">
+      <div id="signin-card" className="grid absolute rounded-2xl shadow-2xl shadow-black/40 sm:w-3/5 md:w-1/2 lg:w-1/3 px-8 xl:px-20 py-20">
         <div className="flex justify-center">
           <div className="Logo flex justify-center items-center">
             <h1 className="font-bold text-black text-3xl mb-8">

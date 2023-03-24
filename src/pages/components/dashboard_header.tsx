@@ -4,12 +4,13 @@ import Linked from 'next/link'
 import useScrollPosition from './hooks/scroll'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { BsSun, BsMoon, BsTelephone } from 'react-icons/bs';
+import { BsTelephone } from 'react-icons/bs';
 import { FaQuestionCircle } from 'react-icons/fa';
 import { BiHomeAlt2, BiEnvelope } from 'react-icons/bi';
 import { MdLogout, MdOutlineInfo } from 'react-icons/md';
 import { RiServiceLine } from 'react-icons/ri'
 import { AiOutlineUser, AiOutlineBell } from 'react-icons/ai'
+import { FaBars, FaTimes } from 'react-icons/fa'
 import Darkmode from './darkmode_dashboard'
 
 const Header = () => {
@@ -47,17 +48,17 @@ const Header = () => {
             
             <div 
                 id="nav-holder" className={classNames(
-                scrollPosition > 0 ? "shadow-md" : "shadow-none py-6",
-                "fixed w-full top-0 left-0 flex justify-between bg-white p-4 px-8 md:px-6 lg:px-16 items-center z-50"
+                scrollPosition > 0 ? "shadow-md" : "shadow-none py-5",
+                "fixed w-full top-0 left-0 flex justify-between bg-white p-4 px-4 md:px-6 lg:px-16 items-center z-50"
                 )} data-aos="bg">
 
                 <div className="cursor-pointer flex flex-row items-center gap-4 w-full">
                     
-                    <div onClick={handleNav} className="block md:hidden">
-                        {!nav ? <img src="https://cdn-icons-png.flaticon.com/128/7710/7710488.png" className="" width={24}></img> : <img src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" className="" width={24}></img>}
+                    <div onClick={handleNav} className="block md:hidden text-3xl">
+                        {!nav ? <FaBars /> : <FaTimes />}
                     </div>
                     <div className="flex justify-start items-start font-bold lg:text-3xl md:text-2xl">
-                        THIS<span className="text-sky-600">Logo</span>
+                        <Link to="logo" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>THIS<span className="text-sky-600">Logo</span></Link> 
                     </div>
                 </div>
                 <div className="pr-0 xl:pr-16">
