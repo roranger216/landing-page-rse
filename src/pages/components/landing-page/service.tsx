@@ -1,10 +1,10 @@
 import Image from "next/image";
-import pic from "../../assets/img/development.jpg";
-import pic2 from "../../assets/img/customization.jpg";
-import pic3 from "../../assets/img/consultation.jpg";
-import pic4 from "../../assets/img/documentation.jpg";
-import pic5 from "../../assets/img/design.jpg";
-import pic6 from "../../assets/img/outsource.jpg";
+import pic from "../../../assets/img/development.jpg";
+import pic2 from "../../../assets/img/customization.jpg";
+import pic3 from "../../../assets/img/consultation.jpg";
+import pic4 from "../../../assets/img/documentation.jpg";
+import pic5 from "../../../assets/img/design.jpg";
+import pic6 from "../../../assets/img/outsource.jpg";
 import React, { useEffect } from "react";
 import AOS from 'aos'
 import 'aos/dist/aos.css'

@@ -1,12 +1,12 @@
 import React from "react";
-import Darkmode from './components/darkmode'
-import Head from './components/header';
-import Content from './components/hero'
-import About from './components/about'
-import Service from "./components/service";
-import Team from './components/team'
-import Contactpage from './components/contactpage'
-import Footer from './components/footer'
+import Darkmode from './components/darkmode/darkmode'
+import Head from './components/landing-page/header';
+import Content from './components/landing-page/hero'
+import About from './components/landing-page/about'
+import Service from "./components/landing-page/service";
+import Team from './components/landing-page/team'
+import Contactpage from './components/landing-page/contactpage'
+import Footer from './components/landing-page/footer'
 
 
 
