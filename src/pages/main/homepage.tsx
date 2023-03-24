@@ -9,15 +9,10 @@ const Homepage = () => {
       </nav>
 
       <div className="mt-16 overflow-hidden ">
-        <div className="row w-screen">
-          <div className="flex flex-col justify-center md:ml-60 ">
+        <div className="row w-screen p-8 rounded-lg bg-gray-100">
+          <div className="flex flex-col justify-center md:ml-60 bg-white p-8 rounded-md">
             <div className="Logo flex justify-center items-center">
-              <h1 className="font-bold text-3xl mb-8">
-                THIS<span className="text-blue-600">Logo</span>
-              </h1>
-            </div>
-            <div className="Logo flex justify-center items-center">
-              <div id="service_logo" className="flex flex-row flex-wrap rounded-md w-full justify-center">
+              <div id="service_logo" className="flex flex-row flex-wrap w-full justify-center">
                 <div id="logo1" className='md:w-28 rounded-full p-4'>
                   <img src="https://cdn-icons-png.flaticon.com/512/5431/5431676.png" alt="development" className='md:w-24' />
                 </div>
@@ -47,6 +42,26 @@ const Homepage = () => {
                   <img src="https://cdn-icons-png.flaticon.com/512/6095/6095494.png" alt="It Works" className='md:w-24' />
                 </div>
               </div>
+            </div>
+            <div className="Logo flex justify-center items-center mt-10">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
+            </div>
+            <div className="Logo flex justify-center items-center">
+              <h1 className="font-bold text-3xl mb-8">
+                THIS<span className="text-blue-600">Logo</span>
+              </h1>
             </div>
             <div className="Logo flex justify-center items-center">
               <h1 className="font-bold text-3xl mb-8">
@@ -91,7 +106,7 @@ const Homepage = () => {
           </h1>
         </div>
       </div>
-      
+
     </div>
   )
 }

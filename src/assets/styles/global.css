@@ -60,4 +60,7 @@
     #logo2{
       @apply bg-sky-50 dark:bg-gradient-to-b from-blue-900 to-fuchsia-700
     }
+    #nav-admin {
+      @apply bg-white dark:bg-gray-800
+    }
 }
