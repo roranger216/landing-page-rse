@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 
 import { Link } from 'react-scroll'
 import Linked from 'next/link'
-import Darkmode from './darkmode'
-import useScrollPosition from './hooks/scroll'
+import Darkmode from '../darkmode/darkmode'
+import useScrollPosition from './../hooks/scroll'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 

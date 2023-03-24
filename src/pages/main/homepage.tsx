@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './components/dashboard_header'
+import Header from './dashboard_header'
 
 const Homepage = () => {
   return (

@@ -1,17 +1,15 @@
 import React, { useState, useEffect  } from 'react'
 import Image from 'next/image'
-import rengoku from '../../assets/img/31f399f8b385b923ad1db24f01dc4b7b58d18d62.jpg'
-import sengoku from '../../assets/img/sengoku-one-piece.jpg'
-import goku from '../../assets/img/goku.jpg'
-import coco from '../../assets/img/download.jpeg'
-import Link from 'next/link'
+import rengoku from '../../../assets/img/31f399f8b385b923ad1db24f01dc4b7b58d18d62.jpg'
+import sengoku from '../../../assets/img/sengoku-one-piece.jpg'
+import goku from '../../../assets/img/goku.jpg'
+import coco from '../../../assets/img/download.jpeg'
 import ProfilePage from './profiles/profile'
 import ProfilePage2 from './profiles/profile2'
 import ProfilePage3 from './profiles/profile3'
 import ProfilePage4 from './profiles/profile4'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { duration } from '@material-ui/core'
 
 
 function Footer() {

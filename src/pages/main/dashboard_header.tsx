@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
 import Linked from 'next/link'
-import useScrollPosition from './hooks/scroll'
+import useScrollPosition from '../components/hooks/scroll'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { BsTelephone } from 'react-icons/bs';
