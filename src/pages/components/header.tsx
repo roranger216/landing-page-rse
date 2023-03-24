@@ -52,7 +52,7 @@ const Header = () => {
                 to="home"
                 spy={true}
                 smooth={true}
-                offset={100}
+                offset={-100}
                 duration={500}
                 onClick={closeMenu}
               >
@@ -105,7 +105,7 @@ const Header = () => {
               <Linked
                 id="signin"
                 href="/components/auth/signin"
-                className="text-lg px-4 py-1 font-medium border-2 border-sky-500 text-black hover:bg-sky-500 hover:text-white rounded-md ease-in duration-200"
+                className="text-lg px-4 py-1 font-medium border-2 bg-sky-600 border-sky-600 text-white hover:bg-sky-800 hover:border-sky-800 rounded-md ease-in duration-200"
               >
                 Sign In
               </Linked>

@@ -45,7 +45,7 @@ const SignIn = () => {
       if (accountArray.find(obj => obj.email == emailValue)) {
         if (accountArray.find(obj => obj.password == passwordValue)) {
           // alert('Hooray');
-          router.push('/main/dashboard');
+          router.push('/homepage');
         }
         else {
           triggerAlert()

@@ -18,9 +18,9 @@
     #nav-element{
       @apply text-black dark:text-white
     }
-    #signin{
-      @apply bg-sky-600 text-white hover:bg-sky-900 dark:bg-blue-300 dark:text-black dark:hover:bg-slate-200
-    }
+    /* #signin{
+      @apply bg-sky-600 text-white hover:bg-sky-700 hover:border-sky-700
+    } */
     #service-title{
       @apply bg-none text-black dark:text-gold-300
     }
