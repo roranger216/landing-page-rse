@@ -124,7 +124,7 @@ const Header = () => {
           }
         >
           <ul id="mobile-nav-drop" className="flex flex-col gap-4 fixed left-0 top-22 uppercase p-6 text-center bg-slate-50 w-full shadow-2xl">
-            <li className="text-md font-medium p-2 rounded-md">
+            <li className="text-sm md:text-md font-medium p-2 rounded-md">
               <Link
                 to="home"
                 spy={true}
@@ -137,7 +137,7 @@ const Header = () => {
                 Home
               </Link>
             </li>
-            <li className="text-md font-medium p-2 rounded-md">
+            <li className="text-sm md:text-md font-medium p-2 rounded-md">
               <Link
                 to="about"
                 spy={true}
@@ -149,7 +149,7 @@ const Header = () => {
                 About
               </Link>
             </li>
-            <li className="text-md font-medium p-2 rounded-md">
+            <li className="text-sm md:text-md font-medium p-2 rounded-md">
               <Link
                 to="services"
                 spy={true}
@@ -161,7 +161,7 @@ const Header = () => {
                 Services
               </Link>
             </li>
-            <li className="text-md font-medium p-2 rounded-md">
+            <li className="text-sm md:text-md font-medium p-2 rounded-md">
               <Link
                 to="contact"
                 spy={true}
@@ -175,7 +175,7 @@ const Header = () => {
             </li>
             <Linked
               href="/components/auth/signin"
-              className="text-lg px-0 py-2 rounded-md font-medium border-2 bg-sky-600 text-white"
+              className="text-sm md:text-md px-0 py-2 rounded-md font-medium bg-sky-600 text-white"
             >
               Sign In
             </Linked>
