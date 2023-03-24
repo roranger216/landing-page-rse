@@ -25,8 +25,9 @@ const Content = () => {
         <div>
           {showModal && (
             <div className="animation modal w-full h-full top-0 left-0 fixed flex content-center justify-center items-center bg-black/75 z-50">
-              <div id="modal-bg"
-                className=" w-5/6 lg:w-1/2 h-11/12 md:w-3/4 rounded-md p-5 max-sm:h-4/5 overflow-y-scroll scroll-px-0 scroll-m-0 scroll-smooth"
+              <div
+                id="modal-bg"
+                className=" bg-white dark:bg-gray-800 w-5/6 lg:w-1/2 h-11/12 md:w-3/4 rounded-md p-5 max-sm:h-4/5 overflow-y-scroll scroll-px-0 scroll-m-0 scroll-smooth"
                 data-aos="fade-up"
               >
                 <div className="float-right">

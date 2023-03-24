@@ -83,7 +83,7 @@ const SignIn = () => {
 
   }
   return (
-    <div className=" w-screen h-screen flex justify-center items-center ">
+    <div className="w-screen h-screen flex justify-center items-center ">
       <Image
         alt="bg"
         src={bg}
@@ -91,7 +91,7 @@ const SignIn = () => {
       />
       <div
         id="signin-card"
-        className="grid absolute rounded-2xl shadow-2xl shadow-black/40 sm:w-3/5 md:w-1/2 lg:w-1/3 px-8 xl:px-20 py-20"
+        className="bg-white dark:bg-slate-800 grid absolute rounded-2xl shadow-2xl shadow-black/40 sm:w-3/5 md:w-1/2 lg:w-1/3 px-8 xl:px-20 py-20"
       >
         <div className="flex justify-center">
           <div className="Logo flex justify-center items-center">
@@ -110,25 +110,29 @@ const SignIn = () => {
             </div>
           )}
 
-          <div className="flex w-full flex-col justify-center items-center gap-6 max-[480px]:gap-4">
-            <input
-              value={emailValue}
-              onChange={handleEmail}
-              type="email"
-              name="username"
-              placeholder="Email"
-              className="w-full h-1/3 text-justify pl-8 px-2 rounded-full border-2 border-blue-400 p-5"
-            />
-            <div className='relative w-full'>
-            <input
-              value={passwordValue}
-              onChange={handlePassword}
-              type="password"
-              name="password"
-              placeholder="Password"
-              className="w-full h-1/3 text-justify pl-8 px-2 rounded-full border-2 border-blue-300 p-5"
-            />
-            <i className='absolute top-1/4 right-3.5'><BsEye/></i>
+          <div className="flex w-full flex-col justify-center items-center gap-4 max-[480px]:gap-4">
+            <div className="w-full h-1/3 ">
+              <input
+                value={emailValue}
+                onChange={handleEmail}
+                type="email"
+                name="username"
+                placeholder="Email"
+                className="w-full h-full  dark:text-black bg-white text-justify pl-8 px-2 rounded-full border-2 border-blue-400 p-5"
+              />
+            </div>
+            <div className="relative w-full h-1/3">
+              <input
+                value={passwordValue}
+                onChange={handlePassword}
+                type="password"
+                name="password"
+                placeholder="Password"
+                className="w-full h-full dark:text-black bg-white text-justify pl-8 px-2 rounded-full border-2 border-blue-300 p-5"
+              />
+              <i className="absolute top-1/3 right-3.5">
+                <BsEye />
+              </i>
             </div>
           </div>
         </div>
@@ -142,7 +146,7 @@ const SignIn = () => {
               Sign In
             </button>
             <div>
-              <span className="text-black">Don&apos;t have an account? </span>
+              <span className="text-black dark:text-white">Don&apos;t have an account? </span>
               <a href="#" className="text-blue-600 cursor-pointer">
                 create account
               </a>
