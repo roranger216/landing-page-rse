@@ -47,7 +47,7 @@ const Service = () => {
             <div
               data-aos="fade-right"
               id="image-container"
-              className="animation bg-blue-300 max-[480px]:w-52 h-full
+              className="animation border-2 border-gray-400 dark:border-white max-[480px]:w-52 h-full
                                        sm:
                                        md: w-64"
             >
@@ -65,9 +65,8 @@ const Service = () => {
           >
             <h1
               id="service-title"
-              
               data-aos="fade-up"
-              className=" animation text-black w-auto max-[480px]:mx-4 text-sm font-bold 
+              className=" animation text-black w-auto bg-none dark:text-gold-300 max-[480px]:mx-4 text-sm font-bold 
                                                     sm:text-base
                                                     md:text-xl
                                                     lg:text-2xl "
@@ -115,7 +114,7 @@ const Service = () => {
             <div
               data-aos="fade-right"
               id="image-container"
-              className="animation bg-blue-300 max-[480px]:w-52 h-full
+              className="animation border-2 border-gray-400 dark:border-white max-[480px]:w-52 h-full
                                        sm:
                                        md: w-64"
             >
@@ -134,7 +133,7 @@ const Service = () => {
             <h1
               id="service-title"
               data-aos="fade-up"
-              className=" animation text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 
+              className=" animation text-black mx-7 w-auto bg-none dark:text-gold-300 max-[480px]:mx-4 text-sm font-bold 
                                                     sm:text-base
                                                     md:text-xl
                                                     lg:text-2xl "
@@ -181,7 +180,7 @@ const Service = () => {
             <div
               data-aos="fade-right"
               id="image-container"
-              className="animation bg-blue-300 max-[480px]:w-52 h-full
+              className="animation border-2 border-gray-400 dark:border-white max-[480px]:w-52 h-full
                                        sm:
                                        md: w-64"
             >
@@ -201,7 +200,7 @@ const Service = () => {
             <h1
               id="service-title"
               data-aos="fade-up"
-              className=" animation text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 
+              className=" animation text-black mx-7 w-auto bg-none dark:text-gold-300 max-[480px]:mx-4 text-sm font-bold 
                                                     sm:text-base
                                                     md:text-xl
                                                     lg:text-2xl "
@@ -249,7 +248,7 @@ const Service = () => {
             <div
               data-aos="fade-right"
               id="image-container"
-              className="animation bg-blue-300 max-[480px]:w-52 h-full
+              className="animation border-2 border-gray-400 dark:border-white max-[480px]:w-52 h-full
                                        sm:
                                        md: w-64"
             >
@@ -269,7 +268,7 @@ const Service = () => {
             <h1
               id="service-title"
               data-aos="fade-up"
-              className=" animation text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 
+              className=" animation text-black mx-7 w-auto bg-none dark:text-gold-300 max-[480px]:mx-4 text-sm font-bold 
                                                     sm:text-base
                                                     md:text-xl
                                                     lg:text-2xl "
@@ -317,7 +316,7 @@ const Service = () => {
             <div
               data-aos="fade-right"
               id="image-container"
-              className="animation bg-blue-300 max-[480px]:w-52 h-full
+              className="animation border-2 border-gray-400 dark:border-white max-[480px]:w-52 h-full
                                        sm:
                                        md: w-64"
             >
@@ -337,7 +336,7 @@ const Service = () => {
             <h1
               id="service-title"
               data-aos="fade-up"
-              className=" animation text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 
+              className=" animation text-black mx-7 w-auto bg-none dark:text-gold-300 max-[480px]:mx-4 text-sm font-bold 
                                                     sm:text-base
                                                     md:text-xl
                                                     lg:text-2xl "
@@ -385,7 +384,7 @@ const Service = () => {
             <div
               data-aos="fade-right"
               id="image-container"
-              className="animation bg-blue-300 max-[480px]:w-52 h-full
+              className="animation border-2 border-gray-400 dark:border-whitemax-[480px]:w-52 h-full
                                        sm:
                                        md: w-64"
             >
@@ -405,7 +404,7 @@ const Service = () => {
             <h1
               id="service-title"
               data-aos="fade-up"
-              className=" animation text-black mx-7 w-auto max-[480px]:mx-4 text-sm font-bold 
+              className=" animation text-black mx-7 w-auto bg-none dark:text-gold-300 max-[480px]:mx-4 text-sm font-bold 
                                                     sm:text-base
                                                     md:text-xl
                                                     lg:text-2xl "
