@@ -2,11 +2,15 @@ import React, { useState,ChangeEvent,useEffect } from 'react'
 import bg from '../../assets/img/f-bg.jpg';
 import Image from 'next/image';
 
+import Router from 'next/router'
+
 const SignIn = () => {
 
     const [accountArray, setAccountArray] = useState([
-        {id:1, email:'jayson@gmail.com', password:'123456'},
-        {id:2, email:'dsteph@gmail.com',password:'hey'}
+      {id:1, email:'jayson@gmail.com', password:'123456'},
+      {id:2, email:'dsteph@gmail.com',password:'hey'},
+      {id:3, email:'roger@gmail.com', password:'sarge'},
+      {id:4, email:'grytz@gmail.com', password:'chang'}
     ]);
 
 
@@ -38,7 +42,8 @@ const SignIn = () => {
          else if ( emailValue.includes('@') && emailValue.includes('.')){  
                 if(accountArray.find(obj =>obj.email == emailValue)){
                     if(accountArray.find(obj =>obj.password == passwordValue)){
-                        alert('Hooray')
+                        // alert('Hooray')
+                        Router.push('/homepage')
                     }
                     else{
                       triggerAlert()
