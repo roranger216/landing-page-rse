@@ -35,12 +35,12 @@ const Header = () => {
       <div
         id="nav-holder"
         className={classNames(
-          scrollPosition > 0 ? "shadow-md" : "shadow-none py-6",
+          scrollPosition > 0 ? "shadow-md" : "shadow-none py-4 md:py-6",
           "fixed w-full top-0 left-0 flex justify-between bg-white p-4 px-8 md:px-6 lg:px-16 items-center z-50"
         )}
       >
         <div className="cursor-pointer pl-0 xl:pl-16">
-          <div className="flex font-bold text-3xl">
+          <div className="flex font-bold text-xl md:text-3xl">
             THIS<span className="text-sky-600">Logo</span>
           </div>
         </div>
@@ -113,14 +113,14 @@ const Header = () => {
           </ul>
 
         <div className="flex items-center md:hidden">
-          <div className="mr-8"><Darkmode /></div>
+          <div className="mr-8 w-4"><Darkmode /></div>
           <div onClick={handleNav} className="block md:hidden">
-            {!nav ? (<img id="nav-btn" src="https://cdn-icons-png.flaticon.com/128/7710/7710488.png" className="" width={24} ></img>) : (<img id="nav-btn" src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" className="" width={24} ></img>)}
+            {!nav ? (<img id="nav-btn" src="https://cdn-icons-png.flaticon.com/128/7710/7710488.png" className="" width={18} ></img>) : (<img id="nav-btn" src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" className="" width={18} ></img>)}
           </div>
         </div>
         <div
           className={
-            !nav ? "hidden" : "fixed ease-in-out duration-300 md:hidden"
+            !nav ? "hidden" : "fixed ease-in-out duration-300 md:hidden mt-5"
           }
         >
           <ul id="mobile-nav-drop" className="flex flex-col gap-4 fixed left-0 top-22 uppercase p-6 text-center bg-slate-50 w-full shadow-2xl">
