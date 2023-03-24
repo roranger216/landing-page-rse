@@ -48,7 +48,7 @@ const SignIn = () => {
           console.log(email )
           if (passwordValue == email?.password){
           console.log('yes')
-           router.push("/main/dashboard");
+           router.push("/homepage");
         }
 
           else{
@@ -86,7 +86,7 @@ const SignIn = () => {
       <div id="signin-card" className="grid absolute rounded-2xl shadow-2xl shadow-black/40 sm:w-3/5 md:w-1/2 lg:w-1/3 px-8 xl:px-20 py-20">
         <div className="flex justify-center">
           <div className="Logo flex justify-center items-center">
-            <h1 className="font-bold text-black text-3xl mb-8">
+            <h1 className="font-bold text-3xl mb-8">
               THIS<span className="text-sky-600">Logo</span>
             </h1>
           </div>
@@ -110,7 +110,7 @@ const SignIn = () => {
               type="email"
               name="username"
               placeholder="Email"
-              className="w-full h-1/3 bg-white text-justify pl-8 px-2 rounded-full border-2 border-blue-300 p-5"
+              className="w-full h-1/3 text-justify pl-8 px-2 rounded-lg border-2 border-blue-400 p-5"
             />
             <input
               value={passwordValue}
@@ -118,7 +118,7 @@ const SignIn = () => {
               type="password"
               name="password"
               placeholder="Password"
-              className="w-full h-1/3 bg-white text-justify pl-8 px-2 rounded-full border-2 border-blue-300 p-5"
+              className="w-full h-1/3 text-justify pl-8 px-2 rounded-lg border-2 border-blue-400 p-5"
             />
           </div>
         </div>
@@ -131,7 +131,7 @@ const SignIn = () => {
               Sign In
             </button>
             <div>
-              <span className='text-black'>Don&apos;t have an account? </span><a href="#" className="text-blue-600 cursor-pointer">create account</a>
+              <span>Don&apos;t have an account? </span><a href="#" className="text-blue-600 cursor-pointer">create account</a>
             </div>
             <div>
               <a href="#" className="text-blue-600 cursor-pointer">Forgot password?</a>
