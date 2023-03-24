@@ -2,13 +2,15 @@ import React, { useState,ChangeEvent,useEffect } from 'react'
 import bg from '../../assets/img/f-bg.jpg';
 import Image from 'next/image';
 
+import Router from 'next/router'
+
 const SignIn = () => {
 
     const [accountArray, setAccountArray] = useState([
-        {id:1, email:'jayson@gmail.com', password:'123456'},
-        {id:2, email:'dsteph@gmail.com',password:'hey'},
-        {id:3, email:'roger@gmail.com', password:'sarge'},
-        {id:4, email:'grytz@gmail.com', password:'chang'},
+      {id:1, email:'jayson@gmail.com', password:'123456'},
+      {id:2, email:'dsteph@gmail.com',password:'hey'},
+      {id:3, email:'roger@gmail.com', password:'sarge'},
+      {id:4, email:'grytz@gmail.com', password:'chang'}
     ]);
 
 
@@ -40,7 +42,8 @@ const SignIn = () => {
          else if ( emailValue.includes('@') && emailValue.includes('.')){  
                 if(accountArray.find(obj =>obj.email == emailValue)){
                     if(accountArray.find(obj =>obj.password == passwordValue)){
-                        alert('Hooray')
+                        // alert('Hooray')
+                        Router.push('/homepage')
                     }
                     else{
                       triggerAlert()
@@ -67,8 +70,8 @@ const SignIn = () => {
         src={bg} className="w-screen h-screen -z-10 brightness-50"
         />
 
-        <div
-          className="grid absolute bg-white rounded-2xl shadow-2xl shadow-black/40
+        <div id="signin-card"
+          className="grid absolute rounded-2xl shadow-2xl shadow-black/40
                         max-[480px]:w-full h-5/6
                         max-sm:w-3/4 sm:h-5/6 sm:border-0
                         sm:w-3/4
