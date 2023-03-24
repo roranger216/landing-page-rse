@@ -19,7 +19,7 @@ const Header = () => {
   }
 
   const [click, setClick] = useState(false)
-  const handleClick = () => setClick(!click)
+  
   const closeMenu = () => setClick
 
   // Function for scrolling effect Navbar
@@ -111,7 +111,6 @@ const Header = () => {
               </Linked>
             </li>
           </ul>
-
         <div className="flex items-center md:hidden">
           <div className="mr-8"><Darkmode /></div>
           <div onClick={handleNav} className="block md:hidden">
