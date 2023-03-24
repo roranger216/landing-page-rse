@@ -9,11 +9,11 @@ const SignIn = () => {
   const router = useRouter();
   // Call the useRouter hook to perform router.push
 
-  const [accountArray, setAccountArray] = useState([
+  const accountArray =[
     { id: 1, email: 'jayson@gmail.com', password: '123456' },
     { id: 2, email: 'dsteph@gmail.com', password: 'hey' },
-    { id: 3, email: 'changz@gmail.com', password: 'zzz' }
-  ]);
+    { id: 3, email: 'changz@gmail.com', password: 'zzz' },
+  ];
 
 
   const [emailValue, setEmail] = useState(""); // for email
@@ -42,14 +42,26 @@ const SignIn = () => {
       triggerAlert()
     }
     else if (emailValue.includes('@') && emailValue.includes('.')) {
-      if (accountArray.find(obj => obj.email == emailValue)) {
-        if (accountArray.find(obj => obj.password == passwordValue)) {
-          // alert('Hooray');
-          router.push('/homepage');
+      if (accountArray.find(obj =>emailValue  === obj.email )) {
+          
+          const email = accountArray.find((item) => item.email == emailValue) 
+          console.log(email )
+          if (passwordValue == email?.password){
+          console.log('yes')
+           router.push("/homepage");
         }
-        else {
-          triggerAlert()
-        }
+
+          else{
+            triggerAlert()
+          }
+          
+        // if (accountArray.find(obj => passwordValue == obj.id && obj.password)) {
+        //   // alert('Hooray');
+        //   router.push('/main/dashboard');
+        // }
+        // else {
+        //   triggerAlert()
+        // }
       }
       else {
         setShowAlert(true)
@@ -98,7 +110,7 @@ const SignIn = () => {
               type="email"
               name="username"
               placeholder="Email"
-              className="w-full h-1/3 text-justify pl-8 px-2 rounded-full border-2 border-blue-300 p-5"
+              className="w-full h-1/3 text-justify pl-8 px-2 rounded-lg border-2 border-blue-400 p-5"
             />
             <input
               value={passwordValue}
@@ -106,7 +118,7 @@ const SignIn = () => {
               type="password"
               name="password"
               placeholder="Password"
-              className="w-full h-1/3 text-justify pl-8 px-2 rounded-full border-2 border-blue-300 p-5"
+              className="w-full h-1/3 text-justify pl-8 px-2 rounded-lg border-2 border-blue-400 p-5"
             />
           </div>
         </div>
