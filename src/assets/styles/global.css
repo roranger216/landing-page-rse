@@ -6,37 +6,13 @@
     body {
       @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 dark:border-white;
       
-    }
-    #nav-holder{
-      @apply bg-white dark:bg-gradient-to-t from-purple-900 to-fuchsia-500
-    }
-    #nav-holder2{
-      @apply bg-white dark:bg-gray-900
-    }
-    #nav-holder2{
-      @apply bg-white dark:bg-gray-900
-    }
-    #nav-element{
-      @apply text-black dark:text-white
-    }
-    #signin{
-      @apply bg-sky-600 text-white hover:bg-sky-900 dark:bg-blue-300 dark:text-black dark:hover:bg-slate-200
-    }
-    #service-title{
-      @apply bg-none text-black dark:text-gold-300
-    }
-    #image-container{
-      @apply border-2 border-gray-400 dark:border-white
-    }
-    #contact{
-      @apply bg-white dark:bg-gray-900
-    }
+    }  
     #profile-holder{
       @apply bg-white dark:bg-gray-700 drop-shadow-w2xl
     }
-    selection {
+    /* selection {
     @apply text-white bg-blue-600;
-    }
+    } */
     #footer {
       @apply bg-neutral-800 dark:bg-gray-800
     }

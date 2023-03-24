@@ -18,6 +18,7 @@ const ProfileLayout = makeStyles((theme) => ({
     padding: theme.spacing(2),
     background: "white",
     boxShadow: "0px 6px 14px 0px rgb(0 0 0 / .1)",
+    
   },
   avatar: {
     width: theme.spacing(10),

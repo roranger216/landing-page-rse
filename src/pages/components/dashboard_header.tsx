@@ -76,7 +76,7 @@ const Header = () => {
             </div>
             
             <div id="nav-holder2" className={!nav ? 
-                'hidden ease-in-out duration-300 shadow-lg shadow-right border-r-2 border-slate-700 h-full w-60 pl-5 pt-2 pb-24 md:flex flex-col justify-between fixed' : 
+                'hidden ease-in-out duration-300 shadow-lg shadow-right border-r-2 border-slate-700 h-full w-60 pl-5 pt-2 pb-24 bg-white dark:bg-gray-900 md:flex flex-col justify-between fixed' : 
 
                 'fixed flex flex-col justify-between transition-all ease-in duration-300 shadow-lg shadow-right border-r-2 border-slate-700 md:hidden h-full w-1/2 pl-5 pt-2 pb-24'}>
 
