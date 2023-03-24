@@ -144,9 +144,9 @@ const Header = () => {
           >
             <ul
               id="mobile-nav-drop"
-              className="flex flex-col gap-4 fixed left-0 top-22 uppercase p-6 text-center bg-slate-50 w-full shadow-2xl"
+              className="flex flex-col gap-4 fixed left-0 top-22 uppercase p-6 text-center bg-slate-200 w-full shadow-2xl dark:bg-gray-800"
             >
-              <li className="text-md font-medium p-2 rounded-md">
+              <li className="text-md font-medium p-2 rounded-md ">
                 <Link
                   to="home"
                   spy={true}
@@ -154,6 +154,7 @@ const Header = () => {
                   offset={-100}
                   duration={500}
                   onClick={closeMenu}
+                  className="hover:border-b-2 hover:border-blue-500"
                 >
                   Home
                 </Link>
@@ -166,6 +167,7 @@ const Header = () => {
                   offset={20}
                   duration={500}
                   onClick={closeMenu}
+                  className="hover:border-b-2 hover:border-blue-500"
                 >
                   About
                 </Link>
@@ -178,6 +180,7 @@ const Header = () => {
                   offset={-100}
                   duration={500}
                   onClick={closeMenu}
+                  className="hover:border-b-2 hover:border-blue-500"
                 >
                   Services
                 </Link>
@@ -190,6 +193,7 @@ const Header = () => {
                   offset={-100}
                   duration={500}
                   onClick={closeMenu}
+                  className="hover:border-b-2 hover:border-blue-500"
                 >
                   Contact
                 </Link>
@@ -202,70 +206,6 @@ const Header = () => {
               </Linked>
             </ul>
           </div>
-        </div>
-        <div
-          className={
-            !nav ? "hidden" : "fixed ease-in-out duration-300 md:hidden mt-5"
-          }
-        >
-          <ul id="mobile-nav-drop" className="flex flex-col gap-4 fixed left-0 top-22 uppercase p-6 text-center bg-slate-50 w-full shadow-2xl">
-            <li className="text-sm md:text-md font-medium p-2 rounded-md">
-              <Link
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                onClick={closeMenu}
-
-              >
-                Home
-              </Link>
-            </li>
-            <li className="text-sm md:text-md font-medium p-2 rounded-md">
-              <Link
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={20}
-                duration={500}
-                onClick={closeMenu}
-              >
-                About
-              </Link>
-            </li>
-            <li className="text-sm md:text-md font-medium p-2 rounded-md">
-              <Link
-                to="services"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                onClick={closeMenu}
-              >
-                Services
-              </Link>
-            </li>
-            <li className="text-sm md:text-md font-medium p-2 rounded-md">
-              <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                onClick={closeMenu}
-              >
-                Contact
-              </Link>
-            </li>
-            <Linked
-              href="/components/auth/signin"
-              className="text-sm md:text-md px-0 py-2 rounded-md font-medium bg-sky-600 text-white"
-            >
-              Sign In
-            </Linked>
-
-          </ul>
         </div>
       </div>
     );
