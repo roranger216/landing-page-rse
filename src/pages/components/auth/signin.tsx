@@ -53,7 +53,7 @@ const SignIn = () => {
           console.log(email )
           if (passwordValue == email?.password){
           console.log('yes')
-           router.push("/homepage");
+           router.push("/main/homepage");
         }
 
           else{
