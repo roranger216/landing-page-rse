@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-scroll'
-import Linked from 'next/link'
-import useScrollPosition from '../components/hooks/scroll'
+import Link from 'next/link'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { BsTelephone } from 'react-icons/bs';
@@ -13,7 +11,7 @@ import { AiOutlineUser, AiOutlineBell } from 'react-icons/ai'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { FaUserCircle } from 'react-icons/fa'
 import { FiSettings } from 'react-icons/Fi'
-import Darkmode from './darkmode_dashboard'
+import Darkmode from './darkmode'
 
 const Header = () => {
 
@@ -32,27 +30,12 @@ const Header = () => {
     const handleClick = () => setClick(!click)
     const closeMenu = () => setClick
 
-    // Function for scrolling effect Navbar
-    const classNames = (...classes: any) => {
-        return classes.filter(Boolean).join(' ');
-    }
-
-    const scrollPosition = useScrollPosition()
-    console.log(scrollPosition);
-
-    const handleDarkMode = () => {
-        setDarkMode(!darkMode)
-    }
-
 
     return (
         <div className='dashboard-header'>
 
             <div
-                id="nav-admin" className={classNames(
-                    scrollPosition > 0 ? "shadow-md" : "shadow py-4",
-                    "fixed w-full top-0 left-0 flex justify-between bg-white p-4 px-4 md:px-6 lg:px-16 items-center z-50"
-                )} data-aos="bg">
+                id="nav-admin" className="fixed w-full shadow-md top-0 left-0 flex justify-between bg-white p-4 px-4 md:px-6 lg:px-16 items-center z-50" data-aos="bg">
 
                 <div className="cursor-pointer flex flex-row items-center gap-4 w-full">
 
@@ -60,32 +43,31 @@ const Header = () => {
                         {!nav ? <FaBars /> : <FaTimes />}
                     </div>
                     <div className="flex justify-start items-start font-bold lg:text-3xl md:text-2xl">
-                        <Link to="logo" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>THIS<span className="text-sky-600">Logo</span></Link>
+                        THIS<span className="text-sky-600">Logo</span>
                     </div>
                 </div>
                 <div className="">
                     <ul className="flex md:gap-6 lg:gap-6 cursor-pointer">
                         <li className="text-lg p-2 px-4 font-medium">
-                            <Link to="bell" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>
-                                <div className='text-2xl items-center'>
-                                    <AiOutlineBell className='hover:text-blue-500' />
-                                </div>
-                            </Link>
+                            <div className='text-2xl items-center'>
+                            <Darkmode />
+                            </div>
                         </li>
                         <li className="text-lg p-2 px-4 font-medium">
-                            <Link to="home" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>
-                                <div className='text-2xl items-center'>
-                                    <BiEnvelope className='hover:text-blue-500' />
-                                </div>
-                            </Link>
+                            <div className='text-2xl items-center'>
+                                <AiOutlineBell className='hover:text-blue-500' />
+                            </div>
+                        </li>
+                        <li className="text-lg p-2 px-4 font-medium">
+                            <div className='text-2xl items-center'>
+                                <BiEnvelope className='hover:text-blue-500' />
+                            </div>
                         </li>
                         <li className="text-lg font-medium p-2 hover:bg-sky-200 rounded transition-all duration-400">
-                            <Link to="user" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>
-                                <div className='flex items-center'>
-                                    <FaUserCircle className="text-2xl mr-3"/>
-                                    Username
-                                </div>
-                            </Link>
+                            <div className='flex items-center'>
+                                <FaUserCircle className="text-2xl mr-3" />
+                                Username
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -98,27 +80,16 @@ const Header = () => {
 
                 <ul className=" justify-start items-start cursor-pointer gap-2 mt-20">
                     <li className="text-lg p-4 py-3 font-medium border-b-2 border-transparent  ease-in-out duration-500 hover:bg-sky-300 m-2 ml-0 rounded">
-                        <Link to="home" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu} className=" flex flex-row items-center gap-4"><BiHomeAlt2 /><span className="w-28 "> Dashboard</span> </Link>
+                        <Link href="./settings" className=" flex flex-row items-center gap-4"><BiHomeAlt2 /><span className="w-28 "> Dashboard</span> </Link>
                     </li>
                     <li className="text-lg p-4 py-3 font-medium border-b-2 border-transparent  ease-in-out duration-500 hover:bg-sky-300 m-2 ml-0 rounded">
-                        <Link to="about" spy={true} smooth={true} offset={-20} duration={500} onClick={closeMenu} className=" flex flex-row items-center gap-4"><MdOutlineInfo /><span className="w-28">About</span> </Link>
+                        <Link href="./settings" className=" flex flex-row items-center gap-4"><MdOutlineInfo /><span className="w-28">About</span> </Link>
                     </li>
                     <li className="text-lg p-4 py-3 font-medium border-b-2 border-transparent  ease-in-out duration-500 hover:bg-sky-300 m-2 ml-0 rounded">
-                        <Link to="services" spy={true} smooth={true} offset={-60} duration={500} onClick={closeMenu} className=" flex flex-row items-center gap-4"><RiServiceLine /><span className="w-28">Services</span> </Link>
+                        <Link href="./settings" className=" flex flex-row items-center gap-4"><RiServiceLine /><span className="w-28">Services</span> </Link>
                     </li>
                     <li className="text-lg p-4 py-3 font-medium border-b-2 border-transparent  ease-in-out duration-500 hover:bg-sky-300 m-2 ml-0 rounded">
-                        <Linked href="./settings" className=" flex flex-row items-center gap-4"><FiSettings /><span className="w-28">Settings</span></Linked>
-                    </li>
-                </ul>
-                <ul className=" justify-start items-start cursor-pointer gap-2">
-                    <hr />
-                    <li className="text-lg p-2 pb-0 font-medium border-b-2 border-transparent  ease-in-out duration-500 flex flex-row items-center gap-4" onClick={handleDarkMode}><Darkmode />
-                    </li>
-                    <li className="text-lg p-2 pb-0 font-medium border-b-2 border-transparent  ease-in-out duration-500">
-                        <Link to="about" spy={true} smooth={true} offset={-20} duration={500} onClick={closeMenu} className=" flex flex-row items-center gap-4 hover:text-sky-600"><FaQuestionCircle /> <span className="w-28">FAQs</span></Link>
-                    </li>
-                    <li className="text-lg p-2 pb-0 font-medium border-b-2 border-transparent  ease-in-out duration-500">
-                        <Linked href="/components/auth/signin" className=" flex flex-row items-center gap-4 hover:text-sky-600"><MdLogout /><span className="w-28">Log-out</span> </Linked>
+                        <Link href="./settings" className=" flex flex-row items-center gap-4"><FiSettings /><span className="w-28">Settings</span></Link>
                     </li>
                 </ul>
             </div>
