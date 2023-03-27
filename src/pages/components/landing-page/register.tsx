@@ -31,7 +31,7 @@ function Register() {
             <input
               type="firstname"
               id="firstname"
-              className="w-full h-1/5 text-justify px-2 py-3  rounded-md border-2 border-blue-300 capitalize"
+              className="w-full bg-white h-1/5 text-justify px-2 py-3  rounded-md border-2 border-blue-300 capitalize"
               placeholder="Firstname"
               required
             />
@@ -40,7 +40,7 @@ function Register() {
             <input
               type="middlename"
               id="middlename"
-              className="w-full h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300 capitalize"
+              className="w-full bg-white h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300 capitalize"
               placeholder="Middle Name"
             />
           </div>
@@ -48,7 +48,7 @@ function Register() {
             <input
               type="lastname"
               id="lastname"
-              className="w-full h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300 capitalize"
+              className="w-full bg-white h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300 capitalize"
               placeholder="Lastname"
               required
             />
@@ -57,7 +57,7 @@ function Register() {
             <input
               type="email"
               id="email"
-              className="w-full h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300"
+              className="w-full bg-white h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300"
               placeholder="Email"
               required
             />
@@ -66,7 +66,7 @@ function Register() {
             <input
               type="password"
               id="password"
-              className="w-full h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300"
+              className="w-full bg-white h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300"
               placeholder="Password"
               required
             />
