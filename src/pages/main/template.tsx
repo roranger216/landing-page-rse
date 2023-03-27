@@ -53,29 +53,29 @@ const Header = () => {
                 <div className="">
                     <ul className="flex cursor-pointer md:gap-4 items-center">
                         <li className="text-lg font-medium p-2">
-                            <div className='text-2xl items-center'>
+                            <div className='text-2xl items-center text-slate-600'>
                                 <Darkmode />
                             </div>
                         </li>
                         <li className="text-lg font-medium p-2">
                             <div className='text-2xl items-center'>
-                                <AiOutlineBell className='hover:text-blue-500' />
+                                <AiOutlineBell className='hover:text-blue-500 text-slate-600' />
                             </div>
                         </li>
                         <li className="text-lg font-medium p-2">
                             <div className='text-2xl items-center'>
-                                <BiEnvelope className='hover:text-blue-500' />
+                                <BiEnvelope className='hover:text-blue-500 text-slate-600' />
                             </div>
                         </li>
-                        <li onClick={handleDropdown} className="text-lg font-medium hover:bg-sky-200 rounded md:ml-8 p-2">
+                        <li onClick={handleDropdown} className="text-lg font-medium hover:bg-sky-200 rounded md:ml-6 p-2">
                             <div className='flex items-center'>
-                                <FaUserCircle className="text-2xl mr-3" />
+                                <FaUserCircle className="text-2xl mr-3 text-slate-500" />
                                 Username
                             </div>
                         </li>
                         <div className={!dropdown ? "hidden" : "fixed ease-in-out duration-300"}>
-                            <ul id="mobile-nav-drop" className="flex flex-col fixed right-10 top-20 uppercase text-left bg-slate-50 shadow-xl dark:bg-gray-800">
-                                <li className="flex text-md hover:bg-sky-200 p-4 pl-4 pr-8">
+                            <ul id="mobile-nav-drop" className="flex flex-col fixed right-10 top-20 text-left bg-slate-50 shadow-xl dark:bg-gray-800">
+                                <li className="flex text-md hover:bg-sky-200 p-4 pl-4 pr-8 border-b-2 border-slate-200">
                                 <AiOutlineUser className="text-xl mr-2" />
                                     <Link href="" className="">User Account</Link>
                                 </li>
@@ -83,15 +83,15 @@ const Header = () => {
                                 <MdLogout className="text-xl mr-2" />
                                     <Link href="" className="">Logout</Link>
                                 </li>
-                                
+
                             </ul>
                         </div>
                     </ul>
                 </div>
             </div>
 
-            <div id="nav-holder2" className={!nav ?
-                'hidden ease-in-out duration-300 shadow-xl shadow-right h-full w-60 pl-5 bg-white dark:bg-gray-900 md:flex flex-col justify-between fixed' :
+            <div id="" className={!nav ?
+                'hidden ease-in-out duration-300 shadow-xl shadow-right h-full w-60 pl-5 bg-white dark:bg-slate-700 md:flex flex-col justify-between fixed' :
 
                 'fixed flex flex-col justify-between transition-all ease-in duration-300 shadow-lg shadow-right md:hidden h-full w-1/2 pl-5'}>
 
