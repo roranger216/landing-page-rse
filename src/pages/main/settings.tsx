@@ -1,22 +1,40 @@
-import React from 'react';
-
+import React from 'react'
 import Header from './template'
 
 const settings = () => {
   return (
-    <>
-      <div className="">
+    <div className="settings">
+      <nav className='z-10'>
         <Header />
-        <div>
-          <div className="absolute z-10 w-full text-4xl bg-slate-300">
-            {/* <div className="ml-60 mt-60"> */}
-              <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, exercitationem. Suscipit debitis ad ducimus aliquam iure rem, beatae eos, et qui asperiores aspernatur dignissimos. Voluptatum delectus dicta consectetur a perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, exercitationem. Suscipit debitis ad ducimus aliquam iure rem, beatae eos, et qui asperiores aspernatur dignissimos. Voluptatum delectus dicta consectetur a perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, exercitationem. Suscipit debitis ad ducimus aliquam iure rem, beatae eos, et qui asperiores aspernatur dignissimos. Voluptatum delectus dicta consectetur a perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, exercitationem. Suscipit debitis ad ducimus aliquam iure rem, beatae eos, et qui asperiores aspernatur dignissimos. Voluptatum delectus dicta consectetur a perspiciatis.</div>
-            {/* </div> */}
+      </nav>
+
+      <div className="mt-16 overflow-hidden ">
+        <div className="row w-screen p-8 rounded-lg bg-gray-100">
+          <div className="flex flex-col justify-center md:ml-60 bg-white p-8 rounded-md">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequatur quod impedit suscipit neque molestiae magnam odio, natus assumenda magni nisi excepturi a eaque voluptates debitis dignissimos quo ut. Cumque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum voluptatibus ipsam ratione laboriosam magnam doloremque amet, delectus, quis praesentium quasi ipsum. Illum quo repellendus veniam iste odit, quos perferendis neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus reprehenderit dolores iusto amet itaque sequi ut saepe commodi modi assumenda, deleniti tenetur, consequatur suscipit dolorum dicta molestiae veniam nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates nobis ipsa dolores neque ipsam quod adipisci odit officia, excepturi, eveniet ex recusandae aut dicta fugiat itaque! Voluptatum, ipsum culpa.</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequatur quod impedit suscipit neque molestiae magnam odio, natus assumenda magni nisi excepturi a eaque voluptates debitis dignissimos quo ut. Cumque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum voluptatibus ipsam ratione laboriosam magnam doloremque amet, delectus, quis praesentium quasi ipsum. Illum quo repellendus veniam iste odit, quos perferendis neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus reprehenderit dolores iusto amet itaque sequi ut saepe commodi modi assumenda, deleniti tenetur, consequatur suscipit dolorum dicta molestiae veniam nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates nobis ipsa dolores neque ipsam quod adipisci odit officia, excepturi, eveniet ex recusandae aut dicta fugiat itaque! Voluptatum, ipsum culpa.</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequatur quod impedit suscipit neque molestiae magnam odio, natus assumenda magni nisi excepturi a eaque voluptates debitis dignissimos quo ut. Cumque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum voluptatibus ipsam ratione laboriosam magnam doloremque amet, delectus, quis praesentium quasi ipsum. Illum quo repellendus veniam iste odit, quos perferendis neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus reprehenderit dolores iusto amet itaque sequi ut saepe commodi modi assumenda, deleniti tenetur, consequatur suscipit dolorum dicta molestiae veniam nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates nobis ipsa dolores neque ipsam quod adipisci odit officia, excepturi, eveniet ex recusandae aut dicta fugiat itaque! Voluptatum, ipsum culpa.</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequatur quod impedit suscipit neque molestiae magnam odio, natus assumenda magni nisi excepturi a eaque voluptates debitis dignissimos quo ut. Cumque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum voluptatibus ipsam ratione laboriosam magnam doloremque amet, delectus, quis praesentium quasi ipsum. Illum quo repellendus veniam iste odit, quos perferendis neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus reprehenderit dolores iusto amet itaque sequi ut saepe commodi modi assumenda, deleniti tenetur, consequatur suscipit dolorum dicta molestiae veniam nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates nobis ipsa dolores neque ipsam quod adipisci odit officia, excepturi, eveniet ex recusandae aut dicta fugiat itaque! Voluptatum, ipsum culpa.</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequatur quod impedit suscipit neque molestiae magnam odio, natus assumenda magni nisi excepturi a eaque voluptates debitis dignissimos quo ut. Cumque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum voluptatibus ipsam ratione laboriosam magnam doloremque amet, delectus, quis praesentium quasi ipsum. Illum quo repellendus veniam iste odit, quos perferendis neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus reprehenderit dolores iusto amet itaque sequi ut saepe commodi modi assumenda, deleniti tenetur, consequatur suscipit dolorum dicta molestiae veniam nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates nobis ipsa dolores neque ipsam quod adipisci odit officia, excepturi, eveniet ex recusandae aut dicta fugiat itaque! Voluptatum, ipsum culpa.</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequatur quod impedit suscipit neque molestiae magnam odio, natus assumenda magni nisi excepturi a eaque voluptates debitis dignissimos quo ut. Cumque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum voluptatibus ipsam ratione laboriosam magnam doloremque amet, delectus, quis praesentium quasi ipsum. Illum quo repellendus veniam iste odit, quos perferendis neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus reprehenderit dolores iusto amet itaque sequi ut saepe commodi modi assumenda, deleniti tenetur, consequatur suscipit dolorum dicta molestiae veniam nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates nobis ipsa dolores neque ipsam quod adipisci odit officia, excepturi, eveniet ex recusandae aut dicta fugiat itaque! Voluptatum, ipsum culpa.</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequatur quod impedit suscipit neque molestiae magnam odio, natus assumenda magni nisi excepturi a eaque voluptates debitis dignissimos quo ut. Cumque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum voluptatibus ipsam ratione laboriosam magnam doloremque amet, delectus, quis praesentium quasi ipsum. Illum quo repellendus veniam iste odit, quos perferendis neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus reprehenderit dolores iusto amet itaque sequi ut saepe commodi modi assumenda, deleniti tenetur, consequatur suscipit dolorum dicta molestiae veniam nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates nobis ipsa dolores neque ipsam quod adipisci odit officia, excepturi, eveniet ex recusandae aut dicta fugiat itaque! Voluptatum, ipsum culpa.</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequatur quod impedit suscipit neque molestiae magnam odio, natus assumenda magni nisi excepturi a eaque voluptates debitis dignissimos quo ut. Cumque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum voluptatibus ipsam ratione laboriosam magnam doloremque amet, delectus, quis praesentium quasi ipsum. Illum quo repellendus veniam iste odit, quos perferendis neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus reprehenderit dolores iusto amet itaque sequi ut saepe commodi modi assumenda, deleniti tenetur, consequatur suscipit dolorum dicta molestiae veniam nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates nobis ipsa dolores neque ipsam quod adipisci odit officia, excepturi, eveniet ex recusandae aut dicta fugiat itaque! Voluptatum, ipsum culpa.</div>
           </div>
         </div>
       </div>
-    </>
+      <div className="-z-10">
+        <div className="flex flex-row justify-center items-center text-center md:ml-60 overflow-hidden bg-gray-800">
+          <h1 className=" text-gray-400 md:font-semibold">
+            © 2022-2023 All rights reserved | Build with ❤ by{" "}
+            <span className="hover:text-blue-600 md:font-semibold cursor-pointer">
+              Team RSE INTERNS{" "}
+            </span>
+          </h1>
+        </div>
+      </div>
+
+    </div>
   )
 }
 
-export default settings;
+export default settings

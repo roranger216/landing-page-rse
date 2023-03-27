@@ -30,12 +30,16 @@ const Header = () => {
     const handleClick = () => setClick(!click)
     const closeMenu = () => setClick
 
+    const [dropdown, setdropdown] = useState(false)
+    const handleDropdown = () => {
+        setdropdown(!dropdown)
+    }
+
 
     return (
         <div className='dashboard-header'>
 
-            <div
-                id="nav-admin" className="fixed w-full shadow-md top-0 left-0 flex justify-between bg-white p-4 px-4 md:px-6 lg:px-16 items-center z-50" data-aos="bg">
+            <div id="nav-admin" className="fixed w-full shadow-md top-0 left-0 flex justify-between bg-white p-4 px-4 md:px-6 lg:px-16 items-center z-50" data-aos="bg">
 
                 <div className="cursor-pointer flex flex-row items-center gap-4 w-full">
 
@@ -47,28 +51,41 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="">
-                    <ul className="flex md:gap-6 lg:gap-6 cursor-pointer">
-                        <li className="text-lg p-2 px-4 font-medium">
+                    <ul className="flex cursor-pointer md:gap-4 items-center">
+                        <li className="text-lg font-medium p-2">
                             <div className='text-2xl items-center'>
-                            <Darkmode />
+                                <Darkmode />
                             </div>
                         </li>
-                        <li className="text-lg p-2 px-4 font-medium">
+                        <li className="text-lg font-medium p-2">
                             <div className='text-2xl items-center'>
                                 <AiOutlineBell className='hover:text-blue-500' />
                             </div>
                         </li>
-                        <li className="text-lg p-2 px-4 font-medium">
+                        <li className="text-lg font-medium p-2">
                             <div className='text-2xl items-center'>
                                 <BiEnvelope className='hover:text-blue-500' />
                             </div>
                         </li>
-                        <li className="text-lg font-medium p-2 hover:bg-sky-200 rounded transition-all duration-400">
+                        <li onClick={handleDropdown} className="text-lg font-medium hover:bg-sky-200 rounded md:ml-8 p-2">
                             <div className='flex items-center'>
                                 <FaUserCircle className="text-2xl mr-3" />
                                 Username
                             </div>
                         </li>
+                        <div className={!dropdown ? "hidden" : "fixed ease-in-out duration-300"}>
+                            <ul id="mobile-nav-drop" className="flex flex-col fixed right-10 top-20 uppercase text-left bg-slate-50 shadow-xl dark:bg-gray-800">
+                                <li className="flex text-md hover:bg-sky-200 p-4 pl-4 pr-8">
+                                <AiOutlineUser className="text-xl mr-2" />
+                                    <Link href="" className="">User Account</Link>
+                                </li>
+                                <li className="flex text-md hover:bg-sky-200 p-4 pl-4 pr-8">
+                                <MdLogout className="text-xl mr-2" />
+                                    <Link href="" className="">Logout</Link>
+                                </li>
+                                
+                            </ul>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -78,7 +95,7 @@ const Header = () => {
 
                 'fixed flex flex-col justify-between transition-all ease-in duration-300 shadow-lg shadow-right md:hidden h-full w-1/2 pl-5'}>
 
-                <ul className=" justify-start items-start cursor-pointer gap-2 mt-20">
+                <ul className=" justify-start items-start cursor-pointer gap-2 mt-4">
                     <li className="text-lg p-4 py-3 font-medium border-b-2 border-transparent  ease-in-out duration-500 hover:bg-sky-300 m-2 ml-0 rounded">
                         <Link href="./settings" className=" flex flex-row items-center gap-4"><BiHomeAlt2 /><span className="w-28 "> Dashboard</span> </Link>
                     </li>
