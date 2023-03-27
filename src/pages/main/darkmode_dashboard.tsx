@@ -27,7 +27,7 @@ const Darkmode = () => {
           <BsSun
             className="w-5 h-5"
           />
-          <span>Dark Mode</span>
+          <span>Light Mode</span>
         </div>
       );
     } else {
@@ -39,7 +39,7 @@ const Darkmode = () => {
           <FaMoon
             className="w-5 h-5"
           />
-          <span>Light Mode</span>
+          <span>Dark Mode</span>
         </div>
         
       );
