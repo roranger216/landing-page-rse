@@ -3,8 +3,35 @@ import { BsTelephoneFill } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
 import { HiLocationMarker } from "react-icons/hi";
 import { FaInstagram, FaTwitter, FaYoutube, FaPinterest, FaGithub, } from "react-icons/fa";
-
+  import { useState } from "react";
 const Contactpage = () => {
+
+  // declare empty array with object
+  const [formData, setFormData] = useState({
+    first_name: "",
+   
+    last_name: "",
+    email: "",
+    subject:"",
+    message : "",
+    
+  });
+
+
+  const handleInputChange = (event:any) => {
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+
+  };
+
+  const handleSubmit = (event:any) => {
+    event.preventDefault();
+    console.log(formData); // display the array object in console 
+   
+  };
   return (
     <div
       id="contact"
@@ -20,19 +47,19 @@ const Contactpage = () => {
             you. Thank you!
           </p>
           <div className="flex-col my-20 gap-5 flex  ">
-            <div className="flex gap-5 p-4 border border-gray-500  hover:border-sky-600  dark:border-black  md:w-1/2 w-full rounded-lg group cursor-pointer items-center">
+            <div className="flex gap-5 p-4 border border-gray-500  hover:border-sky-600  dark:border-black  md:w-auto rounded-lg group cursor-pointer items-center">
               <BsTelephoneFill className="text-xl text-gray-500 group-hover:border-sky-600" />
               <p className="text-gray-500 dark:text-white text-base font-semibold group-hover:border-sky-600">
                 +639-0123456789
               </p>
             </div>
-            <div className="flex gap-5 p-4 border border-gray-500 dark:border-black hover:border-blue-700 md:w-1/2 w-full rounded-lg group cursor-pointer items-center">
+            <div className="flex gap-5 p-4 border border-gray-500 dark:border-black hover:border-blue-700 md:w-auto rounded-lg group cursor-pointer items-center">
               <GrMail className="text-xl text-gray-500  group-hover:border-sky-600" />
               <p className="text-gray-500 text-base font-semibold group-hover:border-sky-600 dark:text-white">
                 teamRSE.com
               </p>
             </div>
-            <div className="flex gap-5 p-4 border border-gray-500 dark:border-black hover:border-blue-700 md:w-1/2 w-full rounded-lg group cursor-pointer items-center">
+            <div className="flex gap-5 p-4 border border-gray-500 dark:border-black hover:border-blue-700 md:w-auto rounded-lg group cursor-pointer items-center">
               <HiLocationMarker className="text-xl text-gray-500  group-hover:border-sky-600" />
               <p className="text-gray-500 text-base font-semibold group-hover:border-sky-600 dark:text-white">
                 Philippines
@@ -53,7 +80,7 @@ const Contactpage = () => {
           id="contact-card"
           className="bg-slate-200 p-12 rounded-lg shadow-lg w-full md:w-auto"
         >
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="grid xl:grid-cols-2 xl:gap-10">
               <input
                 type="text"
@@ -61,6 +88,8 @@ const Contactpage = () => {
                 id="first_name"
                 className="form-control block w-full px-3 py-2 mb-5 text-base font-normal bg-clip-padding border border-solid border-gray-300 rounded-md transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-sky-600 focus:outline-none"
                 placeholder="First Name "
+                value={formData.first_name}
+                onChange={handleInputChange}
                 required={true}
               />
               <input
@@ -69,6 +98,8 @@ const Contactpage = () => {
                 id="last_name"
                 className="form-control block w-full px-3 py-2 mb-5 text-base font-normal bg-clip-padding border border-solid border-gray-300 rounded-md transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-sky-600 focus:outline-none"
                 placeholder="Last Name "
+                value={formData.last_name}
+                onChange={handleInputChange}
                 required={true}
               />
             </div>
@@ -77,6 +108,8 @@ const Contactpage = () => {
               name="email"
               className="form-control block w-full px-3 py-2 mb-5 text-base font-normal bg-clip-padding border border-solid border-gray-300 rounded-md transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-sky-600 focus:outline-none"
               placeholder="Email "
+              value={formData.email}
+              onChange={handleInputChange}
               required={true}
             />
             <input
@@ -84,15 +117,20 @@ const Contactpage = () => {
               name="subject"
               className="form-control block w-full px-3 py-2 mb-5 text-base font-normal bg-clip-padding border border-solid border-gray-300 rounded-md transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-sky-600 focus:outline-none"
               placeholder="Subject "
+              value={formData.subject}
+              onChange={handleInputChange}
               required={true}
             />
 
             <div className="flex justify-center">
               <textarea
                 id="exampleFormControlTextarea1"
+                name="message"
                 className="form-control block w-full px-3 py-2 mb-5 text-base font-normal bg-clip-padding border border-solid border-gray-300 rounded-md transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-sky-600 focus:outline-none"
                 placeholder="Your message"
-                required={true}
+                value={formData.message}
+                onChange={handleInputChange}
+                required
               ></textarea>
             </div>
 
