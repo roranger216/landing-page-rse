@@ -137,11 +137,7 @@ const Header = () => {
               )}
             </div>
           </div>
-          <div
-            className={
-              !nav ? "hidden" : "fixed ease-in-out duration-300 md:hidden mt-5"
-            }
-          >
+          <div className={!nav ? "hidden" : "fixed ease-in-out duration-300 md:hidden mt-5"}>
             <ul
               id="mobile-nav-drop"
               className="flex flex-col gap-4 fixed left-0 top-22 uppercase p-6 text-center bg-slate-200 w-full shadow-2xl dark:bg-gray-800"
