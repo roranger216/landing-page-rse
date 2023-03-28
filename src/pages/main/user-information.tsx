@@ -17,6 +17,7 @@ const Content = () => {
                         <div className="text-xl text-center font-bold"></div>
 
                         <div className="flex flex-col xl:flex-row w-full items-center justify-center">
+                            
                                 <div><img className="rounded-full xl:mr-16 w-300" src="https://static.wikia.nocookie.net/bleach-and-fairy-tail/images/1/1b/Natsu_Dragneel.jpg" width="180px"></img></div>
                                 <div className="w-full xl:w-1/2">
                                     <div className="flex flex-col text-center xl:text-left">
@@ -26,22 +27,16 @@ const Content = () => {
                                     </div>
                                 </div>
 
-                            <div className="flex flex-col xl:border-l-2 pl-4 mt-6 xl:mt-0 ml-8">
+                            <div className="flex flex-col xl:border-l-2 pl-4 mt-6 xl:mt-0 ml-8 w-full lg:w-80">
                                 <div>
                                     <div className="font-bold mb-2">Personal Details</div>
                                 </div>
-                                <div className="flex">
-                                    <div className="font-semibold w-full md:w-32">
-                                        <div>Birthdate: </div>
-                                        <div>Age: </div>
-                                        <div>Contact No.: </div>
-                                        <div>Address: </div>
-                                    </div>
-                                    <div className="">
-                                        <div>January 1, 1990</div>
-                                        <div>33</div>
-                                        <div>09123456789</div>
-                                        <div>Earth 616</div>
+                                <div className="flex w-full">
+                                    <div className="font-semibold">
+                                        <div>Birthdate: January 1, 1990</div>
+                                        <div>Age: 33</div>
+                                        <div>Contact No.: 09123456789</div>
+                                        <div>Address: Earth 616</div>
                                     </div>
                                 </div>
                             </div>

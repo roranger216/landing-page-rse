@@ -24,16 +24,13 @@
     /* selection {
     @apply text-white bg-blue-600;
     } */
-    #service_logo {
-      @apply bg-white drop-shadow-lg dark:bg-gradient-to-b from-purple-600 to-indigo-900 shadow-black
-    }
     #logo1{
-      @apply bg-sky-50 dark:bg-gradient-to-b from-purple-600 to-indigo-900
-    }
-    #logo2{
-      @apply bg-sky-50 dark:bg-gradient-to-b from-blue-900 to-fuchsia-700
+      @apply bg-gradient-to-b from-sky-100 to-sky-300 dark:bg-gradient-to-b dark:from-blue-900 dark:to-fuchsia-700
     }
     #nav-admin {
       @apply bg-white dark:bg-gray-800
+    }
+    #logo2{
+      @apply bg-gradient-to-b from-sky-300 to-sky-100 dark:bg-gradient-to-b dark:from-purple-600 dark:to-indigo-900
     }
 }

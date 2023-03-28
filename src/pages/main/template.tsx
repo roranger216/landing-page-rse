@@ -91,7 +91,7 @@ const Header = () => {
             <div id="" className={!nav ?
                 'hidden ease-in-out duration-300 shadow-xl shadow-right h-full w-60 pl-5 bg-white dark:bg-gray-800 md:flex flex-col justify-between fixed' :
 
-                'fixed flex flex-col justify-between transition-all ease-in duration-300 shadow-lg shadow-right md:hidden h-full w-1/2 pl-5 dark:bg-gray-800'}>
+                'fixed flex flex-col justify-between transition-all ease-in duration-300 shadow-lg shadow-right md:hidden h-full w-64 pl-5 dark:bg-gray-800'}>
 
                 <ul className=" justify-start items-start cursor-pointer gap-2 mt-4">
                     <li className="text-lg p-4 py-3 font-medium border-b-2 border-transparent  ease-in-out duration-500 hover:bg-sky-300 dark:hover:bg-sky-700 m-2 ml-0 rounded">
@@ -101,7 +101,7 @@ const Header = () => {
                         <Link href="./settings" className=" flex flex-row items-center gap-4"><MdOutlineInfo /><span className="w-28">About</span> </Link>
                     </li>
                     <li className="text-lg p-4 py-3 font-medium border-b-2 border-transparent  ease-in-out duration-500 hover:bg-sky-300 dark:hover:bg-sky-700 m-2 ml-0 rounded">
-                        <Link href="./settings" className=" flex flex-row items-center gap-4"><RiServiceLine /><span className="w-28">Services</span> </Link>
+                        <Link href="./services" className=" flex flex-row items-center gap-4"><RiServiceLine /><span className="w-28">Services</span> </Link>
                     </li>
                     <li className="text-lg p-4 py-3 font-medium border-b-2 border-transparent  ease-in-out duration-500 hover:bg-sky-300 dark:hover:bg-sky-700 m-2 ml-0 rounded">
                         <Link href="./settings" className=" flex flex-row items-center gap-4"><FiSettings /><span className="w-28">Settings</span></Link>

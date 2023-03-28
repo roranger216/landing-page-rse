@@ -13,9 +13,53 @@ function Register() {
     //         setChecked(selected)
     //     }
     // }
-    const [selectedValue, setSelectedValue] = useState("");
+  
 
-    const [gender, setGender] = useState('Male');
+    const [gender, setGender] = useState('');
+    const [register, setRegister] =useState({ // array with obejects for basic personal information
+      firstName:'',
+      middleName:'',
+      lastName:'',
+      gender:'',
+    })
+
+
+
+    const [account, setAccount] = useState({
+      email:'',
+      password:'',
+      firstName:'',
+      lastName:'',
+      
+    })
+    const handleBasicInfo =(event:any) =>{
+       const { name, value ,type  } = event.target;
+        if (type === "radio") {
+          setGender(value);
+        }
+    setRegister((prevRegister) => ({
+      ...prevRegister,
+      [name]: value,
+    }));
+
+  };
+
+
+
+  const handleNewAccount = (event:any) =>{
+      const {name , value} = event.target
+      setAccount((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+      firstName:register.firstName,
+      lastName:register.lastName
+      }))};
+  const handleSubmit = (event: any) => {
+    event.preventDefault();
+    console.log(register); // display the array object in console
+    console.log(account)
+  };
+    
 
 
   return (
@@ -25,31 +69,38 @@ function Register() {
           RASI<span className="text-sky-600">NIX</span>
         </h1>
       </div>
-      <form className="w-full flex flex-col justify-center items-center">
+      <form onSubmit={handleSubmit}
+       className="w-full flex flex-col justify-center items-center">
         <div className="flex w-full flex-col justify-start items-center gap-y-10 max-sm:gap-y-9">
           <div className="flex flex-row w-3/4 justify-center gap-4">
             <input
-              type="firstname"
+              type="text"
               id="firstname"
-              className="w-full bg-white h-1/5 text-justify px-2 py-3  rounded-md border-2 border-blue-300 capitalize"
+              name='firstName'
+              className="w-full bg-white h-1/5 text-justify px-2 py-3 rounded-md border-2 border-blue-300 capitalize dark:text-black"
               placeholder="Firstname"
+              onChange={handleBasicInfo}
               required
             />
           </div>
           <div className="flex flex-row w-3/4 justify-center gap-4">
             <input
-              type="middlename"
+              type="text"
               id="middlename"
-              className="w-full bg-white h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300 capitalize"
+              name='middleName'
+              className="w-full bg-white h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300 capitalize dark:text-black"
               placeholder="Middle Name"
+              onChange={handleBasicInfo}
             />
           </div>
           <div className="flex flex-row w-3/4 justify-center gap-4">
             <input
-              type="lastname"
+              type="text"
               id="lastname"
-              className="w-full bg-white h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300 capitalize"
+              name='lastName'
+              className="w-full bg-white h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300 capitalize dark:text-black"
               placeholder="Lastname"
+              onChange={handleBasicInfo}
               required
             />
           </div>
@@ -57,18 +108,24 @@ function Register() {
             <input
               type="email"
               id="email"
-              className="w-full bg-white h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300"
+              name='email'
+              value={account.email}
+              onChange={handleNewAccount}
+              className="w-full bg-white h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300 dark:text-black"
               placeholder="Email"
-              required
+              
             />
           </div>
           <div className="flex flex-row w-3/4 justify-center gap-4">
             <input
               type="password"
               id="password"
-              className="w-full bg-white h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300"
+              name='password'
+              value={account.password}
+              onChange={handleNewAccount}
+              className="w-full bg-white h-1/3 text-justify px-2 py-3 rounded-md border-2 border-blue-300 dark:text-black"
               placeholder="Password"
-              required
+             
             />
           </div>
           <div className=" w-3/4 ">
@@ -87,9 +144,10 @@ function Register() {
                   <input
                     type="radio"
                     checked={gender === "Male"}
+                    name='gender'
                     value="Male"
-                    onClick={() => setGender("Male")}
-                    className="bg-white dark:bg-white"
+                    onChange={handleBasicInfo}
+                    className="bg-white dark:bg-white text-black"
                   />
                 </div>
                 <div className="float-left mx-2 max-sm:">
@@ -102,8 +160,9 @@ function Register() {
                   <input
                     type="radio"
                     checked={gender === "Female"}
+                    name='gender'
                     value="Female"
-                    onClick={() => setGender("Female")}
+                    onChange={handleBasicInfo}
                   />
                 </div>
 
@@ -119,8 +178,8 @@ function Register() {
                     type="radio"
                     checked={gender === "Other"}
                     value="Other"
-                    onClick={() => setGender("Other")}
-                    
+                    name='gender'
+                    onChange={handleBasicInfo}
                   />
                 </div>
               </div>
@@ -134,10 +193,7 @@ function Register() {
             >
               Register
             </button>
-            <p className='underline'>
-              or
-             
-            </p>
+            <p className="underline">or</p>
             <button
               type="submit"
               className="w-auto bg-gray-300 hover:bg-blue-400 py-2 px-4 rounded-md font-bold text-sm text-black hover:text-gray-200 shadow-lg flex flex-row justify-center max-sm:full"
@@ -153,7 +209,8 @@ function Register() {
         </div>
       </form>
     </div>
-  );
-}
+  )
+
+  }
 
 export default Register
