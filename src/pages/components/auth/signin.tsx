@@ -128,7 +128,7 @@ const SignIn = () => {
                 type="password"
                 name="password"
                 placeholder="Password"
-                className="w-full h-full dark:text-black bg-white text-justify pl-8 px-2 rounded-full border-2 border-blue-300 p-5"
+                className="w-full h-full dark:text-black bg-white text-justify pl-8 px-2 rounded-full border-2 border-blue-400 p-5"
               />
               <i className="absolute top-1/3 right-3.5">
                 <BsEye />
