@@ -25,7 +25,7 @@ const Darkmode = () => {
           onClick={() => setTheme('light')}
         >
           <BsSun
-            className="text-lg md:text-2xl"
+            className="text-lg md:text-xl"
           />
         </div>
       );
@@ -36,7 +36,7 @@ const Darkmode = () => {
           onClick={() => setTheme('dark')}
         >
           <FaMoon
-            className="text-base md:text-2xl"
+            className="text-base md:text-xl"
           />
         </div>
         

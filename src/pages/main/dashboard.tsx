@@ -1,10 +1,10 @@
-import React from 'react'
-import Header from './template'
+import React from 'react';
+import Header from './template';
 import Footer from './footer';
 
-const settings = () => {
+const Content = () => {
   return (
-    <div className="settings">
+    <div className="Content">
       <nav className='z-10'>
         <Header />
       </nav>
@@ -14,16 +14,16 @@ const settings = () => {
           <div className="flex flex-col justify-center md:ml-60 bg-white dark:bg-slate-800 p-8 rounded-md">
 
             {/* Content Here */}
-            <div className="text-xl text-center font-bold">Settings</div>
+            <div className="text-xl text-center font-bold">Dashboard</div>
           </div>
 
         </div>
       </div>
 
-      {/* <Footer /> */}
+      <Footer />
 
     </div>
   )
 }
 
-export default settings
+export default Content;
