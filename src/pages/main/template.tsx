@@ -41,10 +41,10 @@ const Header = () => {
 
                 <div className="cursor-pointer flex flex-row items-center gap-4 w-full">
 
-                    <div onClick={handleNav} className="block md:hidden text-3xl">
+                    <div onClick={handleNav} className="block md:hidden text-2xl">
                         {!nav ? <FaBars /> : <FaTimes />}
                     </div>
-                    <div className="flex justify-start items-start font-bold lg:text-3xl md:text-2xl">
+                    <div className="flex justify-start items-start font-bold text-lg lg:text-3xl md:text-2xl">
                         THIS<span className="text-sky-600">Logo</span>
                     </div>
                 </div>
@@ -56,23 +56,18 @@ const Header = () => {
                             </div>
                         </li>
                         <li className="text-lg font-medium p-2">
-                            <div className='text-2xl items-center'>
+                            <div className='text-xl md:text-2xl items-center'>
                                 <AiOutlineBell className='hover:text-blue-500' />
                             </div>
                         </li>
-                        <li className="text-lg font-medium p-2">
-                            <div className='text-2xl items-center'>
-                                <BiEnvelope className='hover:text-blue-500' />
-                            </div>
-                        </li>
-                        <li onClick={handleDropdown} className="text-lg font-medium hover:bg-sky-200 dark:hover:bg-sky-700 rounded md:ml-6 p-2">
+                        <li onClick={handleDropdown} className="text-base md:text-lg font-medium hover:bg-sky-200 dark:hover:bg-sky-700 rounded md:ml-6 p-2">
                             <div className='flex items-center'>
                                 <FaUserCircle className="text-2xl mr-3 text-slate-500 dark:text-white" />
                                 Username
                             </div>
                         </li>
                         <div className={!dropdown ? "hidden" : "fixed ease-in-out duration-300"}>
-                            <ul id="mobile-nav-drop" className="flex flex-col fixed right-10 top-20 text-left bg-slate-50 shadow-xl dark:bg-gray-800">
+                            <ul id="mobile-nav-drop" className="flex flex-col fixed right-2 md:right-10 top-20 text-left bg-slate-50 shadow-xl dark:bg-gray-800">
                                 <li className="flex text-md hover:bg-sky-200 p-4 pl-4 pr-8 border-b-2 border-slate-200 dark:border-sky-700 dark:hover:bg-sky-700">
                                 <AiOutlineUser className="text-xl mr-2" />
                                     <Link href="./user-information" className="">User Account</Link>
