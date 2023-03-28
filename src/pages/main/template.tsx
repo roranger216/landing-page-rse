@@ -10,6 +10,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import { FaUserCircle } from 'react-icons/fa'
 import { FiSettings } from 'react-icons/Fi'
 import Darkmode from './darkmode'
+import DarkmodeDS from './darkmode_dashboard'
 
 const Header = () => {
 
