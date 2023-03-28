@@ -3,6 +3,9 @@ import Link from 'next/link'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { BiHomeAlt2, BiEnvelope } from 'react-icons/bi';
+import { BsTelephone } from 'react-icons/bs';
+import { FaQuestionCircle } from 'react-icons/fa';
+import { BiHomeAlt2, BiEnvelope, BiBell } from 'react-icons/bi';
 import { MdLogout, MdOutlineInfo } from 'react-icons/md';
 import { RiServiceLine } from 'react-icons/ri'
 import { AiOutlineUser, AiOutlineBell } from 'react-icons/ai'
@@ -10,6 +13,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import { FaUserCircle } from 'react-icons/fa'
 import { FiSettings } from 'react-icons/Fi'
 import Darkmode from './darkmode'
+import DarkmodeDS from './darkmode_dashboard'
 
 const Header = () => {
 
@@ -85,7 +89,7 @@ const Header = () => {
 
             <div id="" className={!nav ?
                 'hidden ease-in-out duration-300 shadow-xl shadow-right h-full w-60 pl-5 bg-white dark:bg-gray-800 md:flex flex-col justify-between fixed' :
-
+                
                 'fixed flex flex-col justify-between transition-all ease-in duration-300 shadow-lg shadow-right md:hidden h-full w-64 pl-5 dark:bg-gray-800'}>
 
                 <ul className=" justify-start items-start cursor-pointer gap-2 mt-4">

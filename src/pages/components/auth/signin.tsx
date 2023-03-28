@@ -2,7 +2,7 @@ import React, { useState, ChangeEvent, useEffect } from 'react'
 import bg from '../../../assets/img/f-bg.jpg';
 import Image from 'next/image';
 import { useRouter } from 'next/router'
-import {BsEye} from 'react-icons/bs'
+import {BsEye,BsEyeSlash} from 'react-icons/bs'
 
 const SignIn = () => {
 
@@ -25,6 +25,7 @@ const SignIn = () => {
 
   const [showAlert, setShowAlert] = useState(false); //alert
 
+  const [showPassword, setShowPassword] = useState(false); // to view password
   
 
   const handleEmail = (event: ChangeEvent<HTMLInputElement>) => {
@@ -34,6 +35,12 @@ const SignIn = () => {
   const handlePassword = (event: ChangeEvent<HTMLInputElement>) => {
     setPasswordValue(event.target.value)
   }
+  
+
+  const handleTogglePassword = () => {
+      setShowPassword(!showPassword);
+    };
+
   const triggerAlert = () => {
     setShowAlert(true);
     setTimeout(() => {
@@ -125,13 +132,16 @@ const SignIn = () => {
               <input
                 value={passwordValue}
                 onChange={handlePassword}
-                type="password"
+                type={showPassword ? "text" : "password"}
                 name="password"
                 placeholder="Password"
                 className="w-full h-full dark:text-black bg-white text-justify pl-8 px-2 rounded-full border-2 border-blue-400 p-5"
               />
-              <i className="absolute top-1/3 right-3.5">
-                <BsEye />
+              <i
+                className="absolute top-1/3 right-3.5"
+                onClick={handleTogglePassword}
+              >
+                {showPassword ? <BsEye /> : <BsEyeSlash />}
               </i>
             </div>
           </div>
@@ -146,7 +156,9 @@ const SignIn = () => {
               Sign In
             </button>
             <div>
-              <span className="text-black dark:text-white">Don&apos;t have an account? </span>
+              <span className="text-black dark:text-white">
+                Don&apos;t have an account?{" "}
+              </span>
               <a href="#" className="text-blue-600 cursor-pointer">
                 create account
               </a>
