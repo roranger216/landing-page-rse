@@ -22,12 +22,12 @@ const Content = () => {
                                 <div className="w-full xl:w-1/2">
                                     <div className="flex flex-col text-center xl:text-left">
                                         <div className="text-2xl font-bold">John Doe</div>
-                                        <div className="text-md font-bold mb-2">Full Stack Developer</div>
+                                        <div className="text-md font-bold mb-2">Software Engineer</div>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati earum voluptas modi laudantium nobis inventore incidunt nisi ipsa! Deserunt quisquam porro unde veritatis voluptatum commodi delectus veniam, temporibus sunt quidem.</p>
                                     </div>
                                 </div>
 
-                            <div className="flex flex-col xl:border-l-2 pl-4 mt-6 xl:mt-0 ml-8 w-full lg:w-80">
+                            <div className="flex flex-col xl:border-l-2 pl-4 mt-6 xl:mt-0 xl:ml-8 w-full lg:w-80">
                                 <div>
                                     <div className="font-bold mb-2">Personal Details</div>
                                 </div>
