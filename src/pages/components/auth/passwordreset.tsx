@@ -16,7 +16,7 @@ export default function PasswordReset() {
     setForgottenEmail(event.target.value);
   };
 
-
+  const message1 = 'Please provide'
   const warning =()=>{
     setAlert(true);
     setTimeout(()=> {
@@ -29,6 +29,12 @@ export default function PasswordReset() {
     console.log(toFind)
     if (!toFind){
       warning()
+    }
+    else if (toFind.email ===''){
+      warning()
+    }
+    else{
+
     }
   }
 
@@ -79,9 +85,9 @@ export default function PasswordReset() {
       </div>
       <div className="w-full h-1/3 flex justify-center items-center my-7">
         <div className="flex items-center ">
-          <i className=" max-sm:text-2xl text-black">
+          <button className=" max-sm:text-2xl text-black">
             <IoChevronBackSharp />
-          </i>
+          </button>
           <h3 className="ml-1 text-blue-400">Back to login</h3>
         </div>
       </div>

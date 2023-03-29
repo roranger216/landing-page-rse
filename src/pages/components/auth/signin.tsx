@@ -158,9 +158,12 @@ const SignIn = () => {
               <span className="text-black dark:text-white">
                 Don&apos;t have an account?{" "}
               </span>
-              <a href="#" className="text-blue-600 cursor-pointer">
-                create account
-              </a>
+              <Link
+                href="../landing-page/register"
+                className="text-blue-600 cursor-pointer"
+              >
+                Create Account
+              </Link>
             </div>
             <div>
               <Link
@@ -173,7 +176,6 @@ const SignIn = () => {
           </div>
         </div>
       </div>
-    
     </div>
   );
 }
