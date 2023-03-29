@@ -60,7 +60,7 @@ const SignIn = () => {
           console.log(email )
           if (passwordValue == email?.password){
           console.log('yes')
-           router.push("/main/settings");
+           router.push("/main/dashboard");
         }
 
           else{
