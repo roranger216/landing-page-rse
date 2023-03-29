@@ -13,6 +13,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+       height:{
+      'h-13':'48px',
+    },
       colors: {
         gold: {
           50: "#fdf6e3",
@@ -30,7 +33,11 @@ module.exports = {
       dropShadow: {
         w2xl: "0 5px 10px rgba(255, 255, 255, 0.2)",
       },
+     // inset:{
+      //   'left-5/6':'83%',
+      // }
     },
+  
   },
   variants: {},
   plugins: [],

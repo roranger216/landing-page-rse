@@ -1,22 +1,24 @@
-import React, { useState, ChangeEvent, useEffect } from 'react'
+import React, { useState, ChangeEvent, } from 'react'
 import bg from '../../../assets/img/f-bg.jpg';
 import Image from 'next/image';
 import { useRouter } from 'next/router'
 import {BsEye,BsEyeSlash} from 'react-icons/bs'
+import Link from 'next/link';
 
+import { accountArray } from './accounts';
 const SignIn = () => {
-
+  
   // Call the useRouter hook to perform router.push
   const router = useRouter();
   // Call the useRouter hook to perform router.push
 
-  const accountArray =[
-    { id: 1, email: 'jayson@gmail.com', password: '123456' },
-    { id: 2, email: 'dsteph@gmail.com', password: 'hey' },
-    { id: 3, email: 'roger@gmail.com', password: 'jjj' },
-    { id: 4, email: 'grytz@gmail.com', password: 'chang' },
+  // const accountArray =[
+  //   { id: 1, email: 'jayson@gmail.com', password: '123456' },
+  //   { id: 2, email: 'dsteph@gmail.com', password: 'hey' },
+  //   { id: 3, email: 'roger@gmail.com', password: 'jjj' },
+  //   { id: 4, email: 'grytz@gmail.com', password: 'chang' },
     
-  ];
+  // ];
 
 
   const [emailValue, setEmail] = useState(""); // for email
@@ -76,10 +78,7 @@ const SignIn = () => {
         // }
       }
       else {
-        setShowAlert(true)
-        setTimeout(() => {
-          setShowAlert(false);
-        }, 3000);
+          triggerAlert()
       }
 
     }
@@ -138,7 +137,7 @@ const SignIn = () => {
                 className="w-full h-full dark:text-black bg-white text-justify pl-8 px-2 rounded-full border-2 border-blue-400 p-5"
               />
               <i
-                className="absolute top-1/3 right-3.5"
+                className="absolute top-1/3 right-3.5 text-black"
                 onClick={handleTogglePassword}
               >
                 {showPassword ? <BsEye /> : <BsEyeSlash />}
@@ -164,13 +163,17 @@ const SignIn = () => {
               </a>
             </div>
             <div>
-              <a href="#" className="text-blue-600 cursor-pointer">
+              <Link
+                href="./forgotpassword"
+                className="text-blue-600 cursor-pointer"
+              >
                 Forgot password?
-              </a>
+              </Link>
             </div>
           </div>
         </div>
       </div>
+    
     </div>
   );
 }
