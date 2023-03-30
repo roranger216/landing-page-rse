@@ -13,7 +13,7 @@ import { FaUserCircle } from 'react-icons/fa'
 import { FiSettings } from 'react-icons/Fi'
 import Darkmode from './darkmode'
 import DarkmodeDS from './darkmode_dashboard'
-import './search';
+import  Search from './search';
 import {BiSearch} from 'react-icons/bi';
 
 
