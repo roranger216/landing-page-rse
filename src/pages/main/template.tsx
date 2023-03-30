@@ -13,6 +13,10 @@ import { FaUserCircle } from 'react-icons/fa'
 import { FiSettings } from 'react-icons/Fi'
 import Darkmode from './darkmode'
 import DarkmodeDS from './darkmode_dashboard'
+import Search from './search';
+import {BiSearch} from 'react-icons/bi';
+
+
 
 const Header = () => {
 
@@ -50,7 +54,15 @@ const Header = () => {
                     <div className="flex justify-start items-start font-bold text-lg lg:text-3xl md:text-2xl">
                         THIS<span className="text-sky-600">Logo</span>
                     </div>
+                </div> 
+
+                <div>
+                <Search />
+
                 </div>
+              
+
+        
                 <div className="">
                     <ul className="flex cursor-pointer md:gap-4 items-center">
                         <li className="text-lg font-medium p-2">
