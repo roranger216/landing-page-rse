@@ -77,7 +77,7 @@ const Header = () => {
                                 </li>
                                 <li className="flex text-md hover:bg-sky-200 p-4 pl-4 pr-8 dark:hover:bg-sky-700">
                                 <MdLogout className="text-xl mr-2" />
-                                    <Link href="../components/auth/signin" className="">Logout</Link>
+                                    <Link href="../components/auth/signin3Del" className="">Logout</Link>
                                 </li>
 
                             </ul>

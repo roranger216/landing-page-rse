@@ -20,25 +20,17 @@ const SignIn = () => {
     
   // ];
 
-
   const [emailValue, setEmail] = useState(""); // for email
-
   const [passwordValue, setPasswordValue] = useState("") //for password
-
   const [showAlert, setShowAlert] = useState(false); //alert
-
   const [showPassword, setShowPassword] = useState(false); // to view password
-  
 
   const handleEmail = (event: ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value);
   }
-
   const handlePassword = (event: ChangeEvent<HTMLInputElement>) => {
     setPasswordValue(event.target.value)
   }
-  
-
   const handleTogglePassword = () => {
       setShowPassword(!showPassword);
     };
@@ -52,7 +44,6 @@ const SignIn = () => {
   const handleButtonClick = () => {
     // Perform action when button is clicked
     if (emailValue.trim() == '') {
-
       triggerAlert()
     }
     else if (emailValue.includes('@') && emailValue.includes('.')) {
@@ -64,29 +55,19 @@ const SignIn = () => {
           console.log('yes')
            router.push("/main/dashboard");
         }
-
           else{
             triggerAlert()
+            alert('Error')
           }
-          
-        // if (accountArray.find(obj => passwordValue == obj.id && obj.password)) {
-        //   // alert('Hooray');
-        //   router.push('/main/dashboard');
-        // }
-        // else {
-        //   triggerAlert()
-        // }
       }
       else {
           triggerAlert()
+          alert('Error')
       }
-
     }
     else {
-
       triggerAlert()
     }
-
   }
   return (
     <div className="w-screen h-screen flex justify-center items-center ">
@@ -124,17 +105,27 @@ const SignIn = () => {
                 type="email"
                 name="username"
                 placeholder="Email"
-                className="w-full h-full  dark:text-black bg-white text-justify pl-8 px-2 rounded-full border-2 border-blue-400 p-5"
+                className="w-full h-full text-justify pl-8 px-2 rounded-full border-2 border-blue-400 p-5"
               />
             </div>
-            <div className="relative w-full h-1/3">
+            <div className="w-full h-1/3 ">
+              <input
+                value={passwordValue}
+                onChange={handlePassword}
+                type="email"
+                name="password"
+                placeholder="Password"
+                className="w-full h-full text-justify pl-8 px-2 rounded-full border-2 border-blue-400 p-5"
+              />
+            </div>
+            {/* <div className="relative w-full h-1/3">
               <input
                 value={passwordValue}
                 onChange={handlePassword}
                 type={showPassword ? "text" : "password"}
                 name="password"
                 placeholder="Password"
-                className="w-full h-full dark:text-black bg-white text-justify pl-8 px-2 rounded-full border-2 border-blue-400 p-5"
+                className="w-full h-full text-justify pl-8 px-2 rounded-full border-2 border-blue-400 p-5"
               />
               <i
                 className="absolute top-1/3 right-3.5 text-black"
@@ -142,7 +133,7 @@ const SignIn = () => {
               >
                 {showPassword ? <BsEye /> : <BsEyeSlash />}
               </i>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="buttons w-full">
