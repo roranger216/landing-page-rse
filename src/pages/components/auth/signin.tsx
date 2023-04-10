@@ -26,20 +26,23 @@ const SignIn = () => {
 
   const handleSubmit = async (event: any) => {
     event.preventDefault();
+
+    const loginDto = { email, password };
     const response = await fetch('http://localhost:3008/auth/login', {
       method: 'POST',
-      body: JSON.stringify({ email, password }),
       headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(loginDto),
     });
+
     if (response.ok) {
       const { token } = await response.json();
-      alert('You are in!');
-      router.push("/main/dashboard");
-      console.log({ token })
-      // Save the token to local storage or cookie and redirect to the home page
+      // save token to localStorage or state and redirect to another page
+      console.log({ token });
+      alert("You are in!");
+      router.push('/main/homepage');
     } else {
-      triggerAlert()
-      // alert('Incorrect username or password');
+      const { message } = await response.json();
+      triggerAlert();
     }
   };
 
@@ -85,20 +88,29 @@ const SignIn = () => {
                   value={email} onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
+              {/* <div className="w-full ">
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="password"
+                  className="w-full h-3 text-justify pl-8 px-2 rounded-full border-2 border-blue-400 p-5"
+                  value={password} onChange={(e) => setPassword(e.target.value)}
+                />
+              </div> */}
               <div className="relative w-full ">
                 <input
-                  type = {showPassword ? "text" : "password"}
+                  type={showPassword ? "text" : "password"}
                   name="password"
                   placeholder="Password"
                   className="w-full h-3 text-justify pl-8 px-2 rounded-full border-2 border-blue-400 p-5"
                   value={password} onChange={(e) => setPassword(e.target.value)}
                 />
                 <i
-                className="absolute top-1/3 right-3.5 text-black"
-                onClick={handleTogglePassword}
-              >
-                {showPassword ? <BsEye /> : <BsEyeSlash />}
-              </i>
+                  className="absolute top-1/3 right-3.5 text-black"
+                  onClick={handleTogglePassword}
+                >
+                  {showPassword ? <BsEye /> : <BsEyeSlash />}
+                </i>
               </div>
               <button type="submit" className=" w-2/5 bg-blue-600 hover:bg-blue-400 p-1 rounded-md font-bold text-lg text-white hover:text-gray-200 my-6">
                 Sign In
