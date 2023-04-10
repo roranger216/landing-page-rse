@@ -50,7 +50,7 @@ function Register() {
               type="text"
               id="firstname"
               name='firstName'
-              className="w-full bg-white h-1/5 text-justify px-2 py-2 rounded-md border-2 border-blue-300 capitalize dark:text-black"
+              className="w-full h-1/5 text-justify px-2 py-2 rounded-md border-2 border-blue-300 capitalize"
               placeholder="Firstname"
               value={firstname}
               onChange={(event) => setFirstname(event.target.value)}
@@ -63,7 +63,7 @@ function Register() {
               type="text"
               id="middlename"
               name='middleName'
-              className="w-full bg-white h-1/3 text-justify px-2 py-2 rounded-md border-2 border-blue-300 capitalize dark:text-black"
+              className="w-full h-1/3 text-justify px-2 py-2 rounded-md border-2 border-blue-300 capitalize"
               placeholder="Middle Name"
               value={middlename}
               onChange={(event) => setMiddlename(event.target.value)}
@@ -75,7 +75,7 @@ function Register() {
               type="text"
               id="lastname"
               name='lastName'
-              className="w-full bg-white h-1/3 text-justify px-2 py-2 rounded-md border-2 border-blue-300 capitalize dark:text-black"
+              className="w-full h-1/3 text-justify px-2 py-2 rounded-md border-2 border-blue-300 capitalize"
               placeholder="Lastname"
               value={lastname}
               onChange={(event) => setLastname(event.target.value)}
@@ -88,7 +88,7 @@ function Register() {
               type="email"
               id="email"
               name='email'
-              className="w-full bg-white h-1/3 text-justify px-2 py-2 rounded-md border-2 border-blue-300 dark:text-black"
+              className="w-full h-1/3 text-justify px-2 py-2 rounded-md border-2 border-blue-300"
               placeholder="Email"
               value={email}
               onChange={(event) => setEmail(event.target.value)}
@@ -100,7 +100,7 @@ function Register() {
               type="password"
               id="password"
               name='password'
-              className="w-full bg-white h-1/3 text-justify px-2 py-2 rounded-md border-2 border-blue-300 dark:text-black"
+              className="w-full h-1/3 text-justify px-2 py-2 rounded-md border-2 border-blue-300"
               placeholder="Password"
               value={password}
               onChange={(event) => setPassword(event.target.value)}
@@ -110,7 +110,7 @@ function Register() {
             <label>Gender</label>
             <select 
               name="gender"
-              className="w-full bg-white h-1/3 text-justify px-2 py-2 rounded-md border-2 border-blue-300 dark:text-black"
+              className="w-full h-1/3 text-justify px-2 py-2 rounded-md border-2 border-blue-300"
               value={gender}
               onChange={(event) => setGender(event.target.value)}>
               <option value="">Select Here</option>
