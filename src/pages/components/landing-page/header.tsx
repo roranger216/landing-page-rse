@@ -108,7 +108,7 @@ const Header = () => {
             <li className="mt-2">
               <Linked
                 id="signin"
-                href="/components/auth/signin3Del"
+                href="/components/auth/signin"
                 className="text-lg px-4 py-1 font-medium border-2 bg-sky-600 border-sky-600 text-white hover:bg-sky-800 hover:border-sky-800 rounded-md ease-in duration-200"
               >
                 Sign In
@@ -195,7 +195,7 @@ const Header = () => {
                 </Link>
               </li>
               <Linked
-                href="/components/auth/signin3Del"
+                href="/components/auth/signin"
                 className="text-lg px-0 py-2 rounded-md font-medium border-2 bg-sky-600 text-white"
               >
                 Sign In

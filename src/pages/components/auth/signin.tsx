@@ -1,74 +1,48 @@
 import React, { useState, ChangeEvent, } from 'react'
-import bg from '../../../assets/img/f-bg.jpg';
 import Image from 'next/image';
 import { useRouter } from 'next/router'
-import {BsEye,BsEyeSlash} from 'react-icons/bs'
+import { BsEye, BsEyeSlash } from 'react-icons/bs'
 import Link from 'next/link';
-
 import { accountArray } from './accounts';
+import bg from '../../../assets/img/f-bg.jpg';
+
 const SignIn = () => {
-  
-  // Call the useRouter hook to perform router.push
+
   const router = useRouter();
-  // Call the useRouter hook to perform router.push
 
-  // const accountArray =[
-  //   { id: 1, email: 'jayson@gmail.com', password: '123456' },
-  //   { id: 2, email: 'dsteph@gmail.com', password: 'hey' },
-  //   { id: 3, email: 'roger@gmail.com', password: 'jjj' },
-  //   { id: 4, email: 'grytz@gmail.com', password: 'chang' },
-    
-  // ];
-
-  const [emailValue, setEmail] = useState(""); // for email
-  const [passwordValue, setPasswordValue] = useState("") //for password
-  const [showAlert, setShowAlert] = useState(false); //alert
-  const [showPassword, setShowPassword] = useState(false); // to view password
-
-  const handleEmail = (event: ChangeEvent<HTMLInputElement>) => {
-    setEmail(event.target.value);
-  }
-  const handlePassword = (event: ChangeEvent<HTMLInputElement>) => {
-    setPasswordValue(event.target.value)
-  }
-  const handleTogglePassword = () => {
-      setShowPassword(!showPassword);
-    };
+  const [showAlert, setShowAlert] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
 
   const triggerAlert = () => {
     setShowAlert(true);
-    setTimeout(() => {
-      setShowAlert(false);
-    }, 3000);
-  }
-  const handleButtonClick = () => {
-    // Perform action when button is clicked
-    if (emailValue.trim() == '') {
+    setTimeout(() => setShowAlert(false), 3000);
+  };
+
+  const handleTogglePassword = () => {
+    setShowPassword(!showPassword);
+  };
+
+  const handleSubmit = async (event: any) => {
+    event.preventDefault();
+    const response = await fetch('http://localhost:3008/auth/login', {
+      method: 'POST',
+      body: JSON.stringify({ email, password }),
+      headers: { 'Content-Type': 'application/json' },
+    });
+    if (response.ok) {
+      const { token } = await response.json();
+      alert('You are in!');
+      router.push("/main/dashboard");
+      console.log({ token })
+      // Save the token to local storage or cookie and redirect to the home page
+    } else {
       triggerAlert()
+      // alert('Incorrect username or password');
     }
-    else if (emailValue.includes('@') && emailValue.includes('.')) {
-      if (accountArray.find(obj =>emailValue  === obj.email )) {
-          
-          const email = accountArray.find((item) => item.email == emailValue) 
-          console.log(email )
-          if (passwordValue == email?.password){
-          console.log('yes')
-           router.push("/main/dashboard");
-        }
-          else{
-            triggerAlert()
-            alert('Error')
-          }
-      }
-      else {
-          triggerAlert()
-          alert('Error')
-      }
-    }
-    else {
-      triggerAlert()
-    }
-  }
+  };
+
   return (
     <div className="w-screen h-screen flex justify-center items-center ">
       <Image
@@ -89,62 +63,51 @@ const SignIn = () => {
         </div>
 
         <div className="inputs flex flex-col justify-center">
+
+          {/* Red Alert */}
           {showAlert && (
             <div className=" w-full">
-              <h1 className="text-red-600 text-center font-semibold text-base md:text-lg">
+              <h1 className="text-red-600 text-center font-semibold text-base md:text-lg pb-4">
                 Incorrect Email or Password!
               </h1>
             </div>
           )}
+          {/* Red Alert */}
 
-          <div className="flex w-full flex-col justify-center items-center gap-4 max-[480px]:gap-4">
-            <div className="w-full h-1/3 ">
-              <input
-                value={emailValue}
-                onChange={handleEmail}
-                type="email"
-                name="username"
-                placeholder="Email"
-                className="w-full h-full text-justify pl-8 px-2 rounded-full border-2 border-blue-400 p-5"
-              />
-            </div>
-            <div className="w-full h-1/3 ">
-              <input
-                value={passwordValue}
-                onChange={handlePassword}
-                type="email"
-                name="password"
-                placeholder="Password"
-                className="w-full h-full text-justify pl-8 px-2 rounded-full border-2 border-blue-400 p-5"
-              />
-            </div>
-            {/* <div className="relative w-full h-1/3">
-              <input
-                value={passwordValue}
-                onChange={handlePassword}
-                type={showPassword ? "text" : "password"}
-                name="password"
-                placeholder="Password"
-                className="w-full h-full text-justify pl-8 px-2 rounded-full border-2 border-blue-400 p-5"
-              />
-              <i
+          <form onSubmit={handleSubmit}>
+            <div className="flex w-full flex-col justify-center items-center gap-4 max-[480px]:gap-4">
+              <div className="w-full ">
+                <input
+                  type="email"
+                  name="username"
+                  placeholder="Email"
+                  className="w-full h-3 text-justify pl-8 px-2 rounded-full border-2 border-blue-400 p-5"
+                  value={email} onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              <div className="relative w-full ">
+                <input
+                  type = {showPassword ? "text" : "password"}
+                  name="password"
+                  placeholder="Password"
+                  className="w-full h-3 text-justify pl-8 px-2 rounded-full border-2 border-blue-400 p-5"
+                  value={password} onChange={(e) => setPassword(e.target.value)}
+                />
+                <i
                 className="absolute top-1/3 right-3.5 text-black"
                 onClick={handleTogglePassword}
               >
                 {showPassword ? <BsEye /> : <BsEyeSlash />}
               </i>
-            </div> */}
-          </div>
+              </div>
+              <button type="submit" className=" w-2/5 bg-blue-600 hover:bg-blue-400 p-1 rounded-md font-bold text-lg text-white hover:text-gray-200 my-6">
+                Sign In
+              </button>
+            </div>
+          </form>
         </div>
         <div className="buttons w-full">
           <div className="flex flex-col items-center justify-between">
-            <button
-              onClick={handleButtonClick}
-              type="submit"
-              className=" w-2/5 bg-blue-600 hover:bg-blue-400 p-1 rounded-md font-bold text-lg text-white hover:text-gray-200 my-6"
-            >
-              Sign In
-            </button>
             <div>
               <span className="text-black dark:text-white">
                 Don&apos;t have an account?{" "}
@@ -164,7 +127,7 @@ const SignIn = () => {
           </div>
         </div>
       </div>
-    
+
     </div>
   );
 }
