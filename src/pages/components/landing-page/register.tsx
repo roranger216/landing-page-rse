@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router'
 import axios from 'axios';
+import bcrypt from 'bcryptjs';
 
 function Register() {
   const router = useRouter();
@@ -14,21 +15,21 @@ function Register() {
 
   const handleSubmit = async (event: any) => {
     event.preventDefault();
-
+    const hashedPassword = await bcrypt.hash(password, 10);
     try {
       const response = await axios.post('http://localhost:3008/users', {
         firstname,
         middlename,
         lastname,
         email,
-        password,
+        password: hashedPassword,
         gender,
       });
-
+  
       console.log(response.data);
       alert("Created Successfully");
       router.push("../components/auth/signin");
-
+  
     } catch (error) {
       console.error(error);
     }
@@ -43,7 +44,7 @@ function Register() {
       </div>
       <form onSubmit={handleSubmit}
         className="w-full flex flex-col justify-center items-center">
-        <div className="flex w-full flex-col justify-start items-center gap-y-5 max-sm:gap-y-9">
+        <div className="flex w-full flex-col justify-start items-center gap-y-5 max-sm:gap-y-2">
           <div className="flex flex-col w-3/4 justify-center gap-1">
             <label>First Name</label>
             <input
@@ -83,6 +84,18 @@ function Register() {
             />
           </div>
           <div className="flex flex-col w-3/4 justify-center gap-1">
+            <label>Gender</label>
+            <select 
+              name="gender"
+              className="w-full h-1/3 text-justify px-2 py-2 rounded-md border-2 border-blue-300"
+              value={gender}
+              onChange={(event) => setGender(event.target.value)}>
+              <option value="">Select Here</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <div className="flex flex-col w-3/4 justify-center gap-1">
             <label>Email</label>
             <input
               type="email"
@@ -106,24 +119,12 @@ function Register() {
               onChange={(event) => setPassword(event.target.value)}
             />
           </div>
-          <div className="flex flex-col w-3/4 justify-center gap-1">
-            <label>Gender</label>
-            <select 
-              name="gender"
-              className="w-full h-1/3 text-justify px-2 py-2 rounded-md border-2 border-blue-300"
-              value={gender}
-              onChange={(event) => setGender(event.target.value)}>
-              <option value="">Select Here</option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-            </select>
-          </div>
 
-          <div className="w-full flex flex-col items-center justify-center gap-4">
+          <div className="w-full flex flex-col items-center justify-center gap-2">
             <button
               type="submit"
               value="Register"
-              className="w-1/3 bg-blue-600 hover:bg-blue-400 py-2 px-4 rounded-md font-bold text-sm text-white hover:text-gray-200 shadow-lg"
+              className="w-40 bg-blue-600 hover:bg-blue-400 py-2 px-4 rounded-md font-bold text-sm text-white hover:text-gray-200 shadow-lg"
             >
               Register
             </button>
