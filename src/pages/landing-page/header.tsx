@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 
 import { Link } from 'react-scroll'
 import Linked from 'next/link'
-import Darkmode from '../darkmode/darkmode'
-import useScrollPosition from './../hooks/scroll'
+import Darkmode from '../components/darkmode/darkmode'
+import useScrollPosition from '../components/hooks/scroll'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -32,11 +32,18 @@ const Header = () => {
 
 
     return (
+      // <div
+      //   id="nav-holder"
+      //   className={classNames(
+      //     scrollPosition > 0 ? "shadow-md" : "shadow-none py-4 md:py-6",
+      //     "bg-white dark:bg-gradient-to-t from-purple-900 to-fuchsia-500 fixed w-full top-0 left-0 flex justify-between p-4 px-8 md:px-6 lg:px-16 items-center z-50"
+      //   )}
+      // >
       <div
         id="nav-holder"
         className={classNames(
-          scrollPosition > 0 ? "shadow-md" : "shadow-none py-4 md:py-6",
-          "bg-white dark:bg-gradient-to-t from-purple-900 to-fuchsia-500 fixed w-full top-0 left-0 flex justify-between p-4 px-8 md:px-6 lg:px-16 items-center z-50"
+          scrollPosition > 0 ? "shadow-md dark:bg-slate-600" : "shadow-none py-4 md:py-6",
+          "bg-white dark:bg-slate-900 fixed w-full top-0 left-0 flex justify-between p-4 px-8 md:px-6 lg:px-16 items-center z-50"
         )}
       >
         <div className="cursor-pointer pl-0 xl:pl-16">
@@ -66,7 +73,7 @@ const Header = () => {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-20}
+                offset={-60}
                 duration={500}
                 onClick={closeMenu}
                 className="text-black dark:text-white"
@@ -80,7 +87,7 @@ const Header = () => {
                 to="services"
                 spy={true}
                 smooth={true}
-                offset={-60}
+                offset={-80}
                 duration={500}
                 onClick={closeMenu}
                 className="text-black dark:text-white"

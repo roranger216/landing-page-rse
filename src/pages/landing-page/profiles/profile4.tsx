@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
-import coco from '../../../../assets/img/download.jpeg'
+import coco from '../../../assets/img/download.jpeg'
 import Image from 'next/image'
 
 const useStyles = makeStyles((theme) => ({

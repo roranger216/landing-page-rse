@@ -2,13 +2,15 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
-import goku from '../../../../assets/img/goku.jpg'
+import rengoku from '../../../assets/img/31f399f8b385b923ad1db24f01dc4b7b58d18d62.jpg'
 import Image from 'next/image';
+import Darkmode from '../../components/darkmode/darkmode';
 
-const useStyles = makeStyles((theme) => ({
+
+const ProfileLayout = makeStyles((theme) => ({
   root: {
     width: "400px",
-    
+
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -16,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     background: "white",
     boxShadow: "0px 6px 14px 0px rgb(0 0 0 / .1)",
+    
   },
   avatar: {
     width: theme.spacing(10),
@@ -28,27 +31,25 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(2),
   },
 }));
-
-function ProfilePage3() {
-  const classes = useStyles();
-
+function ProfilePage() {
+    const classes = ProfileLayout();
   return (
-    <div id="profile-holder" className={classes.root}>
-      <Avatar className={classes.avatar}>
-        <Image alt="Profile Picture" src={goku} className={classes.avatar} />
-      </Avatar>
+    
+    <div id='profile-holder' className={classes.root}>
+    <Avatar className={classes.avatar}>
+      <Image  
+      alt="Profile Picture"
+      src={rengoku}
+      className={classes.avatar}/>
+    </Avatar>
       <Typography variant="h4" component="h1" gutterBottom>
-        Son Goku
+        Kyojuro Rengoku
       </Typography>
       <Typography variant="body1" className={classes.bio}>
-        Despite his busy schedule as a warrior, Goku is a committed and
-        passionate developer. He is constantly learning and improving his
-        skills, and he enjoys sharing his knowledge with others. He regularly
-        participates in hackathons and coding competitions, and he mentors young
-        developers to help them achieve their goals.
+      Kyojuro Rengoku is a visionary entrepreneur and the founder of Rapidsignal, a successful technology company that has revolutionized the way people communicate and connect. With a passion for innovation and a commitment to making a positive impact on the world, Rengoku has built a reputation as a leader in the tech industry.
       </Typography>
     </div>
   );
 }
 
-export default ProfilePage3;
+export default ProfilePage;

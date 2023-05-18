@@ -2,15 +2,13 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
-import rengoku from '../../../../assets/img/31f399f8b385b923ad1db24f01dc4b7b58d18d62.jpg'
+import goku from '../../../assets/img/goku.jpg'
 import Image from 'next/image';
-import Darkmode from '../../darkmode/darkmode';
 
-
-const ProfileLayout = makeStyles((theme) => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     width: "400px",
-
+    
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -18,7 +16,6 @@ const ProfileLayout = makeStyles((theme) => ({
     padding: theme.spacing(2),
     background: "white",
     boxShadow: "0px 6px 14px 0px rgb(0 0 0 / .1)",
-    
   },
   avatar: {
     width: theme.spacing(10),
@@ -31,25 +28,27 @@ const ProfileLayout = makeStyles((theme) => ({
     margin: theme.spacing(2),
   },
 }));
-function ProfilePage() {
-    const classes = ProfileLayout();
+
+function ProfilePage3() {
+  const classes = useStyles();
+
   return (
-    
-    <div id='profile-holder' className={classes.root}>
-    <Avatar className={classes.avatar}>
-      <Image  
-      alt="Profile Picture"
-      src={rengoku}
-      className={classes.avatar}/>
-    </Avatar>
+    <div id="profile-holder" className={classes.root}>
+      <Avatar className={classes.avatar}>
+        <Image alt="Profile Picture" src={goku} className={classes.avatar} />
+      </Avatar>
       <Typography variant="h4" component="h1" gutterBottom>
-        Kyojuro Rengoku
+        Son Goku
       </Typography>
       <Typography variant="body1" className={classes.bio}>
-      Kyojuro Rengoku is a visionary entrepreneur and the founder of Rapidsignal, a successful technology company that has revolutionized the way people communicate and connect. With a passion for innovation and a commitment to making a positive impact on the world, Rengoku has built a reputation as a leader in the tech industry.
+        Despite his busy schedule as a warrior, Goku is a committed and
+        passionate developer. He is constantly learning and improving his
+        skills, and he enjoys sharing his knowledge with others. He regularly
+        participates in hackathons and coding competitions, and he mentors young
+        developers to help them achieve their goals.
       </Typography>
     </div>
   );
 }
 
-export default ProfilePage;
+export default ProfilePage3;
