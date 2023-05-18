@@ -35,7 +35,7 @@ const Contactpage = () => {
   return (
     <div
       id="contact"
-      className=" w-full h-auto mb-52 bg-slate-300 dark:bg-gray-700"
+      className="lg:px-60 py-20 mb-32 bg-slate-200 dark:bg-slate-800"
     >
       <div className="flex justify-around items-center mx-10 md:flex-row flex-col">
         {/* textual content */}
@@ -78,7 +78,7 @@ const Contactpage = () => {
         {/* Contact form */}
         <div
           id="contact-card"
-          className="bg-slate-200 p-12 rounded-lg shadow-lg w-full md:w-auto"
+          className="bg-slate-300 dark:bg-slate-700 p-12 rounded-lg shadow-lg w-full md:w-auto"
         >
           <form onSubmit={handleSubmit}>
             <div className="grid xl:grid-cols-2 xl:gap-10">

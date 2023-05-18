@@ -3,6 +3,8 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { duration } from '@material-ui/core'
 import Register from './register'
+import lpimage2 from "../../assets/img/lpimage2.png";
+import Image from "next/image"
 
 const Content = () => {
 
@@ -20,7 +22,7 @@ const Content = () => {
     return (
       <div
         id="home"
-        className="content flex flex-col lg:flex-row justify-between items-center pt-32 md:pt-10 lg:pt-40 xl:pt-20 pb-20 px-4 lg:px-0 m-4 md:m-20"
+        className="content flex flex-col lg:flex-row justify-between items-center pt-28 md:pt-10 lg:pt-16 xl:pt-12 pb-20 px-4 lg:px-0 m-4 md:m-20"
       >
         <div>
           {showModal && (
@@ -45,7 +47,7 @@ const Content = () => {
           )}
         </div>
 
-        <div className="text-center lg:text-left lg:w-1/2 lg:pr-10">
+        <div className="text-center lg:text-left lg:w-1/2 lg:pr-10 lg:mt-28">
           <h3 className="text-3xl lg:text-3xl font-medium">
             Efficient and Comprehensive
           </h3>
@@ -65,10 +67,13 @@ const Content = () => {
           </button>
         </div>
         <div className="lg:w-1/2">
-          <img
+          <Image
             className="w-full"
-            src="https://amincodes.com/html/one-pages/flex-it/assets/images/hero/illustration-1.png"
+            // src="https://amincodes.com/html/one-pages/flex-it/assets/images/hero/illustration-1.png"
+            src={lpimage2}
+            alt="lp-image"
           />
+          {/* Image from https://pngtree.com/ */}
         </div>
       </div>
     );
