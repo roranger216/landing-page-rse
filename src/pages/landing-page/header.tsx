@@ -6,6 +6,8 @@ import Darkmode from '../components/darkmode/darkmode'
 import useScrollPosition from '../components/hooks/scroll'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { RxHamburgerMenu } from 'react-icons/rx'
+import { RiCloseFill } from 'react-icons/ri'
 
 const Header = () => {
 
@@ -128,19 +130,17 @@ const Header = () => {
             </div>
             <div onClick={handleNav} className="block md:hidden">
               {!nav ? (
-                <img
+                <RxHamburgerMenu
                   id="nav-btn"
-                  src="https://cdn-icons-png.flaticon.com/128/7710/7710488.png"
-                  className=""
+                  className="text-2xl dark:text-white"
                   width={18}
-                ></img>
+                />
               ) : (
-                <img
+                <RiCloseFill
                   id="nav-btn"
-                  src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png"
-                  className=""
+                  className="text-2xl dark:text-white"
                   width={18}
-                ></img>
+                />
               )}
             </div>
           </div>
