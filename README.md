@@ -1,8 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Preview
-![image](https://github.com/roranger216/landing-page-rse/assets/126582662/4c01c832-50b4-4a33-a41d-58f014f4db83)
+Landing Page Preview
+
+`Light Theme`
 ![image](https://github.com/roranger216/landing-page-rse/assets/126582662/eab1edeb-a6cc-436c-bd35-41ac66eeb900)
+`Dark Theme`
+![image](https://github.com/roranger216/landing-page-rse/assets/126582662/4c01c832-50b4-4a33-a41d-58f014f4db83)
 
 
 
